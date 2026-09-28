@@ -2,7 +2,7 @@
 const LS_OWN='limbus.owned.v1', LS_SH='limbus.shards.v1', LS_TH='limbus.thread.v1', LS_TAB='limbus.tab.v1';
 let DATA=null;
 const st={tab:'all',own:'all',rar:new Set([1,2,3]),kind:'all',kw:'all',craft:false,q:''};
-const VIEW_TABS=['deck','builder'];
+const VIEW_TABS=['deck','builder','saeong'];
 const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}};
 const save=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
 let ownMap=load(LS_OWN,{}), shMap=load(LS_SH,{});
@@ -67,7 +67,7 @@ function renderTabs(){
   const t=document.getElementById('tabs');
   let h=`<button class="tab ${st.tab==='all'?'on':''}" data-t="all">전체</button>`;
   for(const s of DATA.sinners){const x=stats(s);h+=`<button class="tab ${st.tab===s.id?'on':''}" data-t="${s.id}">${esc(s.name)}<span class="cnt">${x.owned}/${x.total}</span></button>`}
-  h+=`<span class="tabsep"></span><button class="tab vt ${st.tab==='deck'?'on':''}" data-t="deck">덱</button><button class="tab vt ${st.tab==='builder'?'on':''}" data-t="builder">덱 빌더</button>`;
+  h+=`<span class="tabsep"></span><button class="tab vt ${st.tab==='deck'?'on':''}" data-t="deck">덱</button><button class="tab vt ${st.tab==='builder'?'on':''}" data-t="builder">덱 빌더</button><button class="tab vt ${st.tab==='saeong'?'on':''}" data-t="saeong" title="사영전투][투전영사 보스별 추천 덱과 내 보유 판정">사영전투</button>`;
   t.innerHTML=h;
 }
 function renderSummary(){
@@ -145,10 +145,11 @@ function renderSources(){
 }
 function renderAll(){
   const v=VIEW_TABS.includes(st.tab)?st.tab:'';
-  document.body.classList.toggle('mode-deck',v==='deck');document.body.classList.toggle('mode-builder',v==='builder');
+  document.body.classList.toggle('mode-deck',v==='deck');document.body.classList.toggle('mode-builder',v==='builder');document.body.classList.toggle('mode-saeong',v==='saeong');
   renderTabs();
   if(v==='deck'){renderDecks();return}
   if(v==='builder'){renderBuilder();return}
+  if(v==='saeong'){renderSaeong();return}
   renderSummary();renderGrid();renderSchedule();renderRules();}
 document.addEventListener('click',e=>{
   const t=e.target.closest('[data-t]'); if(t){st.tab=t.dataset.t;save(LS_TAB,st.tab);history.replaceState(null,'','#'+st.tab);renderAll();window.scrollTo({top:0,behavior:'smooth'});return;}

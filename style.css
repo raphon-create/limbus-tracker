@@ -118,9 +118,10 @@ footer{color:var(--mut);text-align:center;font-size:12px;padding:20px}
 
 /* ---- 뷰 전환 ---- */
 .view{display:none}
-body.mode-deck #deckView,body.mode-builder #builderView{display:block}
+body.mode-deck #deckView,body.mode-builder #builderView,body.mode-saeong #saeongView{display:block}
 body.mode-deck #summary,body.mode-deck .filters,body.mode-deck #grid,body.mode-deck #schedule,body.mode-deck #rules,
-body.mode-builder #summary,body.mode-builder .filters,body.mode-builder #grid,body.mode-builder #schedule,body.mode-builder #rules{display:none}
+body.mode-builder #summary,body.mode-builder .filters,body.mode-builder #grid,body.mode-builder #schedule,body.mode-builder #rules,
+body.mode-saeong #summary,body.mode-saeong .filters,body.mode-saeong #grid,body.mode-saeong #schedule,body.mode-saeong #rules{display:none}
 .tabsep{flex:0 0 10px}
 .tab.vt{border-color:#7a5a2a;color:var(--gold2);font-weight:700}
 .btn{background:linear-gradient(#6b4d1f,#3a2912);border:1px solid var(--gold);color:#fff3d0;padding:5px 12px;border-radius:3px;font-weight:700;font-size:12px}
@@ -258,8 +259,8 @@ ul.wl.sp{color:#cbbba3}
 .snote{max-width:280px;font-size:10px;color:var(--mut)}
 .ttier{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid var(--line)}
 .ttier .tb{font-size:13px;padding:3px 6px}
-dialog#tierSrc{background:var(--panel);color:var(--txt);border:1px solid var(--line);border-radius:6px;max-width:min(1100px,94vw);max-height:88vh;padding:0}
-dialog#tierSrc::backdrop{background:#000a}
+dialog#tierSrc,dialog#sySrc{background:var(--panel);color:var(--txt);border:1px solid var(--line);border-radius:6px;max-width:min(1100px,94vw);max-height:88vh;padding:0}
+dialog#tierSrc::backdrop,dialog#sySrc::backdrop{background:#000a}
 .dlg{padding:14px 18px;font-size:12px}.dlg table.st{font-size:11px}.dlg table.st td{vertical-align:top;border-bottom:1px solid #2a1e14}
 .dlgh{display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:var(--panel)}
 .chead .tb{margin-left:2px}
@@ -267,3 +268,21 @@ dialog#tierSrc::backdrop{background:#000a}
 .srct{font-size:11px}
 .mm b{color:var(--gold,#d8b25a);font-weight:600}
 .srct td.snote{min-width:84px;font-size:10px;line-height:1.3}
+
+/* 사영전투 탭 */
+.sy h2{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.syst{font-size:11px;font-weight:700;border-radius:3px;padding:1px 6px;border:1px solid var(--line)}
+.syst.ok{color:#bfe8b8;border-color:#4d7a48}.syst.off{color:var(--mut)}
+.sysum{margin:2px 0 6px;font-size:12px;color:var(--txt)}
+.syverd{font-size:12px;margin:0 0 6px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.syverd .lb{font-size:10px;color:var(--mut);border:1px solid var(--line);border-radius:3px;padding:0 4px}
+.syvb,.syv,.syc{font-size:11px;font-weight:700;border-radius:3px;padding:0 5px;white-space:nowrap}
+.syvb.ok,.syv.ok,.syc.ok{background:#1f3a1d;color:#c9f5c4}.syvb.mid,.syv.mid,.syc.mid{background:#3a2f14;color:#f0d68a}.syvb.bad,.syv.bad,.syc.bad{background:#3d1a16;color:#f2b1a8}.syc.off{background:#2a2420;color:var(--mut)}
+.syc{font-weight:600;font-size:10px}
+.sypg{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:6px;margin-bottom:8px}
+.syp{background:#120c08;border:1px solid #2a1e14;border-radius:4px;padding:5px 8px}
+.syph{font-size:12px;display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.sys{color:var(--gold)}.syf{font-size:10px;color:#f0d68a;border:1px solid #5a4a22;border-radius:3px;padding:0 4px}
+.egn{font-style:normal;font-size:9px;color:var(--mut);margin-left:2px}
+.syend{opacity:.9}.syold>summary{cursor:pointer;padding:4px 0}
+.syold .sy{margin-top:8px}

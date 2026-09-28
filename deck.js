@@ -198,6 +198,7 @@ function renderBuilder(){
       <button class="chip toggle${inc?' on':''}" id="bInc">미보유 인격도 선택지에 표시</button>
       <label>키워드 기준 자동 순서 <select id="bSort"><option value="">선택…</option>${KWS().map(k=>`<option>${k.id}</option>`).join('')}</select></label>
       <label>메타 덱 불러오기 <select id="bMeta"><option value="">선택…</option>${(DATA.meta.metaDecks||[]).map(d=>`<option value="${esc(d.id)}">${esc(d.t)} · ${esc(d.name)}</option>`).join('')}</select></label>
+      ${DATA.meta.saeong?`<label>사영전투 덱 <select id="bSy"><option value="">선택…</option>${DATA.meta.saeong.stages.map(st=>`<optgroup label="${esc(st.name)}${st.status==='ended'?' (종료)':''}">${st.decks.map(d=>`<option value="${esc(st.id)}|${esc(d.id)}">${esc(d.name)}</option>`).join('')}</optgroup>`).join('')}</select></label>`:''}
       <label>키워드 덱 불러오기 <select id="bFrom"><option value="">선택…</option>${KWS().map(k=>`<option>${k.id}</option>`).join('')}</select></label>
     </div>
     <div class="bbar io"><textarea id="bIO" rows="2" placeholder="내보내기 결과가 여기 표시됩니다. 공유받은 덱 코드/JSON 을 붙여넣고 [가져오기]를 누르세요."></textarea>

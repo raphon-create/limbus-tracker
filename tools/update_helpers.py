@@ -28,6 +28,10 @@
   #    -> merge-meta 가 출처별 점수를 0~100 정규화·가중 평균해 identities[].tier, meta.tier, meta.metaDecks 를 채움
   python3 tools/update_helpers.py merge-meta
 
+  # 7) 사영전투(Reflectrial) 덱: tools/meta_build_ref/build_saeong.py 로 tools/saeong_manifest.json 생성(원본은 /workspace/research/saeong)
+  #    -> merge-saeong 이 덱별 평균 티어·대체 후보(페이즈 접대 키워드/죄악/소속 가중)를 계산해 meta.saeong 을 채움 (merge-meta 이후 실행)
+  python3 tools/update_helpers.py merge-saeong
+
 키: data.json 의 sinners[].id (yisang faust don ryoshu meursault honglu heathcliff ishmael rodion
 sinclair outis gregor) + identities[].name (한국어 인격명, data.json 과 정확히 일치).
 필요 패키지: Pillow (pip install pillow). 네트워크 다운로드는 curl 사용.
@@ -150,6 +154,7 @@ def missing():
         for i in s['identities']:
             if not i.get('portrait'): print(f"{s['id']}|{i['name']}")
 
+SAEONG = os.path.join(ROOT, 'tools', 'saeong_manifest.json')
 META = os.path.join(ROOT, 'tools', 'meta_manifest.json')
 BANDS = [(92, 'SS'), (87, 'S+'), (82, 'S'), (77, 'S-'), (72, 'A+'), (66, 'A'), (60, 'A-'), (48, 'B'), (34, 'C'), (0, 'D')]
 LET = {'SSS': 100, 'SS': 92, 'S+': 85, 'S': 80, 'A': 64, 'B': 48, 'C': 34, 'D': 20}
@@ -278,11 +283,59 @@ def merge_meta():
     print('상위:', ', '.join(f"{k}({v['t']} {v['s']})" for k, v in top[:12]))
     build_js()
 
+def merge_saeong():
+    """tools/saeong_manifest.json -> data.json meta.saeong (덱 평균 티어 + 슬롯별 대체 후보) + data.js 재생성."""
+    d = load(DATA); man = load(SAEONG)
+    if not man: raise SystemExit('tools/saeong_manifest.json 없음 — tools/meta_build_ref/build_saeong.py 먼저 실행')
+    ids = {f"{s['id']}|{i['name']}": (s, i) for s in d['sinners'] for i in s['identities']}
+    def kws(i):
+        c = i.get('combat') or {}; return set(c.get('kw') or []) | set(c.get('kwSub') or [])
+    def sins(i):
+        c = i.get('combat') or {}; return [x.get('sin') for x in (c.get('skills') or []) + (c.get('skillsExtra') or [])]
+    def dsin(i):
+        return ((i.get('combat') or {}).get('defense') or {}).get('sin')
+    def tscore(i): return (i.get('tier') or {}).get('s', 0)
+    for st in man['stages']:
+        for dk in st['decks']:
+            ph = [p for p in st['phases'] if p['n'] in dk['phases']]
+            fkw = set(dk['kw']) | {k for p in ph for k in p['fav']['kw']}
+            fsin = {k for p in ph for k in p['fav']['sin']}; ffac = {k for p in ph for k in p['fav']['fac']}
+            flex = set(dk['flex']) | set(dk.get('bench', []))
+            cs = [tscore(ids[k][1]) for k in dk['core']]
+            dk['s'] = round(sum(cs) / len(cs), 1); dk['t'] = band(dk['s'])
+            dk['alts'] = {}
+            for k in dk['core']:
+                s, i = ids[k]; out = []
+                want_def = i.get('combat', {}).get('defense', {}).get('sin') if i.get('combat') else None
+                for j in s['identities']:
+                    k2 = f"{s['id']}|{j['name']}"
+                    if k2 == k or j.get('upcoming'): continue
+                    why = []; sc = 0
+                    if k2 in flex: sc += 6; why.append('출처 언급')
+                    dkw = sorted(kws(j) & set(dk['kw'])); pkw = sorted((kws(j) & fkw) - set(dk['kw']))
+                    if dkw: sc += 2 * len(dkw); why.append('덱 키워드 ' + '·'.join(dkw))
+                    if pkw: sc += 1 * len(pkw); why.append('접대 키워드 ' + '·'.join(pkw))
+                    ns = sum(1 for x in sins(j) if x in fsin)
+                    if ns: sc += 1.5 * min(ns, 3); why.append('접대 속성 ' + '·'.join(sorted(fsin)) + f'×{ns}')
+                    if want_def and dsin(j) == want_def and want_def in fsin: sc += 1.5; why.append(f'{want_def} 수비')
+                    fac = sorted(set(j.get('keywords') or []) & ffac)
+                    if fac: sc += 3; why.append('소속 ' + '·'.join(fac))
+                    if sc <= 0: continue
+                    sc += tscore(j) / 25
+                    out.append((sc, k2, why))
+                out.sort(key=lambda x: -x[0])
+                dk['alts'][k] = [{'k': k2, 'why': why, 'fit': round(sc, 1)} for sc, k2, why in out[:5]]
+    d['meta']['saeong'] = man
+    dump(DATA, d)
+    for st in man['stages']:
+        print(st['name'], [(dk['name'], dk['t'], dk['s']) for dk in st['decks']])
+    build_js()
+
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest='cmd', required=True)
     sub.add_parser('build-js'); sub.add_parser('merge-portraits'); sub.add_parser('missing')
-    sub.add_parser('merge-combat'); sub.add_parser('combat-missing'); sub.add_parser('merge-meta')
+    sub.add_parser('merge-combat'); sub.add_parser('combat-missing'); sub.add_parser('merge-meta'); sub.add_parser('merge-saeong')
     a = sub.add_parser('add-portrait'); a.add_argument('sinner'); a.add_argument('name'); a.add_argument('url')
     a.add_argument('--cx', type=float); a.add_argument('--page')
     x = ap.parse_args()
@@ -292,4 +345,5 @@ if __name__ == '__main__':
     elif x.cmd == 'merge-combat': merge_combat()
     elif x.cmd == 'combat-missing': combat_missing()
     elif x.cmd == 'merge-meta': merge_meta()
+    elif x.cmd == 'merge-saeong': merge_saeong()
     else: add_portrait(x.sinner, x.name, x.url, x.cx, x.page)
