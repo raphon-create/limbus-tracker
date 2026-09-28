@@ -14,7 +14,8 @@ const findId=(s,name)=>name?s.identities.find(i=>i.name===name):null;
 function deployN(){const v=Number(load(LS_DEPLOY,DK().deployDefault));return (v>=1&&v<=12)?v:DK().deployDefault}
 function setDeploy(v){v=Math.max(1,Math.min(12,Math.round(Number(v))||DK().deployDefault));save(LS_DEPLOY,v);return v}
 const cmpRel=(a,b)=>(a.release<b.release)?1:(a.release>b.release)?-1:0;
-function cmpFor(kw){return (a,b)=>(kwScore(b,kw)-kwScore(a,kw))||(b.rarity-a.rarity)||cmpRel(a,b)}
+/* 정렬: 커뮤니티 종합 티어(구간) → 키워드 언급 블록 수 → 등급 → 출시일 */
+function cmpFor(kw){return (a,b)=>(tierRank(b)-tierRank(a))||(kwScore(b,kw)-kwScore(a,kw))||(b.rarity-a.rarity)||cmpRel(a,b)}
 const cmpGeneral=(a,b)=>(b.rarity-a.rarity)||cmpRel(a,b);
 
 /* ---------- 공통 표시 조각 ---------- */
@@ -71,7 +72,7 @@ function computeDeck(kw){
   for(const s of DATA.sinners){
     const m=s.identities.filter(i=>hasKw(i,kw)).sort(cmp);
     const own=m.filter(i=>isOwned(s,i)&&!i.upcoming), un=m.filter(i=>!isOwned(s,i));
-    slots.push({s,pick:own[0]||null,alts:own.slice(1),un});
+    slots.push({s,pick:own[0]||null,alts:own.slice(1),un,best:m.find(i=>!i.upcoming)||null});
   }
   const filled=slots.filter(x=>x.pick).sort((a,b)=>cmp(a.pick,b.pick));
   filled.forEach((x,n)=>x.ord=n+1);
@@ -80,10 +81,10 @@ function computeDeck(kw){
   const up=[];
   for(const x of slots)for(const i of x.un){
     if(!x.pick) up.push({s:x.s,i,tag:'완성'});
-    else if(kwScore(i,kw)>kwScore(x.pick,kw)) up.push({s:x.s,i,tag:'강화'});
+    else if(cmp(i,x.pick)<0&&!i.upcoming) up.push({s:x.s,i,tag:'강화'});
   }
   up.forEach(u=>u.a=availInfo(u.s,u.i));
-  up.sort((a,b)=>(!!b.a.craft-!!a.a.craft)||((a.tag==='완성'?0:1)-(b.tag==='완성'?0:1))||(kwScore(b.i,kw)-kwScore(a.i,kw))||(b.i.rarity-a.i.rarity));
+  up.sort((a,b)=>(!!b.a.craft-!!a.a.craft)||((a.tag==='완성'?0:1)-(b.tag==='완성'?0:1))||cmp(a.i,b.i));
   return {kw,slots,filled,order,deployed,up,N};
 }
 function deckToBuilder(D){return {name:`${D.kw} 덱`,order:D.order.slice(),picks:Object.fromEntries(D.slots.map(x=>[x.s.id,x.pick?x.pick.name:null])),from:D.kw}}
@@ -102,9 +103,9 @@ function deployInfo(){
 function renderDecks(){
   const el=document.getElementById('deckView'); const N=deployN();
   const decks=KWS().map(k=>computeDeck(k.id));
-  let h=`<section class="panel"><h2>키워드 덱</h2>${deployCtl('deployIn')}
+  let h=metaDeckSection()+`<section class="panel"><h2>키워드 덱 <span class="note">자동 구성</span></h2>${deployCtl('deployIn')}
    <div class="dsum">${decks.map(D=>`<a class="dsb" href="#deck-${esc(D.kw)}" data-jump="${esc(D.kw)}" style="--c:${kwColor(D.kw)}"><b>${esc(D.kw)}</b><span class="${D.filled.length>=N?'off':'est'}">${D.filled.length}/12</span><i style="width:${D.filled.length/12*100}%"></i></a>`).join('')}</div>
-   <p class="note">숫자 = 해당 키워드 인격을 보유한 수감자 수 / 12 · 출전 ${N}명 기준으로 충족 여부 표시. ${esc(DK().sortRule)}<br>${esc(DK().kwRule)}</p>${deployInfo()}</section>`;
+   <p class="note">숫자 = 해당 키워드 인격을 보유한 수감자 수 / 12 · 출전 ${N}명 기준으로 충족 여부 표시. 픽 정렬: 커뮤니티 종합 티어 → ${esc(DK().sortRule)}<br>${esc(DK().kwRule)}</p>${deployInfo()}</section>`;
   for(const D of decks) h+=deckCard(D);
   el.innerHTML=h;
 }
@@ -116,7 +117,8 @@ function deckCard(D){
         <div class="sn">${esc(x.s.name)}<span class="ordb">${x.ord<=N?x.ord+'번 출전':'후보 '+x.ord}</span></div>
         ${thumb(x.s,x.pick,{kw:D.kw,label:false})}
         <div class="pn" title="${esc(x.pick.name)}">${esc(x.pick.name)}</div>
-        <div class="ps"><span class="kc" style="--c:${col}">${esc(D.kw)}<small>${kwScore(x.pick,D.kw)}/6</small></span></div>
+        <div class="ps">${tierBadge(x.pick,{empty:true})}<span class="kc" style="--c:${col}">${esc(D.kw)}<small>${kwScore(x.pick,D.kw)}/6</small></span></div>
+        ${x.best&&x.best!==x.pick?`<div class="subl" title="이 자리의 최고 티어 ${esc(x.best.name)}(${esc(x.best.tier?x.best.tier.t:'-')})는 미보유 → 보유 인격으로 대체 중">대체 ← ${esc(x.best.name)} ${tierBadge(x.best)}</div>`:''}
         ${x.alts.length?`<div class="alts" title="다른 보유 후보">${x.alts.map(i=>thumb(x.s,i,{kw:D.kw,label:false,cls:'mini'})).join('')}</div>`:''}
         ${x.un.length?`<div class="unc">미보유 ${x.un.length}</div>`:''}
       </div>`;
@@ -156,16 +158,17 @@ function renderBuilder(){
   const el=document.getElementById('builderView'); const N=deployN(); const inc=!!load(LS_BUN,false);
   const saved=decksAll(); const M=bMembers(); const dep=M.filter(m=>m.dep&&m.i); const bk=M.filter(m=>!m.dep&&m.i);
   const rows=M.map(m=>{
-    const s=m.s, own=s.identities.filter(i=>isOwned(s,i)&&!i.upcoming).sort(cmpGeneral), un=s.identities.filter(i=>!isOwned(s,i)).sort(cmpGeneral);
+    const cmpT=(a,b)=>(tierScore(b)-tierScore(a))||cmpGeneral(a,b);
+    const s=m.s, own=s.identities.filter(i=>isOwned(s,i)&&!i.upcoming).sort(cmpT), un=s.identities.filter(i=>!isOwned(s,i)).sort(cmpT);
     const cur=m.i; const curOwn=cur?isOwned(s,cur):false;
-    const opt=i=>`<option value="${esc(i.name)}"${cur&&cur.name===i.name?' selected':''}>${rarStr(i.rarity)} ${esc(i.name)}${(cb(i).kw||[]).length?' ['+esc(cb(i).kw.join('·'))+']':''}${isOwned(s,i)?'':' (미보유)'}</option>`;
+    const opt=i=>`<option value="${esc(i.name)}"${cur&&cur.name===i.name?' selected':''}>${i.tier?'['+esc(i.tier.t)+'] ':''}${rarStr(i.rarity)} ${esc(i.name)}${(cb(i).kw||[]).length?' ['+esc(cb(i).kw.join('·'))+']':''}${isOwned(s,i)?'':' (미보유)'}</option>`;
     const unList=inc?un:(cur&&!curOwn?[cur]:[]);
     const warn=!cur?'<span class="wbad">픽 없음</span>':(!curOwn?'<span class="wbad">미보유</span>':'');
     return `<div class="brow${m.dep?' dep':' bk'}${warn?' warnrow':''}">
       <div class="bo"><span class="num">${m.n+1}</span><span class="lab">${m.dep?'출전':'후보'}</span>
         <button class="mv" data-mv="-1" data-sid="${s.id}" ${m.n===0?'disabled':''} title="위로">▲</button><button class="mv" data-mv="1" data-sid="${s.id}" ${m.n===11?'disabled':''} title="아래로">▼</button></div>
       ${thumb(s,cur,{label:false,cls:'mini2'})}
-      <div class="bm"><div class="bs">${esc(s.name)} ${warn}</div>
+      <div class="bm"><div class="bs">${esc(s.name)} ${cur?tierBadge(cur,{empty:true}):''} ${warn}</div>
         <select data-pick="${s.id}"><option value="">— 선택 안 함 —</option><optgroup label="보유">${own.map(opt).join('')}</optgroup>${unList.length?`<optgroup label="미보유">${unList.map(opt).join('')}</optgroup>`:''}</select>
         <div class="bchips">${cur?kwChips(cur,{count:true,sub:true})+' '+sinChips(cur):''}</div></div>
       <div class="bord"><label title="출전 순서 직접 지정">순서 <input type="number" min="1" max="12" value="${m.n+1}" data-ord="${s.id}"></label></div>
@@ -194,6 +197,7 @@ function renderBuilder(){
     <div class="bbar">${deployCtl('deployIn2')}
       <button class="chip toggle${inc?' on':''}" id="bInc">미보유 인격도 선택지에 표시</button>
       <label>키워드 기준 자동 순서 <select id="bSort"><option value="">선택…</option>${KWS().map(k=>`<option>${k.id}</option>`).join('')}</select></label>
+      <label>메타 덱 불러오기 <select id="bMeta"><option value="">선택…</option>${(DATA.meta.metaDecks||[]).map(d=>`<option value="${esc(d.id)}">${esc(d.t)} · ${esc(d.name)}</option>`).join('')}</select></label>
       <label>키워드 덱 불러오기 <select id="bFrom"><option value="">선택…</option>${KWS().map(k=>`<option>${k.id}</option>`).join('')}</select></label>
     </div>
     <div class="bbar io"><textarea id="bIO" rows="2" placeholder="내보내기 결과가 여기 표시됩니다. 공유받은 덱 코드/JSON 을 붙여넣고 [가져오기]를 누르세요."></textarea>
@@ -202,7 +206,7 @@ function renderBuilder(){
     ${deployInfo()}
   </section>
   <div class="blayout"><section class="panel brows">${rows}</section>
-  <aside class="panel bsum"><h3>출전 ${dep.length}/${N}명 키워드</h3>
+  <aside class="panel bsum">${(()=>{const T=teamTier(depI);return T?`<div class="ttier"><span class="note">출전 평균 티어</span> <span class="tb ${tierCls(T.t)}" title="출전 인격 ${T.n}명의 커뮤니티 종합 점수 평균 ${T.avg} (합계 ${T.total}) · ${esc(TM().asOf)} 기준 참고용">${T.t}</span> <b>${T.avg}</b><span class="note">점 · 합계 ${T.total} · 평가 ${T.n}/${depI.length}명 <a href="#" data-tsrc="1">출처·기준</a></span></div>`:''})()}<h3>출전 ${dep.length}/${N}명 키워드</h3>
     <table class="st"><tr><th>키워드</th><th title="주 키워드 보유 출전 인원">인원</th><th title="출전 인원의 해당 키워드 언급 블록 합(인당 최대 6)">블록</th><th title="부 키워드(wiki.gg 분류)로만 가진 인원">부</th><th></th></tr>${kwRows}</table>
     <h3>출전 죄악 속성</h3>${sinBar(depI,true)}
     <table class="st"><tr><th>죄악</th><th title="스킬 1·2·3 수량 가중(3/2/1)">가중</th><th title="스킬 1·2·3 개수">스킬</th><th title="수비 스킬">수비</th></tr>${sinRows}</table>

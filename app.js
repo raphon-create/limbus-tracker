@@ -48,7 +48,7 @@ function card(s,i){
    <div class="pf" data-k="${esc(key(s,i))}" title="${esc(s.name+' · '+i.name)}${i.type==='base'?'':' (클릭: 보유 전환)'}">${pic}
      <span class="pr">${rarStr(i.rarity)}</span>${own?'<span class="ribbon on">보유</span>':`<span class="ribbon">${i.upcoming?'출시 예정':'미보유'}</span>`}</div>
    <div class="cbody">
-   <div class="chead"><div><span class="rar">${rarStr(i.rarity)}</span> <span class="sinner">${esc(s.name)}</span>
+   <div class="chead"><div><span class="rar">${rarStr(i.rarity)}</span> <span class="sinner">${esc(s.name)}</span> ${typeof tierBadge==='function'?tierBadge(i):''}
      <div class="nm">${esc(i.name)}</div></div>
      <button class="own ${own?'yes':''}" data-k="${esc(key(s,i))}" data-o="${own?1:0}" ${i.type==='base'?'disabled title="기본 지급"':''}>${own?'✓ 보유':'미보유'}</button></div>
    <div class="badges">${b.join('')}</div>
@@ -57,7 +57,7 @@ function card(s,i){
    ${own?'':`<div class="kv"><b>획득</b>${esc(i.obtainRaw)}</div>
    <div class="kv"><b>교환</b>${i.shardCost?('파편 '+i.shardCost+' · '):''}${esc(i.craftNote)}</div>
    <div class="kv"><b>다음 기회</b>${nextHtml(i)}</div>`}
-   <details class="more"><summary>세부/출처</summary><div>${own&&i.obtainRaw?('획득: '+esc(i.obtainRaw)+'<br>'):''}특성 키워드: ${esc(i.keywords)}${i.ocrRead?('<br>스크린샷 판독: '+esc(i.ocrRead)):''}<br>출처: ${i.source.split(' ; ').map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(decodeURI(u).slice(0,60))}</a>`).join(' , ')}${i.portrait?`<br>초상화: <a href="${esc(i.portraitSourcePage||i.portraitSourceUrl)}" target="_blank" rel="noopener">${i.portraitSource==='fandom'?'Limbus Company Fandom Wiki':i.portraitSource==='namu'?'나무위키':'출처'}</a> (${esc(i.portraitNote||'')})`:'<br>초상화: 없음'}${combatDetail(i)}</div></details>
+   <details class="more"><summary>세부/출처</summary><div>${own&&i.obtainRaw?('획득: '+esc(i.obtainRaw)+'<br>'):''}특성 키워드: ${esc(i.keywords)}${i.ocrRead?('<br>스크린샷 판독: '+esc(i.ocrRead)):''}<br>출처: ${i.source.split(' ; ').map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(decodeURI(u).slice(0,60))}</a>`).join(' , ')}${i.portrait?`<br>초상화: <a href="${esc(i.portraitSourcePage||i.portraitSourceUrl)}" target="_blank" rel="noopener">${i.portraitSource==='fandom'?'Limbus Company Fandom Wiki':i.portraitSource==='namu'?'나무위키':'출처'}</a> (${esc(i.portraitNote||'')})`:'<br>초상화: 없음'}${combatDetail(i)}${typeof tierDetail==='function'?tierDetail(s,i):''}</div></details>
    </div>
   </div>`;
 }

@@ -24,6 +24,10 @@
   #    전투 데이터가 없는/확인 필요 인격 목록
   python3 tools/update_helpers.py combat-missing
 
+  # 6) 커뮤니티 티어·메타 덱: tools/meta_build_ref/build_meta.py 로 tools/meta_manifest.json 생성(원본은 /workspace/research/meta)
+  #    -> merge-meta 가 출처별 점수를 0~100 정규화·가중 평균해 identities[].tier, meta.tier, meta.metaDecks 를 채움
+  python3 tools/update_helpers.py merge-meta
+
 키: data.json 의 sinners[].id (yisang faust don ryoshu meursault honglu heathcliff ishmael rodion
 sinclair outis gregor) + identities[].name (한국어 인격명, data.json 과 정확히 일치).
 필요 패키지: Pillow (pip install pillow). 네트워크 다운로드는 curl 사용.
@@ -146,11 +150,139 @@ def missing():
         for i in s['identities']:
             if not i.get('portrait'): print(f"{s['id']}|{i['name']}")
 
+META = os.path.join(ROOT, 'tools', 'meta_manifest.json')
+BANDS = [(92, 'SS'), (87, 'S+'), (82, 'S'), (77, 'S-'), (72, 'A+'), (66, 'A'), (60, 'A-'), (48, 'B'), (34, 'C'), (0, 'D')]
+LET = {'SSS': 100, 'SS': 92, 'S+': 85, 'S': 80, 'A': 64, 'B': 48, 'C': 34, 'D': 20}
+
+def band(x):
+    return next(t for lim, t in BANDS if x >= lim)
+
+def merge_meta():
+    """tools/meta_manifest.json (커뮤니티 티어 출처·원점수·메타 덱) -> 집계 후 data.json 병합 + data.js 재생성."""
+    import statistics
+    d = load(DATA); man = load(META)
+    if not man: raise SystemExit('tools/meta_manifest.json 없음 — tools/meta_build_ref/build_meta.py 먼저 실행')
+    mm = man['__meta__']; S = {s['id']: s for s in man['sources']}
+    ids = {f"{s['id']}|{i['name']}": (s, i) for s in d['sinners'] for i in s['identities']}
+    def kws(i):
+        c = i.get('combat') or {}; return set(c.get('kw') or []) | set(c.get('kwSub') or [])
+    agg = {}
+    for key, (s, i) in ids.items():
+        ent = []
+        r = S['prydwen']['ratings'].get(key)
+        if r: ent.append({'id': 'prydwen', 'raw': r['raw'], 's': r['score'], 'w': 1.0, 'm': ['RR'], 'd': r.get('updated') or S['prydwen']['date'],
+                          'note': ' · '.join(x for x in [r.get('role'), '/'.join(r.get('tags') or [])] if x)})
+        r = S['gll']['ratings'].get(key)
+        if r: ent.append({'id': 'gll', 'raw': r['raw'], 's': r['score'], 'w': 1.0, 'm': ['RR', 'general'], 'd': S['gll']['date']})
+        r = S['gamemeca']['ratings'].get(key)
+        if r: ent.append({'id': 'gamemeca', 'raw': r['raw'], 's': r['score'], 'w': S['gamemeca']['weight'], 'm': ['general'], 'd': S['gamemeca']['date'], 'note': r['comment']})
+        r = S['arca']['ratings'].get(key)
+        if r:
+            nm = S['arca']['norm']
+            if 'md' in r: ent.append({'id': 'arca', 'sub': 'md', 'raw': f"거던 {r['md']}", 's': nm[r['md']], 'w': 0.5, 'm': ['MD'], 'd': S['arca']['date'],
+                                      **({'note': f"초판(9/2) {r['md_old']}"} if r.get('md_old') and r['md_old'] != r['md'] else {})})
+            if 'gen' in r: ent.append({'id': 'arca', 'sub': 'gen', 'raw': f"거던밖 {r['gen']}", 's': nm[r['gen']], 'w': 0.5, 'm': ['general'], 'd': S['arca']['date'],
+                                       **({'note': f"초판(9/2) {r['gen_old']}"} if r.get('gen_old') and r['gen_old'] != r['gen'] else {})})
+        r = S['goni']['ratings'].get(key)
+        if r: ent.append({'id': 'goni', 'raw': r['raw'], 's': r['score'], 'w': round(S['goni']['weight'] * r['fresh'], 2), 'm': ['general'], 'd': S['goni']['date'],
+                          'note': f"개별 리뷰 {r['review']}" + (' (구 평가, 가중 축소)' if r['fresh'] < 1 else '')})
+        if not ent: continue
+        tw = sum(e['w'] for e in ent); sc = sum(e['s'] * e['w'] for e in ent) / tw
+        per = {}
+        for e in ent:
+            if e['w'] >= 0.5 or e['id'] == 'arca': per.setdefault(e['id'], []).append(e['s'])   # 합의도는 신선한(가중 0.5+) 평가만
+        vals = [sum(v) / len(v) for v in per.values()] or [sc]
+        sd = statistics.pstdev(vals) if len(vals) > 1 else 0.0
+        rng = max(vals) - min(vals) if len(vals) > 1 else 0
+        agree = '단일' if len(vals) == 1 else '높음' if sd <= 7 else '보통' if sd <= 12 else '낮음'
+        modes = {}
+        for mo in ('RR', 'MD', 'general'):
+            es = [e for e in ent if mo in e['m']]
+            if es:
+                x = sum(e['s'] * e['w'] for e in es) / sum(e['w'] for e in es); modes[mo] = {'t': band(x), 's': round(x)}
+        # 추세
+        sig = []
+        for e in ent:
+            if e['id'] == 'arca' and e.get('note'):
+                old = e['note'].split()[-1]; nw = e['raw'].split()[-1]
+                sig.append({'src': 'arca', 'd': '2026-09-10', 'txt': f"아카 {'거던' if e['sub']=='md' else '거던밖'} {old}→{nw}", 'v': S['arca']['norm'][nw] - S['arca']['norm'][old]})
+        for src, cur in (('gll', S['gll']['ratings'].get(key)), ('prydwen', S['prydwen']['ratings'].get(key))):
+            h = sorted(man['history'][src].get(key, []), key=lambda x: x['date'])
+            h26 = [x for x in h if x['date'] >= '2026-01-01']
+            for x in h26:
+                if x['from']:
+                    sig.append({'src': src, 'd': x['date'], 'txt': f"{'GLL' if src=='gll' else 'Prydwen'} {x['from']}→{x['to']} ({x['date'][5:].replace('-', '/')})", 'v': LET[x['to']] - LET[x['from']]})
+            if h and cur and h[-1]['date'] >= '2026-01-01' and h[-1]['to'] != cur['raw'] and cur['raw'] in LET:
+                dd = '2026-09-02' if src == 'gll' else h[-1]['date']
+                sig.append({'src': src, 'd': dd, 'txt': f"{'GLL' if src=='gll' else 'Prydwen'} {h[-1]['to']}→{cur['raw']} ({'9/2 리워크' if src=='gll' else h[-1]['date'][5:].replace('-', '/') + ' 이후 재평가'})",
+                            'v': LET[cur['raw']] - LET[h[-1]['to']]})
+        recent = [x for x in sig if x['d'] >= mm['cutoff']]
+        basis = recent or [dict(x, v=x['v'] / 2) for x in sig]
+        tot = sum(x['v'] for x in basis)
+        rel = i.get('release') or ''
+        trend = 'new' if rel >= '2026-09-01' else ('up' if tot > 3 else 'down' if tot < -3 else ('flat' if basis else None))
+        roles = []
+        for e in ent:
+            if e['id'] == 'prydwen':
+                rr = S['prydwen']['ratings'][key].get('role')
+                if rr and rr not in roles: roles.append(rr)
+            if e['id'] == 'gamemeca':
+                for rr in S['gamemeca']['ratings'][key].get('role') or []:
+                    if rr not in roles: roles.append(rr)
+        gmr = S['gamemeca']['ratings'].get(key)
+        if gmr: reason = gmr['comment'] + ' (게임메카)'
+        else:
+            bits = []
+            pr = S['prydwen']['ratings'].get(key); gl = S['gll']['ratings'].get(key)
+            if pr: bits.append(f"Prydwen RR {pr['raw']}" + (f" {pr['role']}" if pr.get('role') else '') + (f" ({'/'.join(pr['tags'])})" if pr.get('tags') else ''))
+            if gl: bits.append(f"GLL {gl['raw']}")
+            ar = S['arca']['ratings'].get(key)
+            if ar and 'md' in ar: bits.append(f"아카 투표 거던 {ar['md']}·밖 {ar['gen']}")
+            reason = ' · '.join(bits)
+        agg[key] = {'t': band(sc), 's': round(sc, 1), 'n': len(vals), 'sd': round(sd, 1), 'agree': agree, **({'split': True} if rng >= 25 else {}),
+                    'range': [round(min(vals)), round(max(vals))], 'trend': trend, 'trendNote': [x['txt'] for x in sorted(sig, key=lambda x: x['d'], reverse=True)][:4],
+                    'modes': modes, 'roles': roles, 'reason': reason, 'src': ent}
+    # 대체 후보: 같은 수감자 + 키워드 공유, 점수 순
+    def alts_for(key, want_kw, n=5, prefer=()):
+        s, i = ids[key]; out = []
+        for j in s['identities']:
+            k2 = f"{s['id']}|{j['name']}"
+            if k2 == key: continue
+            shared = sorted(kws(j) & set(want_kw))
+            if not shared and k2 not in prefer: continue
+            out.append((k2 in prefer, agg.get(k2, {}).get('s', 0), len(shared), k2, shared))
+        out.sort(key=lambda x: (x[0], x[1], x[2]), reverse=True)
+        return [{'k': k2, 'kw': sh} for _, _, _, k2, sh in out[:n]]
+    for key, (s, i) in ids.items():
+        i.pop('tier', None)
+        if key in agg:
+            a = agg[key]
+            if a['s'] >= 77: a['alts'] = alts_for(key, kws(i) or set())
+            i['tier'] = a
+    decks = []
+    for dk in man.get('decks', []):
+        dk = json.loads(json.dumps(dk))
+        cs = [agg.get(k, {}).get('s', 0) for k in dk['core']]
+        dk['s'] = round(sum(cs) / len(cs), 1); dk['t'] = band(dk['s'])
+        flex_by_sin = {}
+        for k in dk['flex']: flex_by_sin.setdefault(k.split('|')[0], []).append(k)
+        dk['alts'] = {k: alts_for(k, dk['kw'], 5, prefer=tuple(flex_by_sin.get(k.split('|')[0], []))) for k in dk['core']}
+        decks.append(dk)
+    decks.sort(key=lambda x: -x['s'])
+    srcs = [{k: v for k, v in s.items() if k != 'ratings'} | {'count': len(s['ratings'])} for s in man['sources']]
+    d['meta']['tier'] = {**mm, 'bands': [[a, b] for a, b in BANDS], 'sources': srcs, 'deckSources': man.get('deckSources', []), 'excluded': man.get('excluded', [])}
+    d['meta']['metaDecks'] = decks
+    dump(DATA, d)
+    top = sorted(agg.items(), key=lambda x: -x[1]['s'])
+    print(f'커뮤니티 티어 병합: 평가 {len(agg)}개 / 전체 {len(ids)}개, 메타 덱 {len(decks)}개')
+    print('상위:', ', '.join(f"{k}({v['t']} {v['s']})" for k, v in top[:12]))
+    build_js()
+
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest='cmd', required=True)
     sub.add_parser('build-js'); sub.add_parser('merge-portraits'); sub.add_parser('missing')
-    sub.add_parser('merge-combat'); sub.add_parser('combat-missing')
+    sub.add_parser('merge-combat'); sub.add_parser('combat-missing'); sub.add_parser('merge-meta')
     a = sub.add_parser('add-portrait'); a.add_argument('sinner'); a.add_argument('name'); a.add_argument('url')
     a.add_argument('--cx', type=float); a.add_argument('--page')
     x = ap.parse_args()
@@ -159,4 +291,5 @@ if __name__ == '__main__':
     elif x.cmd == 'missing': missing()
     elif x.cmd == 'merge-combat': merge_combat()
     elif x.cmd == 'combat-missing': combat_missing()
+    elif x.cmd == 'merge-meta': merge_meta()
     else: add_portrait(x.sinner, x.name, x.url, x.cx, x.page)

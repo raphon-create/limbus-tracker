@@ -1,0 +1,5870 @@
+{
+ "__meta__": {
+  "asOf": "2026-09-28",
+  "season": 8,
+  "seasonStart": "2026-09-17",
+  "cutoff": "2026-06-01",
+  "cutoffWhy": "S7 후반 핵심 인격(거미집 엄지 6/25, 새벽 사무소 7/9, 차원찢개 7/23)과 중지·약지 덱 완성 이후 평가만 남기기 위해 2026-06-01 이후 갱신된 자료만 점수에 반영. 2026-05 이전 자료는 제외(단, 지속 갱신 페이지는 최종 갱신일 기준)",
+  "method": [
+   "각 출처의 고유 등급을 0~100으로 정규화(출처별 표 참조)",
+   "가중 평균: Prydwen 1.0, GLL 1.0, 아카 투표 1.0(거던/거던밖 두 표를 0.5씩), 게임메카 0.9, 고니 0.6×리뷰 신선도(2026=1.0, 2025=0.6, ≤2024=0.3)",
+   "티어 구간: SS≥92, S+≥87, S≥82, S-≥77, A+≥72, A≥66, A-≥60, B≥48, C≥34, D<34",
+   "합의도: 평가 출처 수 + 표준편차(σ≤7 높음, ≤12 보통, 그 외 낮음, 1곳=단일), 최고-최저 25점 이상이면 \"의견 갈림\"",
+   "추세: GLL 변경 로그(2026-08) 및 9/2 리워크 전후, 아카 투표 초판(9/2)→재투표(9/10), Prydwen 2026-04 변경(보조)",
+   "모드별: RR=Prydwen+GLL, MD=아카 \"거던 기준\"표(S7 3성만), 일반=GLL+게임메카+아카 \"거던 밖\"+고니",
+   "미평가 인격은 점수를 추정하지 않음(평가 없음)"
+  ],
+  "disclaimer": "커뮤니티 평가를 모아 계산한 참고용 티어입니다. 공식 아님 · 기준일 2026-09-28"
+ },
+ "sources": [
+  {
+   "id": "prydwen",
+   "site": "Prydwen.gg",
+   "region": "해외(EN)",
+   "title": "Limbus Company Tier List",
+   "url": "https://www.prydwen.gg/limbus-company/tier-list",
+   "author": "Prydwen 편집진",
+   "date": "2026-09-23",
+   "dateNote": "헤더 \"Last updated 23/August/2026\", S8 신규 인격 개별 갱신 2026-09-23(항목 updatedAt)",
+   "season": "S8 초반(신규 2종 포함)",
+   "modes": [
+    "RR"
+   ],
+   "modeNote": "엔드게임(굴절 철도) 기준, 동기화 4, 역할(딜러/상태이상/서포터/탱커) 내 비교",
+   "scale": "SSS>SS>S+>S>A>B>C>D (숫자 11~5)",
+   "norm": {
+    "SSS": 100,
+    "SS": 92,
+    "S+": 85,
+    "S": 78,
+    "A": 66,
+    "B": 52,
+    "C": 38,
+    "D": 22
+   },
+   "weight": 1.0,
+   "ratings": {
+    "ishmael|오트쿠튀르::르루주 부티크": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "충전",
+      "진동"
+     ],
+     "updated": "2026-09-23"
+    },
+    "ryoshu|오트쿠튀르::르누아르 신발관": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "탱커",
+     "tags": [
+      "충전",
+      "진동"
+     ],
+     "updated": "2026-09-23"
+    },
+    "outis|LCA 우제트 선봉 3팀 팀장": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "서포터",
+     "tags": [
+      "Ammo",
+      "침잠",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|검계 우두머리": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "Aggro",
+      "출혈",
+      "Counter",
+      "Paralyze",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|검계 살수": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "서포터",
+     "tags": [
+      "호흡",
+      "Poise Support"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|검계 살수": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "서포터",
+     "tags": [
+      "Bind",
+      "출혈",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|검계 살수": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "딜러",
+     "tags": [
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|검계 살수": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|검계 살수": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|거미집의 검": {
+     "raw": "SSS",
+     "rawNum": 11.0,
+     "score": 100,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "출혈",
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|동부 섕크 협회 3과": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "화상",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|동부 섕크 협회 3과": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "화상",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|서부 섕크 협회 3과": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "Haste",
+      "호흡",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|남부 섕크 협회 5과 부장": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "Haste",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|남부 섕크 협회 4과 부장": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "Fragility",
+      "Haste",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|남부 섕크 협회 4과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "Bind",
+      "Haste",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|새벽 사무소 해결사": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "딜러",
+     "tags": [
+      "화상",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|새벽 사무소 해결사": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "딜러",
+     "tags": [
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|새벽 사무소 대표": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "상태이상 특화",
+     "tags": [
+      "화상",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|데드레빗츠 보스": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "딜러",
+     "tags": [
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|북부 제뱌찌 협회 3과": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "Haste",
+      "Retreat",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|북부 제뱌찌 협회 3과": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "파열",
+      "Short Fight Specialist"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|남부 디에치 협회 4과 부장": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "상태이상 특화",
+     "tags": [
+      "Aggro",
+      "Discard",
+      "Insight",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|남부 디에치 협회 4과": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "Discard",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|남부 디에치 협회 4과": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "침잠",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|남부 디에치 협회 4과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "Discard",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|20구 유로지비": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "상태이상 특화",
+     "tags": [
+      "진동",
+      "Tremor - Reverb"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|20구 유로지비": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "Passive Provider",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|홍원 방랑무사": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "서포터",
+     "tags": [
+      "호흡",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|에드가 가문 버틀러": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "Bind",
+      "Haste",
+      "호흡",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|에드가 가문 치프 버틀러": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "Bind",
+      "Haste",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|에드가 가문 승계자": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|개화 E.G.O::동백": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "AoE Skills",
+      "Deluge",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|가주 후보": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "Retreat",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|송곳니 사냥 사무소 해결사": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|불주먹 사무소 생존자": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|마침표 사무소 해결사": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "Ammo",
+      "DPS",
+      "Fragility"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|마침표 사무소 대표": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "Ammo",
+      "DPS",
+      "Fragility",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|G사 부장": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "서포터",
+     "tags": [
+      "Buffer",
+      "Debuffer"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|G사 일등대리": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "파열",
+      "Passive Provider"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|흑수 - 묘 필두": {
+     "raw": "SSS",
+     "rawNum": 11.0,
+     "score": 100,
+     "role": "딜러",
+     "tags": [
+      "DPS",
+      "Haste",
+      "호흡",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|흑수 - 묘": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "Haste",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|흑수 - 묘": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "Haste",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|흑수 - 사": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|흑수 - 사": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|흑수 - 미": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "파열",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|흑수 - 오 필두": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "서포터",
+     "tags": [
+      "DPS",
+      "파열",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|흑수 - 유 필두": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "화상",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|흑수 - 유": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "화상",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|갈고리 사무소 해결사": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "딜러",
+     "tags": [
+      "Haste"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|정사무소 대표": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "딜러",
+     "tags": [
+      "침잠",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|K사 3등급 적출직 직원": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "파열",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|흑운회 부조장": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "서포터",
+     "tags": [
+      "출혈",
+      "Debuffer"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|흑운회 부조장": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "출혈"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|흑운회 와카슈": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "출혈",
+      "Counter"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|흑운회 와카슈": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "출혈"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|흑운회 와카슈": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "출혈",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|흑운회 와카슈": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "상태이상 특화",
+     "tags": [
+      "출혈",
+      "Debuffer"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "Haste"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "서포터",
+     "tags": [
+      "Debuffer"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "탱커",
+     "tags": [
+      "파열",
+      "Passive Provider"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "침잠",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "탱커",
+     "tags": [
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|LCB 수감자": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "탱커",
+     "tags": [
+      "Passive provider"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "Passive provider"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|LCB 수감자": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|LCCB 대리": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "Debuffer",
+      "파열",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|LCCB 대리": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "서포터",
+     "tags": [
+      "Debuffer"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|LCCB 대리": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "서포터",
+     "tags": [
+      "호흡",
+      "파열",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|LCD 현장추리팀": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "출혈",
+      "Haste"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|LCE E.G.O::AEDD": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "서포터",
+     "tags": [
+      "충전",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|LCE E.G.O::홍염살": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|LCE E.G.O::차원찢개": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "충전",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|LCE E.G.O::초롱": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "상태이상 특화",
+     "tags": [
+      "Aggro",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|남부 리우 협회 4과 부장": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|남부 리우 협회 4과": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|남부 리우 협회 4과": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "상태이상 특화",
+     "tags": [
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|남부 리우 협회 6과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|남부 리우 협회 3과": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "서포터",
+     "tags": [
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|남부 리우 협회 5과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "화상",
+      "Passive Provider"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|남부 리우 협회 6과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "화상"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|살아남은 로보토미 직원": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "Haste"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|로보토미 E.G.O::잔향 · 외로움": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "상태이상 특화",
+     "tags": [
+      "Ammo",
+      "침잠",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|로보토미 E.G.O::호넷【변조】": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "Ammo",
+      "화상",
+      "출혈"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|로보토미 E.G.O::사랑과 증오의 이름으로": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "충전",
+      "파열",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|로보토미 E.G.O::램프": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "서포터",
+     "tags": [
+      "화상",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|로보토미 E.G.O::초롱": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "상태이상 특화",
+     "tags": [
+      "Aggro",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|로보토미 E.G.O::마탄": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "상태이상 특화",
+     "tags": [
+      "화상",
+      "Nuker",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|로보토미 E.G.O::적안 · 참회": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "탱커",
+     "tags": [
+      "출혈",
+      "HP Heal",
+      "SP Heal",
+      "Unique Charge"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|로보토미 E.G.O::홍적": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "Passive Provider",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|로보토미 E.G.O::후회": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "상태이상 특화",
+     "tags": [
+      "AoE Skills",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|로보토미 E.G.O::출렁임": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "파열",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|로보토미 E.G.O::엄숙한 애도": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "상태이상 특화",
+     "tags": [
+      "Unique Ammo",
+      "Unique Sinking"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|로보토미 E.G.O::여우비": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "Counter",
+      "Negative SP",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|로보토미 E.G.O::눈물로 벼려낸 검": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "상태이상 특화",
+     "tags": [
+      "충전",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|마리아치 보스": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "탱커",
+     "tags": [
+      "침잠",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|어금니 보트 센터 해결사": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "상태이상 특화",
+     "tags": [
+      "Debuffer",
+      "Fragility",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|어금니 보트 센터 해결사": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|어금니 사무소 해결사": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "상태이상 특화",
+     "tags": [
+      "진동",
+      "Discard"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|어금니 사무소 해결사": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "상태이상 특화",
+     "tags": [
+      "진동",
+      "Discard"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|멀티크랙 사무소 해결사": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "서포터",
+     "tags": [
+      "충전",
+      "HP Healing Down"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|멀티크랙 사무소 대표": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "충전"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|N사 E.G.O::흉탄": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "Friendly-Fire",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|N사 E.G.O::경멸, 경외": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|N사 큰 망치": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "Debuffer",
+      "Nails"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|N사 작은 망치": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "서포터",
+     "tags": [
+      "Debuffer",
+      "Nails",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|N사 중간 망치": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "출혈",
+      "Nails",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|N사 중간 망치": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "출혈",
+      "Nails"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|밤의 송곳 카피타노": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|R사 제 4무리 토끼팀": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "서포터",
+     "tags": [
+      "충전",
+      "Nuker",
+      "Fragility"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|R사 제 4무리 순록팀": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "충전",
+      "DPS",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|R사 제 4무리 순록팀": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "딜러",
+     "tags": [
+      "충전",
+      "Nuker",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|R사 제 4무리 순록팀": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "충전",
+      "DPS",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|R사 제 4무리 코뿔소팀": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "상태이상 특화",
+     "tags": [
+      "출혈",
+      "충전"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|료.고.파. 주방장": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "Debuffer",
+      "Nuker",
+      "Passive Provider"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|료.고.파. 조수": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "서포터",
+     "tags": [
+      "출혈",
+      "Debuffer",
+      "Passive Provider"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|장미스패너 공방 해결사": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "상태이상 특화",
+     "tags": [
+      "파열",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|장미스패너 공방 해결사": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "상태이상 특화",
+     "tags": [
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|장미스패너 공방 대표": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "진동",
+      "충전"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|S사 추노꾼": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "상태이상 특화",
+     "tags": [
+      "호흡",
+      "출혈",
+      "Bind"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|남부 세븐 협회 4과": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|남부 세븐 협회 4과": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|남부 세븐 협회 6과 부장": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "서포터",
+     "tags": [
+      "Buffer",
+      "Debuffer"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|남부 세븐 협회 6과": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "서포터",
+     "tags": [
+      "Fragility"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|남부 세븐 협회 6과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "서포터",
+     "tags": [
+      "Fragility",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|동부 시 협회 3과": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|남부 시 협회 5과 부장": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "HP Gimmick"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|남부 시 협회 5과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "HP Gimmick",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|남부 시 협회 5과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "딜러",
+     "tags": [
+      "HP Gimmick",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|T사 2등급 징수직 직원": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "Bind",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|T사 3등급 징수직 직원": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "Aggro",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|T사 3등급 강력징수직 직원": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "Time Moratorium",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|라만차랜드 이발사": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "출혈"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|거미집 검지 아비": {
+     "raw": "SSS",
+     "rawNum": 11.0,
+     "score": 100,
+     "role": "딜러",
+     "tags": [
+      "DPS",
+      "호흡",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|거미집 중지 제자": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "Counter",
+      "DPS"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|거미집 중지 아비": {
+     "raw": "SSS",
+     "rawNum": 11.0,
+     "score": 100,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "화상",
+      "Aggro",
+      "Paralyze",
+      "Bind"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|거미집 소지 제자": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "DPS",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|거미집 약지 제자": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "DPS",
+      "Unique Charge"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|거미집 약지 아비": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "서포터",
+     "tags": [
+      "출혈",
+      "DPS",
+      "Unique Charge"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|거미집 엄지 제자": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "화상",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|거미집 엄지 아비": {
+     "raw": "SSS",
+     "rawNum": 11.0,
+     "score": 100,
+     "role": "딜러",
+     "tags": [
+      "화상",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|검지 수행자:【쪽지】": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "DPS",
+      "호흡",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|검지 대행자 - 개화 E.G.O::대행": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "DPS",
+      "호흡",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|홍원 군주": {
+     "raw": "SSS",
+     "rawNum": 11.0,
+     "score": 100,
+     "role": "서포터",
+     "tags": [
+      "호흡",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|라만차랜드 실장": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "DPS"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|중지 작은 형님": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "서포터",
+     "tags": [
+      "출혈",
+      "Counter",
+      "DPS"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|중지 작은 아우": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "서포터",
+     "tags": [
+      "Envy Support"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|중지 작은 아우": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "Aggro",
+      "출혈",
+      "Counter"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|중지 작은 아우": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "A-Reson",
+      "Counter",
+      "Envy Focus"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|쥐는 자": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "서포터",
+     "tags": [
+      "출혈",
+      "Debuffer",
+      "Nails"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|쥐어들 자": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "Negative SP",
+      "Nuker"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|피쿼드호 선장": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "서포터",
+     "tags": [
+      "A-Reson",
+      "출혈",
+      "화상",
+      "Poise Support"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|피쿼드호 일등 항해사": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "호흡",
+      "출혈"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|피쿼드호 작살잡이": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "Aggro",
+      "출혈",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|라만차랜드 신부": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "서포터",
+     "tags": [
+      "Aggro",
+      "출혈"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|라만차랜드 왕자": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "서포터",
+     "tags": [
+      "출혈",
+      "Support"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|라만차랜드 공주": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "서포터",
+     "tags": [
+      "출혈",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|약지 야수파 도슨트": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|약지 야수파 스튜던트": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|약지 점묘파 스튜던트": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "상태이상 특화",
+     "tags": [
+      "Coin Reuse",
+      "Every Status"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|약지 점묘파 스튜던트": {
+     "raw": "S",
+     "rawNum": 9.0,
+     "score": 78,
+     "role": "상태이상 특화",
+     "tags": [
+      "Coin Reuse",
+      "Every Status"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|동부 엄지 카포 IIII": {
+     "raw": "SS",
+     "rawNum": 10.0,
+     "score": 92,
+     "role": "딜러",
+     "tags": [
+      "Ammo",
+      "화상",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|동부 엄지 솔다토 II": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "Ammo",
+      "화상",
+      "진동",
+      "Reload Support"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|콩콩이파 두목": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "Nuker",
+      "Passive provider"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|쌍갈고리 해적단 부선장": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "출혈",
+      "호흡"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|W사 2등급 정리 요원": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "서포터",
+     "tags": [
+      "충전",
+      "Debuffer",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "honglu|W사 2등급 정리 요원": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "서포터",
+     "tags": [
+      "Barrier",
+      "충전",
+      "Haste"
+     ],
+     "updated": "2026-09-16"
+    },
+    "meursault|W사 2등급 정리 요원": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "서포터",
+     "tags": [
+      "Debuffer",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "don|W사 3등급 정리 요원": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "충전",
+      "Nuker"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ryoshu|W사 3등급 정리 요원": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "딜러",
+     "tags": [
+      "충전",
+      "Nuker",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "yisang|W사 3등급 정리 요원": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "상태이상 특화",
+     "tags": [
+      "충전",
+      "Req. U4",
+      "파열"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|W사 3등급 정리 요원 팀장": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "서포터",
+     "tags": [
+      "Barrier",
+      "Bind",
+      "충전"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|W사 4등급 정리 요원 - CCA": {
+     "raw": "B",
+     "rawNum": 7.0,
+     "score": 52,
+     "role": "딜러",
+     "tags": [
+      "충전",
+      "Tank"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|와일드헌트": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "딜러",
+     "tags": [
+      "AoE Skills",
+      "침잠",
+      "Revive",
+      "Unique Counter"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|워더링하이츠 버틀러": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "outis|워더링하이츠 치프 버틀러": {
+     "raw": "S+",
+     "rawNum": 9.5,
+     "score": 85,
+     "role": "상태이상 특화",
+     "tags": [
+      "침잠"
+     ],
+     "updated": "2026-09-16"
+    },
+    "rodion|남부 츠바이 협회 5과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "호흡",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|서부 츠바이 협회 3과": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "faust|남부 츠바이 협회 4과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "Buffer"
+     ],
+     "updated": "2026-09-16"
+    },
+    "gregor|남부 츠바이 협회 4과": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "Buffer",
+      "Shields"
+     ],
+     "updated": "2026-09-16"
+    },
+    "sinclair|남부 츠바이 협회 6과": {
+     "raw": "D",
+     "rawNum": 5.0,
+     "score": 22,
+     "role": "탱커",
+     "tags": [
+      "진동",
+      "Req. U4"
+     ],
+     "updated": "2026-09-16"
+    },
+    "ishmael|서부 츠바이 협회 3과": {
+     "raw": "A",
+     "rawNum": 8.0,
+     "score": 66,
+     "role": "탱커",
+     "tags": [
+      "Aggro",
+      "Clashable Guard",
+      "진동"
+     ],
+     "updated": "2026-09-16"
+    },
+    "heathcliff|남부 외우피 협회 3과": {
+     "raw": "C",
+     "rawNum": 6.0,
+     "score": 38,
+     "role": "상태이상 특화",
+     "tags": [
+      "진동",
+      "Tremor Decay"
+     ],
+     "updated": "2026-09-16"
+    }
+   }
+  },
+  {
+   "id": "gll",
+   "site": "Great Limbus Library (gll-fun.com)",
+   "region": "해외(EN/RU)",
+   "title": "Limbus Company Identity Tier List",
+   "url": "https://gll-fun.com/limbus/en/tierlist/identities/",
+   "author": "GLL 팀(Ritsy 외)",
+   "date": "2026-09-02",
+   "dateNote": "변경 로그 02.09.2026 \"Identities Tierlist Rework\" + S8 신규(수선실 로쟈 NEW 등) 반영 확인(2026-09-28 열람)",
+   "season": "S8 초반",
+   "modes": [
+    "RR",
+    "general"
+   ],
+   "modeNote": "개별 성능+EGO 시너지+팀 가치, 최대 동기화. 거울 던전은 평가 기준 아님(명시)",
+   "scale": "SSS>SS>S>A>B>C>D",
+   "norm": {
+    "SSS": 100,
+    "SS": 92,
+    "S": 80,
+    "A": 64,
+    "B": 48,
+    "C": 34,
+    "D": 20
+   },
+   "weight": 1.0,
+   "ratings": {
+    "rodion|거미집 엄지 아비": {
+     "raw": "SSS",
+     "score": 100
+    },
+    "outis|거미집 중지 아비": {
+     "raw": "SSS",
+     "score": 100
+    },
+    "ryoshu|거미집의 검": {
+     "raw": "SSS",
+     "score": 100
+    },
+    "yisang|거미집 검지 아비": {
+     "raw": "SSS",
+     "score": 100
+    },
+    "honglu|홍원 군주": {
+     "raw": "SSS",
+     "score": 100
+    },
+    "rodion|로보토미 E.G.O::눈물로 벼려낸 검": {
+     "raw": "SSS",
+     "score": 100
+    },
+    "faust|흑수 - 묘 필두": {
+     "raw": "SSS",
+     "score": 100
+    },
+    "faust|새벽 사무소 해결사": {
+     "raw": "SS",
+     "score": 92
+    },
+    "gregor|새벽 사무소 대표": {
+     "raw": "SS",
+     "score": 92
+    },
+    "heathcliff|중지 작은 형님": {
+     "raw": "SS",
+     "score": 92
+    },
+    "faust|거미집 약지 제자": {
+     "raw": "SS",
+     "score": 92
+    },
+    "honglu|거미집 약지 아비": {
+     "raw": "SS",
+     "score": 92
+    },
+    "ryoshu|로보토미 E.G.O::잔향 · 외로움": {
+     "raw": "SS",
+     "score": 92
+    },
+    "ishmael|정사무소 대표": {
+     "raw": "SS",
+     "score": 92
+    },
+    "meursault|동부 엄지 카포 IIII": {
+     "raw": "SS",
+     "score": 92
+    },
+    "ishmael|흑운회 부조장": {
+     "raw": "SS",
+     "score": 92
+    },
+    "heathcliff|흑운회 와카슈": {
+     "raw": "SS",
+     "score": 92
+    },
+    "yisang|로보토미 E.G.O::엄숙한 애도": {
+     "raw": "SS",
+     "score": 92
+    },
+    "sinclair|새벽 사무소 해결사": {
+     "raw": "SS",
+     "score": 92
+    },
+    "heathcliff|거미집 엄지 제자": {
+     "raw": "S",
+     "score": 80
+    },
+    "ishmael|LCD 현장추리팀": {
+     "raw": "S",
+     "score": 80
+    },
+    "rodion|약지 야수파 도슨트": {
+     "raw": "S",
+     "score": 80
+    },
+    "gregor|로보토미 E.G.O::램프": {
+     "raw": "S",
+     "score": 80
+    },
+    "ishmael|거미집 중지 제자": {
+     "raw": "S",
+     "score": 80
+    },
+    "don|검지 대행자 - 개화 E.G.O::대행": {
+     "raw": "S",
+     "score": 80
+    },
+    "outis|LCA 우제트 선봉 3팀 팀장": {
+     "raw": "S",
+     "score": 80
+    },
+    "ryoshu|홍원 방랑무사": {
+     "raw": "S",
+     "score": 80
+    },
+    "heathcliff|흑수 - 유 필두": {
+     "raw": "S",
+     "score": 80
+    },
+    "sinclair|중지 작은 아우": {
+     "raw": "S",
+     "score": 80
+    },
+    "ryoshu|흑수 - 묘": {
+     "raw": "S",
+     "score": 80
+    },
+    "outis|흑수 - 묘": {
+     "raw": "S",
+     "score": 80
+    },
+    "faust|LCE E.G.O::홍염살": {
+     "raw": "S",
+     "score": 80
+    },
+    "don|라만차랜드 실장": {
+     "raw": "S",
+     "score": 80
+    },
+    "heathcliff|와일드헌트": {
+     "raw": "S",
+     "score": 80
+    },
+    "meursault|검계 우두머리": {
+     "raw": "S",
+     "score": 80
+    },
+    "yisang|개화 E.G.O::동백": {
+     "raw": "S",
+     "score": 80
+    },
+    "ishmael|오트쿠튀르::르루주 부티크": {
+     "raw": "A",
+     "score": 64
+    },
+    "honglu|S사 추노꾼": {
+     "raw": "A",
+     "score": 64
+    },
+    "meursault|약지 야수파 스튜던트": {
+     "raw": "A",
+     "score": 64
+    },
+    "meursault|로보토미 E.G.O::호넷【변조】": {
+     "raw": "A",
+     "score": 64
+    },
+    "sinclair|거미집 소지 제자": {
+     "raw": "A",
+     "score": 64
+    },
+    "don|흑수 - 미": {
+     "raw": "A",
+     "score": 64
+    },
+    "gregor|밤의 송곳 카피타노": {
+     "raw": "A",
+     "score": 64
+    },
+    "meursault|라만차랜드 왕자": {
+     "raw": "A",
+     "score": 64
+    },
+    "ryoshu|N사 E.G.O::경멸, 경외": {
+     "raw": "A",
+     "score": 64
+    },
+    "yisang|흑수 - 오 필두": {
+     "raw": "A",
+     "score": 64
+    },
+    "sinclair|흑수 - 유": {
+     "raw": "A",
+     "score": 64
+    },
+    "outis|T사 3등급 강력징수직 직원": {
+     "raw": "A",
+     "score": 64
+    },
+    "don|로보토미 E.G.O::사랑과 증오의 이름으로": {
+     "raw": "A",
+     "score": 64
+    },
+    "gregor|흑수 - 사": {
+     "raw": "A",
+     "score": 64
+    },
+    "rodion|흑수 - 사": {
+     "raw": "A",
+     "score": 64
+    },
+    "heathcliff|마침표 사무소 해결사": {
+     "raw": "A",
+     "score": 64
+    },
+    "honglu|마침표 사무소 대표": {
+     "raw": "A",
+     "score": 64
+    },
+    "don|T사 3등급 징수직 직원": {
+     "raw": "A",
+     "score": 64
+    },
+    "yisang|약지 점묘파 스튜던트": {
+     "raw": "A",
+     "score": 64
+    },
+    "gregor|에드가 가문 승계자": {
+     "raw": "A",
+     "score": 64
+    },
+    "outis|워더링하이츠 치프 버틀러": {
+     "raw": "A",
+     "score": 64
+    },
+    "outis|로보토미 E.G.O::마탄": {
+     "raw": "A",
+     "score": 64
+    },
+    "don|중지 작은 아우": {
+     "raw": "A",
+     "score": 64
+    },
+    "yisang|W사 3등급 정리 요원": {
+     "raw": "A",
+     "score": 64
+    },
+    "ishmael|어금니 보트 센터 해결사": {
+     "raw": "A",
+     "score": 64
+    },
+    "yisang|LCE E.G.O::초롱": {
+     "raw": "A",
+     "score": 64
+    },
+    "rodion|T사 2등급 징수직 직원": {
+     "raw": "A",
+     "score": 64
+    },
+    "faust|워더링하이츠 버틀러": {
+     "raw": "A",
+     "score": 64
+    },
+    "ishmael|LCCB 대리": {
+     "raw": "A",
+     "score": 64
+    },
+    "rodion|오트쿠튀르::수선실": {
+     "raw": "B",
+     "score": 48,
+     "new": true
+    },
+    "ryoshu|오트쿠튀르::르누아르 신발관": {
+     "raw": "B",
+     "score": 48
+    },
+    "honglu|동부 섕크 협회 3과": {
+     "raw": "B",
+     "score": 48
+    },
+    "yisang|LCE E.G.O::차원찢개": {
+     "raw": "B",
+     "score": 48
+    },
+    "gregor|LCE E.G.O::AEDD": {
+     "raw": "B",
+     "score": 48
+    },
+    "faust|검지 수행자:【쪽지】": {
+     "raw": "B",
+     "score": 48
+    },
+    "yisang|N사 E.G.O::흉탄": {
+     "raw": "B",
+     "score": 48
+    },
+    "sinclair|동부 엄지 솔다토 II": {
+     "raw": "B",
+     "score": 48
+    },
+    "ishmael|가주 후보": {
+     "raw": "B",
+     "score": 48
+    },
+    "honglu|R사 제 4무리 순록팀": {
+     "raw": "B",
+     "score": 48
+    },
+    "don|동부 섕크 협회 3과": {
+     "raw": "B",
+     "score": 48
+    },
+    "gregor|불주먹 사무소 생존자": {
+     "raw": "B",
+     "score": 48
+    },
+    "yisang|남부 리우 협회 3과": {
+     "raw": "B",
+     "score": 48
+    },
+    "sinclair|북부 제뱌찌 협회 3과": {
+     "raw": "B",
+     "score": 48
+    },
+    "rodion|라만차랜드 공주": {
+     "raw": "B",
+     "score": 48
+    },
+    "outis|라만차랜드 이발사": {
+     "raw": "B",
+     "score": 48
+    },
+    "meursault|서부 섕크 협회 3과": {
+     "raw": "B",
+     "score": 48
+    },
+    "ishmael|서부 츠바이 협회 3과": {
+     "raw": "B",
+     "score": 48
+    },
+    "rodion|북부 제뱌찌 협회 3과": {
+     "raw": "B",
+     "score": 48
+    },
+    "faust|멀티크랙 사무소 대표": {
+     "raw": "B",
+     "score": 48
+    },
+    "honglu|20구 유로지비": {
+     "raw": "B",
+     "score": 48
+    },
+    "rodion|남부 리우 협회 4과 부장": {
+     "raw": "B",
+     "score": 48
+    },
+    "faust|검계 살수": {
+     "raw": "B",
+     "score": 48
+    },
+    "honglu|남부 디에치 협회 4과": {
+     "raw": "B",
+     "score": 48
+    },
+    "outis|어금니 사무소 해결사": {
+     "raw": "B",
+     "score": 48
+    },
+    "rodion|남부 디에치 협회 4과": {
+     "raw": "B",
+     "score": 48
+    },
+    "faust|남부 세븐 협회 4과": {
+     "raw": "B",
+     "score": 48
+    },
+    "heathcliff|R사 제 4무리 토끼팀": {
+     "raw": "B",
+     "score": 48
+    },
+    "sinclair|검계 살수": {
+     "raw": "B",
+     "score": 48
+    },
+    "yisang|검계 살수": {
+     "raw": "B",
+     "score": 48
+    },
+    "don|로보토미 E.G.O::초롱": {
+     "raw": "B",
+     "score": 48
+    },
+    "meursault|중지 작은 아우": {
+     "raw": "B",
+     "score": 48
+    },
+    "honglu|흑운회 와카슈": {
+     "raw": "B",
+     "score": 48
+    },
+    "rodion|R사 제 4무리 순록팀": {
+     "raw": "C",
+     "score": 34
+    },
+    "heathcliff|W사 4등급 정리 요원 - CCA": {
+     "raw": "C",
+     "score": 34
+    },
+    "faust|동부 시 협회 3과": {
+     "raw": "C",
+     "score": 34
+    },
+    "gregor|라만차랜드 신부": {
+     "raw": "C",
+     "score": 34
+    },
+    "ryoshu|로보토미 E.G.O::적안 · 참회": {
+     "raw": "C",
+     "score": 34
+    },
+    "outis|W사 3등급 정리 요원 팀장": {
+     "raw": "C",
+     "score": 34
+    },
+    "meursault|남부 디에치 협회 4과 부장": {
+     "raw": "C",
+     "score": 34
+    },
+    "ryoshu|에드가 가문 치프 버틀러": {
+     "raw": "C",
+     "score": 34
+    },
+    "heathcliff|남부 외우피 협회 3과": {
+     "raw": "C",
+     "score": 34
+    },
+    "ishmael|피쿼드호 선장": {
+     "raw": "C",
+     "score": 34
+    },
+    "sinclair|남부 섕크 협회 4과 부장": {
+     "raw": "C",
+     "score": 34
+    },
+    "heathcliff|피쿼드호 작살잡이": {
+     "raw": "C",
+     "score": 34
+    },
+    "gregor|쌍갈고리 해적단 부선장": {
+     "raw": "C",
+     "score": 34
+    },
+    "faust|로보토미 E.G.O::후회": {
+     "raw": "C",
+     "score": 34
+    },
+    "ryoshu|W사 3등급 정리 요원": {
+     "raw": "C",
+     "score": 34
+    },
+    "gregor|남부 츠바이 협회 4과": {
+     "raw": "C",
+     "score": 34
+    },
+    "meursault|R사 제 4무리 코뿔소팀": {
+     "raw": "C",
+     "score": 34
+    },
+    "ishmael|남부 리우 협회 4과": {
+     "raw": "C",
+     "score": 34
+    },
+    "honglu|K사 3등급 적출직 직원": {
+     "raw": "C",
+     "score": 34
+    },
+    "rodion|장미스패너 공방 대표": {
+     "raw": "C",
+     "score": 34
+    },
+    "sinclair|쥐어들 자": {
+     "raw": "C",
+     "score": 34
+    },
+    "ryoshu|료.고.파. 주방장": {
+     "raw": "C",
+     "score": 34
+    },
+    "faust|쥐는 자": {
+     "raw": "C",
+     "score": 34
+    },
+    "honglu|콩콩이파 두목": {
+     "raw": "C",
+     "score": 34
+    },
+    "ryoshu|흑운회 와카슈": {
+     "raw": "C",
+     "score": 34
+    },
+    "ishmael|R사 제 4무리 순록팀": {
+     "raw": "C",
+     "score": 34
+    },
+    "don|W사 3등급 정리 요원": {
+     "raw": "C",
+     "score": 34
+    },
+    "honglu|송곳니 사냥 사무소 해결사": {
+     "raw": "C",
+     "score": 34
+    },
+    "sinclair|서부 츠바이 협회 3과": {
+     "raw": "C",
+     "score": 34
+    },
+    "heathcliff|멀티크랙 사무소 해결사": {
+     "raw": "C",
+     "score": 34
+    },
+    "ryoshu|20구 유로지비": {
+     "raw": "C",
+     "score": 34
+    },
+    "outis|약지 점묘파 스튜던트": {
+     "raw": "C",
+     "score": 34
+    },
+    "ryoshu|남부 리우 협회 4과": {
+     "raw": "C",
+     "score": 34
+    },
+    "don|검계 살수": {
+     "raw": "C",
+     "score": 34
+    },
+    "yisang|남부 디에치 협회 4과": {
+     "raw": "C",
+     "score": 34
+    },
+    "yisang|피쿼드호 일등 항해사": {
+     "raw": "C",
+     "score": 34
+    },
+    "honglu|갈고리 사무소 해결사": {
+     "raw": "C",
+     "score": 34
+    },
+    "yisang|어금니 사무소 해결사": {
+     "raw": "C",
+     "score": 34
+    },
+    "heathcliff|남부 세븐 협회 4과": {
+     "raw": "C",
+     "score": 34
+    },
+    "outis|검계 살수": {
+     "raw": "C",
+     "score": 34
+    },
+    "ryoshu|남부 세븐 협회 6과": {
+     "raw": "C",
+     "score": 34
+    },
+    "don|남부 섕크 협회 5과 부장": {
+     "raw": "D",
+     "score": 20
+    },
+    "heathcliff|로보토미 E.G.O::여우비": {
+     "raw": "D",
+     "score": 20
+    },
+    "outis|남부 세븐 협회 6과 부장": {
+     "raw": "D",
+     "score": 20
+    },
+    "meursault|N사 큰 망치": {
+     "raw": "D",
+     "score": 20
+    },
+    "rodion|흑운회 와카슈": {
+     "raw": "D",
+     "score": 20
+    },
+    "meursault|W사 2등급 정리 요원": {
+     "raw": "D",
+     "score": 20
+    },
+    "gregor|G사 일등대리": {
+     "raw": "D",
+     "score": 20
+    },
+    "ishmael|에드가 가문 버틀러": {
+     "raw": "D",
+     "score": 20
+    },
+    "meursault|데드레빗츠 보스": {
+     "raw": "D",
+     "score": 20
+    },
+    "gregor|흑운회 부조장": {
+     "raw": "D",
+     "score": 20
+    },
+    "outis|남부 섕크 협회 4과": {
+     "raw": "D",
+     "score": 20
+    },
+    "ryoshu|LCCB 대리": {
+     "raw": "D",
+     "score": 20
+    },
+    "honglu|W사 2등급 정리 요원": {
+     "raw": "D",
+     "score": 20
+    },
+    "faust|남부 츠바이 협회 4과": {
+     "raw": "D",
+     "score": 20
+    },
+    "sinclair|어금니 보트 센터 해결사": {
+     "raw": "D",
+     "score": 20
+    },
+    "rodion|남부 츠바이 협회 5과": {
+     "raw": "D",
+     "score": 20
+    },
+    "sinclair|로보토미 E.G.O::홍적": {
+     "raw": "D",
+     "score": 20
+    },
+    "ishmael|로보토미 E.G.O::출렁임": {
+     "raw": "D",
+     "score": 20
+    },
+    "gregor|장미스패너 공방 해결사": {
+     "raw": "D",
+     "score": 20
+    },
+    "meursault|장미스패너 공방 해결사": {
+     "raw": "D",
+     "score": 20
+    },
+    "don|N사 중간 망치": {
+     "raw": "D",
+     "score": 20
+    },
+    "gregor|료.고.파. 조수": {
+     "raw": "D",
+     "score": 20
+    },
+    "honglu|남부 리우 협회 5과": {
+     "raw": "D",
+     "score": 20
+    },
+    "heathcliff|N사 작은 망치": {
+     "raw": "D",
+     "score": 20
+    },
+    "rodion|N사 중간 망치": {
+     "raw": "D",
+     "score": 20
+    },
+    "ishmael|남부 시 협회 5과": {
+     "raw": "D",
+     "score": 20
+    },
+    "meursault|남부 리우 협회 6과": {
+     "raw": "D",
+     "score": 20
+    },
+    "heathcliff|남부 시 협회 5과": {
+     "raw": "D",
+     "score": 20
+    },
+    "faust|살아남은 로보토미 직원": {
+     "raw": "D",
+     "score": 20
+    },
+    "outis|G사 부장": {
+     "raw": "D",
+     "score": 20
+    },
+    "yisang|남부 세븐 협회 6과": {
+     "raw": "D",
+     "score": 20
+    },
+    "faust|W사 2등급 정리 요원": {
+     "raw": "D",
+     "score": 20
+    },
+    "don|남부 시 협회 5과 부장": {
+     "raw": "D",
+     "score": 20
+    },
+    "gregor|남부 리우 협회 6과": {
+     "raw": "D",
+     "score": 20
+    },
+    "rodion|LCCB 대리": {
+     "raw": "D",
+     "score": 20
+    },
+    "sinclair|남부 츠바이 협회 6과": {
+     "raw": "D",
+     "score": 20
+    },
+    "sinclair|마리아치 보스": {
+     "raw": "D",
+     "score": 20
+    },
+    "honglu|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "heathcliff|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "ryoshu|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "don|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "ishmael|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "outis|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "yisang|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "meursault|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "rodion|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "faust|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "sinclair|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    },
+    "gregor|LCB 수감자": {
+     "raw": "D",
+     "score": 20
+    }
+   }
+  },
+  {
+   "id": "gamemeca",
+   "site": "게임메카 국민트리",
+   "region": "국내(KR)",
+   "title": "림버스 컴퍼니 티어표",
+   "url": "https://trees.gamemeca.com/view.php?seq=1584",
+   "author": "게임메카",
+   "date": "2026-09-17",
+   "dateNote": "\"최종 업데이트 26/09/17\"",
+   "season": "S7 말~S8 시작",
+   "modes": [
+    "general"
+   ],
+   "modeNote": "종합(범용성). SS=범용·대체불가, S=조건부 강함, A=특정 시너지/제한 환경. 미등재 인격은 \"평가 없음\"으로 취급(추정하지 않음)",
+   "scale": "SS>S>A (51종만 등재)",
+   "norm": {
+    "SS": 95,
+    "S": 82,
+    "A": 66
+   },
+   "weight": 0.9,
+   "ratings": {
+    "yisang|거미집 검지 아비": {
+     "raw": "SS",
+     "score": 95,
+     "comment": "스택을 쌓아 강화 3스킬을 날리는 침잠&호흡 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "faust|흑수 - 묘 필두": {
+     "raw": "SS",
+     "score": 95,
+     "comment": "파열 유지와 아군 보호에 특화된 파열 딜탱",
+     "role": [
+      "딜러",
+      "탱커"
+     ]
+    },
+    "ryoshu|거미집의 검": {
+     "raw": "SS",
+     "score": 95,
+     "comment": "같은 소속이 사망할수록 강해지는 화상&출혈&호흡 참격 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "meursault|동부 엄지 카포 IIII": {
+     "raw": "SS",
+     "score": 95,
+     "comment": "특수 탄환 소모량에 따라 추가 효과를 얻는 화상&진동 딜탱",
+     "role": [
+      "딜러",
+      "탱커"
+     ]
+    },
+    "honglu|홍원 군주": {
+     "raw": "SS",
+     "score": 95,
+     "comment": "다른 흑수 인격들과 상호작용하는 파열&호흡 딜포터",
+     "role": [
+      "딜러",
+      "서포터"
+     ]
+    },
+    "honglu|거미집 약지 아비": {
+     "raw": "SS",
+     "score": 95,
+     "comment": "예열 후 강력한 광역 딜링 능력이 생기는 출혈&충전 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "rodion|거미집 엄지 아비": {
+     "raw": "SS",
+     "score": 95,
+     "comment": "강화 3스킬을 통한 킬 캐치에 특화된 화상&진동 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "faust|새벽 사무소 해결사": {
+     "raw": "S",
+     "score": 82,
+     "comment": "다른 새벽 사무소 인격과 연계된 화상&진동 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "ryoshu|로보토미 E.G.O::잔향 · 외로움": {
+     "raw": "S",
+     "score": 82,
+     "comment": "추가 공격에 특화된 진동&침잠 탄환 서브 딜러",
+     "role": [
+      "서브 딜러"
+     ]
+    },
+    "honglu|마침표 사무소 대표": {
+     "raw": "S",
+     "score": 82,
+     "comment": "다른 마침표 사무소 인격과 상호작용할 수 있는 호흡 탄환 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "heathcliff|마침표 사무소 해결사": {
+     "raw": "S",
+     "score": 82,
+     "comment": "다른 마침표 사무소 인격과 상호작용할 수 있는 호흡 탄환 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "ishmael|정사무소 대표": {
+     "raw": "S",
+     "score": 82,
+     "comment": "광을 쌓아 추가 3스킬을 날리는 진동&침잠 버리기 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "rodion|로보토미 E.G.O::눈물로 벼려낸 검": {
+     "raw": "S",
+     "score": 82,
+     "comment": "정신력 수치에 따라 역할이 바뀌는 침잠&충전 인격",
+     "role": []
+    },
+    "gregor|새벽 사무소 대표": {
+     "raw": "S",
+     "score": 82,
+     "comment": "다른 새벽 사무소 인격과 상호 작용하는 화상&진동 딜탱 겸 서포터",
+     "role": [
+      "딜러",
+      "탱커",
+      "서포터"
+     ]
+    },
+    "ryoshu|로보토미 E.G.O::적안 · 참회": {
+     "raw": "S",
+     "score": 82,
+     "comment": "범용성 뛰어난 출혈&충전 딜포터",
+     "role": [
+      "딜러",
+      "서포터"
+     ]
+    },
+    "meursault|로보토미 E.G.O::호넷【변조】": {
+     "raw": "S",
+     "score": 82,
+     "comment": "광역 딜링에 특화된 화상&출혈 탄환 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "gregor|밤의 송곳 카피타노": {
+     "raw": "S",
+     "score": 82,
+     "comment": "킬 캐치에 특화된 출혈&진동 서브 딜러",
+     "role": [
+      "서브 딜러"
+     ]
+    },
+    "yisang|약지 점묘파 스튜던트": {
+     "raw": "A",
+     "score": 66,
+     "comment": "코인 재사용과 랜덤 키워드를 활용하는 출혈 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "faust|거미집 약지 제자": {
+     "raw": "A",
+     "score": 66,
+     "comment": "예열 전 탱커, 예열 후 딜러 역할의 출혈&충전 인격",
+     "role": [
+      "딜러",
+      "탱커"
+     ]
+    },
+    "don|동부 섕크 협회 3과": {
+     "raw": "A",
+     "score": 66,
+     "comment": "속도 차이에 비례해 위력이 증가하는 화상&호흡 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "don|검지 대행자 - 개화 E.G.O::대행": {
+     "raw": "A",
+     "score": 66,
+     "comment": "지령 수행 후 변신 기믹을 활용하는 침잠&호흡 딜러.",
+     "role": [
+      "딜러"
+     ]
+    },
+    "meursault|서부 섕크 협회 3과": {
+     "raw": "A",
+     "score": 66,
+     "comment": "속도 차이 기반, 집중 전투 환경에 특화된 파열&호흡 딜러.",
+     "role": [
+      "딜러"
+     ]
+    },
+    "honglu|동부 섕크 협회 3과": {
+     "raw": "A",
+     "score": 66,
+     "comment": "속도 차이에 비례해 위력이 증가하는 화상&호흡 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "heathcliff|와일드헌트": {
+     "raw": "A",
+     "score": 66,
+     "comment": "변신 기믹을 활용하고, 장기전에 특화된 침잠 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "heathcliff|흑수 - 유 필두": {
+     "raw": "A",
+     "score": 66,
+     "comment": "잃은 체력에 비례해 강해지는 광전사형 화상&파열 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "heathcliff|거미집 엄지 제자": {
+     "raw": "A",
+     "score": 66,
+     "comment": "결투 고조가 있는 대상과의 합 승부에 특화된 화상&진동 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "ishmael|서부 츠바이 협회 3과": {
+     "raw": "A",
+     "score": 66,
+     "comment": "강화 방어 기반 흐트러짐 손상에 특화된 공방일체형 진동 탱커",
+     "role": [
+      "탱커"
+     ]
+    },
+    "sinclair|남부 섕크 협회 4과 부장": {
+     "raw": "A",
+     "score": 66,
+     "comment": "높은 속도를 기반으로 합 싸움에서 우세한 호흡 인격",
+     "role": []
+    },
+    "sinclair|거미집 소지 제자": {
+     "raw": "A",
+     "score": 66,
+     "comment": "넘치는 호흡 위력을 버프로 변환하는 출혈&호흡 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "outis|LCA 우제트 선봉 3팀 팀장": {
+     "raw": "A",
+     "score": 66,
+     "comment": "대상의 코인 확률에 직접 관여하는 진동&침잠 딜탱 인격",
+     "role": [
+      "딜러",
+      "탱커"
+     ]
+    },
+    "outis|거미집 중지 아비": {
+     "raw": "A",
+     "score": 66,
+     "comment": "질투 공명 + 반격 기믹과 특수 예열 기믹을 사용하는 화상&출혈 딜탱",
+     "role": [
+      "딜러",
+      "탱커"
+     ]
+    },
+    "gregor|로보토미 E.G.O::램프": {
+     "raw": "A",
+     "score": 66,
+     "comment": "아군/적군에게 버프/디버프를 부여하는 화상&침잠 탱커",
+     "role": [
+      "탱커"
+     ]
+    },
+    "yisang|남부 리우 협회 3과": {
+     "raw": "A",
+     "score": 66,
+     "comment": "아군의 정신력을 회복시킬 수 있는 화상 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "yisang|LCE E.G.O::차원찢개": {
+     "raw": "A",
+     "score": 66,
+     "comment": "속도를 높이고, 파열 횟수를 늘리는 파열&충전 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "faust|검지 수행자:【쪽지】": {
+     "raw": "A",
+     "score": 66,
+     "comment": "지령 수행 여부에 따라 버프 혹은 디버프를 얻는 침잠&호흡 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "don|라만차랜드 실장": {
+     "raw": "A",
+     "score": 66,
+     "comment": "라만차랜드 인격을 출전시켜 강화 스킬을 사용하는 출혈 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "don|흑수 - 미": {
+     "raw": "A",
+     "score": 66,
+     "comment": "적의 수비 스킬을 돌파하기 좋은 파열&침잠 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "ryoshu|N사 E.G.O::경멸, 경외": {
+     "raw": "A",
+     "score": 66,
+     "comment": "상태 전환 고유 디버프로 부가 효과를 얻는 출혈&진동 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "ryoshu|홍원 방랑무사": {
+     "raw": "A",
+     "score": 66,
+     "comment": "원호 공격 기믹을 활용하는 파열&호흡 시너지 딜포터",
+     "role": [
+      "딜러",
+      "서포터"
+     ]
+    },
+    "ishmael|가주 후보": {
+     "raw": "A",
+     "score": 66,
+     "comment": "능동적인 '퇴각 - 복귀'가 가능한 파열&호흡 인격",
+     "role": []
+    },
+    "rodion|북부 제뱌찌 협회 3과": {
+     "raw": "A",
+     "score": 66,
+     "comment": "'퇴각 - 복귀' 기믹을 이용하는 파열 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "rodion|라만차랜드 공주": {
+     "raw": "A",
+     "score": 66,
+     "comment": "혈귀 인격에게 유용한 효과를 제공하는 출혈&파열 딜포터",
+     "role": [
+      "딜러",
+      "서포터"
+     ]
+    },
+    "rodion|흑수 - 사": {
+     "raw": "A",
+     "score": 66,
+     "comment": "광역 난사 메커니즘을 활용하는 파열&호흡 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "sinclair|쥐어들 자": {
+     "raw": "A",
+     "score": 66,
+     "comment": "모든 스킬 빼기 코인을 사용하는 화상&출혈 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "sinclair|북부 제뱌찌 협회 3과": {
+     "raw": "A",
+     "score": 66,
+     "comment": "'퇴각 - 복귀' 기믹을 이용하는 파열 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "sinclair|동부 엄지 솔다토 II": {
+     "raw": "A",
+     "score": 66,
+     "comment": "아군 탄환 보급이 가능한 화상&진동 인격",
+     "role": []
+    },
+    "gregor|불주먹 사무소 생존자": {
+     "raw": "A",
+     "score": 66,
+     "comment": "고유 자원을 사용해 화상 부여량과 피해량을 늘리는 화상 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "gregor|라만차랜드 신부": {
+     "raw": "A",
+     "score": 66,
+     "comment": "혈찬을 쌓아 방어 레벨 증가와 흡혈 효과로 버티는 출혈&파열 딜탱",
+     "role": [
+      "딜러",
+      "탱커"
+     ]
+    },
+    "gregor|흑수 - 사": {
+     "raw": "A",
+     "score": 66,
+     "comment": "3스킬로 높은 수치의 단일 누킹을 가하는 파열&호흡 딜러",
+     "role": [
+      "딜러"
+     ]
+    },
+    "yisang|로보토미 E.G.O::엄숙한 애도": {
+     "raw": "A",
+     "score": 66,
+     "comment": "나비를 통해 서포팅하는 특수 탄환 침잠 인격",
+     "role": []
+    },
+    "don|로보토미 E.G.O::사랑과 증오의 이름으로": {
+     "raw": "A",
+     "score": 66,
+     "comment": "정신력에 따라 더하기/빼기 코인 상태를 오가는 충전 딜러",
+     "role": [
+      "딜러"
+     ]
+    }
+   }
+  },
+  {
+   "id": "arca",
+   "site": "아카라이브 로보토미 코퍼레이션(림버스) 채널",
+   "region": "국내(KR)",
+   "title": "📌정보/공략 시즌 3성 인격 티어표 리뉴얼본 (투표 결과)",
+   "url": "https://arca.live/b/lobotomycoperation/182606246",
+   "author": "채널 유저 투표(작성자 고정닉, 투표 집계)",
+   "date": "2026-09-10",
+   "dateNote": "9/10 20:00 재투표 반영본. 초판 2026-09-02(https://arca.live/b/lobotomycoperation/181820051)을 추세 비교에 사용",
+   "season": "S7 3성 인격만(25종)",
+   "modes": [
+    "MD",
+    "general"
+   ],
+   "modeNote": "\"거던 기준\"과 \"거던 밖 기준\" 두 표. 0 > 0.5 > 1 > 1.5 > 2 (인플레로 0티어 과반)",
+   "scale": "0/0.5/1/1.5/2/2.5/3",
+   "norm": {
+    "0": 94,
+    "0.5": 84,
+    "1": 72,
+    "1.5": 60,
+    "2": 48
+   },
+   "weight": 1.0,
+   "ratings": {
+    "don|검지 대행자 - 개화 E.G.O::대행": {
+     "md": "0",
+     "gen": "0.5",
+     "md_old": "0",
+     "gen_old": "0.5"
+    },
+    "yisang|거미집 검지 아비": {
+     "md": "0",
+     "gen": "0",
+     "md_old": "0",
+     "gen_old": "0"
+    },
+    "ryoshu|로보토미 E.G.O::잔향 · 외로움": {
+     "md": "0",
+     "gen": "0.5",
+     "md_old": "0",
+     "gen_old": "0"
+    },
+    "faust|거미집 약지 제자": {
+     "md": "0",
+     "gen": "0.5",
+     "md_old": "0",
+     "gen_old": "0.5"
+    },
+    "honglu|거미집 약지 아비": {
+     "md": "0",
+     "gen": "0",
+     "md_old": "0",
+     "gen_old": "0"
+    },
+    "heathcliff|중지 작은 형님": {
+     "md": "0",
+     "gen": "0.5",
+     "md_old": "0",
+     "gen_old": "1"
+    },
+    "ryoshu|거미집의 검": {
+     "md": "0",
+     "gen": "0",
+     "md_old": "0",
+     "gen_old": "0"
+    },
+    "outis|거미집 중지 아비": {
+     "md": "0",
+     "gen": "0",
+     "md_old": "0",
+     "gen_old": "0"
+    },
+    "ishmael|LCD 현장추리팀": {
+     "md": "0",
+     "gen": "0.5",
+     "md_old": "0",
+     "gen_old": "0.5"
+    },
+    "rodion|거미집 엄지 아비": {
+     "md": "0",
+     "gen": "0",
+     "md_old": "0",
+     "gen_old": "0"
+    },
+    "faust|새벽 사무소 해결사": {
+     "md": "0",
+     "gen": "0",
+     "md_old": "0",
+     "gen_old": "0"
+    },
+    "gregor|새벽 사무소 대표": {
+     "md": "0",
+     "gen": "0",
+     "md_old": "0",
+     "gen_old": "0"
+    },
+    "gregor|LCE E.G.O::AEDD": {
+     "md": "0.5",
+     "gen": "0.5",
+     "md_old": "0.5",
+     "gen_old": "0.5"
+    },
+    "yisang|LCE E.G.O::차원찢개": {
+     "md": "0.5",
+     "gen": "2",
+     "md_old": "0.5",
+     "gen_old": "2"
+    },
+    "heathcliff|거미집 엄지 제자": {
+     "md": "0.5",
+     "gen": "0.5",
+     "md_old": "1",
+     "gen_old": "1"
+    },
+    "ishmael|거미집 중지 제자": {
+     "md": "0.5",
+     "gen": "1",
+     "md_old": "1",
+     "gen_old": "1.5"
+    },
+    "outis|LCA 우제트 선봉 3팀 팀장": {
+     "md": "0.5",
+     "gen": "0.5",
+     "md_old": "0",
+     "gen_old": "0"
+    },
+    "gregor|로보토미 E.G.O::램프": {
+     "md": "1",
+     "gen": "0.5",
+     "md_old": "1",
+     "gen_old": "0"
+    },
+    "rodion|약지 야수파 도슨트": {
+     "md": "1",
+     "gen": "1",
+     "md_old": "1",
+     "gen_old": "1"
+    },
+    "honglu|동부 섕크 협회 3과": {
+     "md": "1",
+     "gen": "1",
+     "md_old": "1",
+     "gen_old": "1"
+    },
+    "meursault|로보토미 E.G.O::호넷【변조】": {
+     "md": "1",
+     "gen": "1",
+     "md_old": "0.5",
+     "gen_old": "0.5"
+    },
+    "honglu|S사 추노꾼": {
+     "md": "1",
+     "gen": "1",
+     "md_old": "0.5",
+     "gen_old": "1"
+    },
+    "sinclair|거미집 소지 제자": {
+     "md": "1",
+     "gen": "1.5",
+     "md_old": "0",
+     "gen_old": "0.5"
+    },
+    "faust|검지 수행자:【쪽지】": {
+     "md": "1.5",
+     "gen": "1.5",
+     "md_old": "1",
+     "gen_old": "1"
+    },
+    "meursault|약지 야수파 스튜던트": {
+     "md": "2",
+     "gen": "2",
+     "md_old": "2",
+     "gen_old": "2"
+    }
+   }
+  },
+  {
+   "id": "goni",
+   "site": "고니 블로그(goniblog.com)",
+   "region": "국내(KR)",
+   "title": "림버스 컴퍼니 티어표 (3성 인격 기준)",
+   "url": "https://goniblog.com/림버스-컴퍼니-티어표-3성-인격-기준/",
+   "author": "고니",
+   "date": "2026-08-24",
+   "dateNote": "게시/수정 2026-08-24. 개별 인격 평가글 날짜는 2023~2026로 섞여 있어 리뷰 이미지 업로드 월로 신선도 가중(2026=1.0, 2025=0.6, 2024 이전=0.3)",
+   "season": "S7 후반(S7 인격 대부분 포함, 동부 섕크3 홍루까지)",
+   "modes": [
+    "general"
+   ],
+   "modeNote": "다양한 컨텐츠 종합, 3동 기준. Tier0~4",
+   "scale": "Tier0>1>2>3>4",
+   "norm": {
+    "Tier0": 94,
+    "Tier1": 80,
+    "Tier2": 64,
+    "Tier3": 48,
+    "Tier4": 32
+   },
+   "weight": 0.6,
+   "ratings": {
+    "faust|새벽 사무소 해결사": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-07",
+     "fresh": 1.0
+    },
+    "gregor|새벽 사무소 대표": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-07",
+     "fresh": 1.0
+    },
+    "rodion|거미집 엄지 아비": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-07",
+     "fresh": 1.0
+    },
+    "outis|거미집 중지 아비": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-06",
+     "fresh": 1.0
+    },
+    "ryoshu|거미집의 검": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-05",
+     "fresh": 1.0
+    },
+    "heathcliff|중지 작은 형님": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-04",
+     "fresh": 1.0
+    },
+    "gregor|LCE E.G.O::AEDD": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-03",
+     "fresh": 1.0
+    },
+    "ryoshu|로보토미 E.G.O::잔향 · 외로움": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-03",
+     "fresh": 1.0
+    },
+    "yisang|거미집 검지 아비": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-02",
+     "fresh": 1.0
+    },
+    "outis|LCA 우제트 선봉 3팀 팀장": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2026-01",
+     "fresh": 1.0
+    },
+    "honglu|홍원 군주": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2025-08",
+     "fresh": 0.6
+    },
+    "rodion|로보토미 E.G.O::눈물로 벼려낸 검": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2025-07",
+     "fresh": 0.6
+    },
+    "meursault|동부 엄지 카포 IIII": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2025-06",
+     "fresh": 0.6
+    },
+    "faust|흑수 - 묘 필두": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2025-06",
+     "fresh": 0.6
+    },
+    "rodion|흑수 - 사": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "don|라만차랜드 실장": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "rodion|라만차랜드 공주": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2024-11",
+     "fresh": 0.3
+    },
+    "ryoshu|로보토미 E.G.O::적안 · 참회": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2024-10",
+     "fresh": 0.3
+    },
+    "heathcliff|와일드헌트": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2024-10",
+     "fresh": 0.3
+    },
+    "yisang|약지 점묘파 스튜던트": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2024-06",
+     "fresh": 0.3
+    },
+    "rodion|남부 디에치 협회 4과": {
+     "raw": "Tier0",
+     "score": 94,
+     "review": "2023-09",
+     "fresh": 0.3
+    },
+    "heathcliff|거미집 엄지 제자": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2026-07",
+     "fresh": 1.0
+    },
+    "ishmael|LCD 현장추리팀": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2026-06",
+     "fresh": 1.0
+    },
+    "faust|거미집 약지 제자": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2026-04",
+     "fresh": 1.0
+    },
+    "honglu|거미집 약지 아비": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2026-03",
+     "fresh": 1.0
+    },
+    "sinclair|거미집 소지 제자": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2026-02",
+     "fresh": 1.0
+    },
+    "don|검지 대행자 - 개화 E.G.O::대행": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2026-01",
+     "fresh": 1.0
+    },
+    "faust|검지 수행자:【쪽지】": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2026-01",
+     "fresh": 1.0
+    },
+    "ryoshu|홍원 방랑무사": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-12",
+     "fresh": 0.6
+    },
+    "ishmael|정사무소 대표": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-11",
+     "fresh": 0.6
+    },
+    "meursault|라만차랜드 왕자": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-10",
+     "fresh": 0.6
+    },
+    "heathcliff|W사 4등급 정리 요원 - CCA": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-10",
+     "fresh": 0.6
+    },
+    "ryoshu|N사 E.G.O::경멸, 경외": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-09",
+     "fresh": 0.6
+    },
+    "sinclair|흑수 - 유": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-09",
+     "fresh": 0.6
+    },
+    "yisang|흑수 - 오 필두": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-08",
+     "fresh": 0.6
+    },
+    "don|로보토미 E.G.O::사랑과 증오의 이름으로": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-07",
+     "fresh": 0.6
+    },
+    "yisang|N사 E.G.O::흉탄": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-07",
+     "fresh": 0.6
+    },
+    "ryoshu|흑수 - 묘": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "don|동부 섕크 협회 3과": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "yisang|남부 리우 협회 3과": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "ishmael|흑운회 부조장": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "heathcliff|흑운회 와카슈": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "sinclair|북부 제뱌찌 협회 3과": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "gregor|라만차랜드 신부": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-11",
+     "fresh": 0.3
+    },
+    "outis|라만차랜드 이발사": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-11",
+     "fresh": 0.3
+    },
+    "ishmael|서부 츠바이 협회 3과": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-10",
+     "fresh": 0.3
+    },
+    "rodion|북부 제뱌찌 협회 3과": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-10",
+     "fresh": 0.3
+    },
+    "yisang|로보토미 E.G.O::엄숙한 애도": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-10",
+     "fresh": 0.3
+    },
+    "faust|멀티크랙 사무소 대표": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-10",
+     "fresh": 0.3
+    },
+    "don|T사 3등급 징수직 직원": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-07",
+     "fresh": 0.3
+    },
+    "sinclair|새벽 사무소 해결사": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-06",
+     "fresh": 0.3
+    },
+    "rodion|남부 리우 협회 4과 부장": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-03",
+     "fresh": 0.3
+    },
+    "meursault|검계 우두머리": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-02",
+     "fresh": 0.3
+    },
+    "ishmael|피쿼드호 선장": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2024-02",
+     "fresh": 0.3
+    },
+    "sinclair|남부 섕크 협회 4과 부장": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2023-12",
+     "fresh": 0.3
+    },
+    "heathcliff|피쿼드호 작살잡이": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2023-12",
+     "fresh": 0.3
+    },
+    "don|W사 3등급 정리 요원": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "don|남부 섕크 협회 5과 부장": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "honglu|K사 3등급 적출직 직원": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "ishmael|남부 리우 협회 4과": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "heathcliff|R사 제 4무리 토끼팀": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "sinclair|쥐어들 자": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "ryoshu|W사 3등급 정리 요원": {
+     "raw": "Tier1",
+     "score": 80,
+     "review": "2023-09",
+     "fresh": 0.3
+    },
+    "honglu|동부 섕크 협회 3과": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2026-08",
+     "fresh": 1.0
+    },
+    "yisang|LCE E.G.O::차원찢개": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2026-07",
+     "fresh": 1.0
+    },
+    "rodion|약지 야수파 도슨트": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2026-04",
+     "fresh": 1.0
+    },
+    "meursault|로보토미 E.G.O::호넷【변조】": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2026-03",
+     "fresh": 1.0
+    },
+    "gregor|로보토미 E.G.O::램프": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2026-02",
+     "fresh": 1.0
+    },
+    "ishmael|거미집 중지 제자": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2026-01",
+     "fresh": 1.0
+    },
+    "rodion|R사 제 4무리 순록팀": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-12",
+     "fresh": 0.6
+    },
+    "don|흑수 - 미": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-11",
+     "fresh": 0.6
+    },
+    "heathcliff|흑수 - 유 필두": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-11",
+     "fresh": 0.6
+    },
+    "gregor|밤의 송곳 카피타노": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-11",
+     "fresh": 0.6
+    },
+    "faust|동부 시 협회 3과": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-10",
+     "fresh": 0.6
+    },
+    "outis|T사 3등급 강력징수직 직원": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-08",
+     "fresh": 0.6
+    },
+    "ishmael|가주 후보": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-06",
+     "fresh": 0.6
+    },
+    "gregor|흑수 - 사": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "honglu|R사 제 4무리 순록팀": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "sinclair|중지 작은 아우": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "outis|흑수 - 묘": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "faust|LCE E.G.O::홍염살": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "heathcliff|마침표 사무소 해결사": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-08",
+     "fresh": 0.6
+    },
+    "honglu|마침표 사무소 대표": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2025-05",
+     "fresh": 0.6
+    },
+    "meursault|서부 섕크 협회 3과": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-10",
+     "fresh": 0.3
+    },
+    "outis|W사 3등급 정리 요원 팀장": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-10",
+     "fresh": 0.3
+    },
+    "meursault|남부 디에치 협회 4과 부장": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-07",
+     "fresh": 0.3
+    },
+    "honglu|20구 유로지비": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-06",
+     "fresh": 0.3
+    },
+    "ryoshu|에드가 가문 치프 버틀러": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-04",
+     "fresh": 0.3
+    },
+    "gregor|에드가 가문 승계자": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-04",
+     "fresh": 0.3
+    },
+    "outis|워더링하이츠 치프 버틀러": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-04",
+     "fresh": 0.3
+    },
+    "heathcliff|남부 외우피 협회 3과": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-03",
+     "fresh": 0.3
+    },
+    "faust|검계 살수": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-02",
+     "fresh": 0.3
+    },
+    "honglu|남부 디에치 협회 4과": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2024-01",
+     "fresh": 0.3
+    },
+    "gregor|쌍갈고리 해적단 부선장": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-11",
+     "fresh": 0.3
+    },
+    "outis|어금니 사무소 해결사": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-10",
+     "fresh": 0.3
+    },
+    "rodion|장미스패너 공방 대표": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "yisang|개화 E.G.O::동백": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "ryoshu|료.고.파. 주방장": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "meursault|R사 제 4무리 코뿔소팀": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "ryoshu|흑운회 와카슈": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "honglu|콩콩이파 두목": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "ishmael|R사 제 4무리 순록팀": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "ishmael|어금니 보트 센터 해결사": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "faust|쥐는 자": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "outis|남부 세븐 협회 6과 부장": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "gregor|남부 츠바이 협회 4과": {
+     "raw": "Tier2",
+     "score": 64,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "don|중지 작은 아우": {
+     "raw": "Tier3",
+     "score": 48,
+     "review": "2023-11",
+     "fresh": 0.3
+    },
+    "meursault|W사 2등급 정리 요원": {
+     "raw": "Tier3",
+     "score": 48,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "meursault|N사 큰 망치": {
+     "raw": "Tier3",
+     "score": 48,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "yisang|검계 살수": {
+     "raw": "Tier3",
+     "score": 48,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "heathcliff|로보토미 E.G.O::여우비": {
+     "raw": "Tier3",
+     "score": 48,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "gregor|G사 일등대리": {
+     "raw": "Tier3",
+     "score": 48,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "rodion|흑운회 와카슈": {
+     "raw": "Tier4",
+     "score": 32,
+     "review": "2023-08",
+     "fresh": 0.3
+    },
+    "sinclair|검계 살수": {
+     "raw": "Tier4",
+     "score": 32,
+     "review": "2023-08",
+     "fresh": 0.3
+    }
+   }
+  }
+ ],
+ "deckSources": [
+  {
+   "id": "arca_deck",
+   "site": "아카라이브 채널 덱/편성 질문·답변 글",
+   "region": "국내(KR)",
+   "date": "2026-09-14~2026-09-28",
+   "modes": [
+    "MD",
+    "story"
+   ],
+   "posts": [
+    {
+     "url": "https://arca.live/b/lobotomycoperation/183034582",
+     "date": "2026-09-15",
+     "title": "그래서 새벽엄지화진덱 대기편성까지 완성형이 뭐임?"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/183287989",
+     "date": "2026-09-17",
+     "title": "10장 밀기용 새벽 화진덱 편성 순서 어떻게 짬?"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/183297749",
+     "date": "2026-09-17",
+     "title": "다들 화진덱 순서랑 편성 어캐함?"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/183325937",
+     "date": "2026-09-18",
+     "title": "님들아 충출덱 편성 어케하면 좋을까?"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/183515302",
+     "date": "2026-09-20",
+     "title": "호침덱 편성인원 누구하는게 정배임??"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/184141106",
+     "date": "2026-09-26",
+     "title": "충출덱 편성 어떻게해서 쓰고있어?"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/184156793",
+     "date": "2026-09-26",
+     "title": "흑수덱 편성 질문이용!"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/184236893",
+     "date": "2026-09-27",
+     "title": "현역인 성능덱 알려줘잉"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/184242744",
+     "date": "2026-09-27",
+     "title": "충출덱 2번자리 이스하고 파우중에 누구임?"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/184250477",
+     "date": "2026-09-27",
+     "title": "중지덱 중지맨 다있어야함?"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/184264972",
+     "date": "2026-09-27",
+     "title": "중지덱에 렘그렉 넣어야하나?"
+    },
+    {
+     "url": "https://arca.live/b/lobotomycoperation/177393617",
+     "date": "2026-07-20",
+     "title": "현 메타 거던 15층 1티어 덱 뭐라고 생각해? (S7 후반, 참고)"
+    }
+   ],
+   "note": "개별 유저 의견(댓글 포함). 여러 글에서 반복되는 구성만 core 로 채택. KST 기준 날짜"
+  },
+  {
+   "id": "prydwen_teams",
+   "site": "Prydwen Teams Database",
+   "region": "해외(EN)",
+   "url": "https://www.prydwen.gg/limbus-company/teams-database",
+   "date": "2026-05-22",
+   "modes": [
+    "RR",
+    "general"
+   ],
+   "note": "\"Last updated 22/May/2026\" — S7 후반 인격(새벽·엄지·중지 완성) 이전이라 core 판단엔 쓰지 않고 flex/대체 참고로만 사용(화상: 리우3 이상·마탄 오티스, 파열: 흑수 편성 등)"
+  },
+  {
+   "id": "gamemeca",
+   "site": "게임메카 국민트리 코멘트",
+   "region": "국내(KR)",
+   "url": "https://trees.gamemeca.com/view.php?seq=1584",
+   "date": "2026-09-17",
+   "modes": [
+    "general"
+   ],
+   "note": "\"다른 새벽 사무소 인격과 연계\", \"다른 흑수 인격들과 상호작용\", \"질투 공명\" 등 시너지 서술을 core 근거로 사용"
+  }
+ ],
+ "excluded": [
+  {
+   "site": "TierMaster (tiermaster.vercel.app/ko/limbus)",
+   "url": "https://tiermaster.vercel.app/ko/limbus/general",
+   "date": "2026-05-15",
+   "reason": "마지막 갱신 2026-05-15(컷오프 이전), 익명 투표+DC 시트 기반, 인격명 OCR 깨짐 다수, S7 후반·S8 인격 미배치"
+  },
+  {
+   "site": "Gamerch JP 최강 인격 랭킹",
+   "url": "https://gamerch.com/limbuscompany/662980",
+   "date": "2026-08-21(페이지) / 표는 \"2026/7/30 편집 중\"",
+   "reason": "티어표 본문이 7/30 편집 중 상태로 새벽 사무소(7/9)·엄지 거미집(6/25) 등 S7 후반 인격 누락, 캐릭터 애칭 표기가 많아 인격 매칭 신뢰도 낮음"
+  },
+  {
+   "site": "Prydwen Teams Database",
+   "url": "https://www.prydwen.gg/limbus-company/teams-database",
+   "date": "2026-05-22",
+   "reason": "티어 점수엔 미사용(티어 정보 없음). 덱은 S7 후반 이전 구성이라 flex/대체 참고만"
+  },
+  {
+   "site": "아카라이브 \"현재 메타 0티어 덱 리스트 정리\"",
+   "url": "https://arca.live/b/lobotomycoperation/178430504",
+   "date": "2026-07-30",
+   "reason": "본문 말미 \"라는 상상을 해보았습니다\" — 미출시/가상 인격을 전제로 한 상상글이라 제외"
+  },
+  {
+   "site": "아카라이브 \"인격 티어표 짜봄\"",
+   "url": "https://arca.live/b/lobotomycoperation/180090498",
+   "date": "2026-08-16",
+   "reason": "개인 체감 기준(작성자 명시), 비추천 13 > 추천 6, 댓글에서 기준 부재 지적 다수"
+  },
+  {
+   "site": "아카라이브 \"개인적 림버스 티어표\" / \"호감고닉 티어표\"",
+   "url": "https://arca.live/b/lobotomycoperation/183706018",
+   "date": "2026-09-21",
+   "reason": "인기/유머 티어표(성능 아님)"
+  },
+  {
+   "site": "Beebom / ChainPlay / allthings.how / PropelRC / games.gg / Gamebrott / lawod",
+   "url": "",
+   "date": "2026-06~08",
+   "reason": "Prydwen 티어를 재가공한 파생 글 — 중복 가중 방지"
+  },
+  {
+   "site": "2upskill 티어/팀 가이드",
+   "url": "https://2upskill.com",
+   "date": "2026-07-02",
+   "reason": "S7 중반 기준 SEO형 글, 자체 평가 근거 불명확"
+  },
+  {
+   "site": "PixelNitro 팀 가이드",
+   "url": "https://pixelnitro.com",
+   "date": "2026(S7)",
+   "reason": "존재하지 않는 인격명을 언급하는 등 신뢰 불가(자동 생성 의심)"
+  },
+  {
+   "site": "HostedGG / penguingames / appmatch / pekuo 등 SEO 랭킹",
+   "url": "",
+   "date": "2026-08~09",
+   "reason": "출처·기준 불명 요약형 글, 1차 평가로 보기 어려움"
+  },
+  {
+   "site": "gamesfuze 수감자 투자 우선순위",
+   "url": "",
+   "date": "2026-09",
+   "reason": "인격 단위 평가 아님"
+  },
+  {
+   "site": "Game8 (EN)",
+   "url": "https://game8.co/games/Limbus-Company",
+   "date": "-",
+   "reason": "티어 페이지 URL 404 / 최신판 확인 불가"
+  },
+  {
+   "site": "Pocket Gamer 티어",
+   "url": "",
+   "date": "미표기",
+   "reason": "날짜 미표기·구버전 인격 위주"
+  },
+  {
+   "site": "인벤 림버스 게시판",
+   "url": "https://www.inven.co.kr/",
+   "date": "-",
+   "reason": "림버스 전용 공략 게시판을 찾지 못함(시도한 board 번호는 다른 게임) — 확인 불가"
+  },
+  {
+   "site": "DC 림버스 컴퍼니 마이너 갤러리",
+   "url": "https://gall.dcinside.com/mgallery/board/lists/?id=limbuscompany",
+   "date": "2026-09-20~28 검색",
+   "reason": "\"티어표\" 검색 결과가 리세/질문글 위주, 구조화된 최신 성능 티어표 없음"
+  },
+  {
+   "site": "Reddit r/limbuscompany 티어 토론",
+   "url": "https://www.reddit.com/r/limbuscompany/",
+   "date": "2026",
+   "reason": "평점표 아님 — \"Prydwen은 RR 기준\", \"GLL은 구 인격을 높게 둠\", \"Prydwen이 중지 돈을 과소평가\" 같은 불일치 의견만 참고(점수 미반영)"
+  },
+  {
+   "site": "goniblog 개별 구 리뷰(2023~2024 이미지)",
+   "url": "https://goniblog.com/림버스-컴퍼니-티어표-3성-인격-기준/",
+   "date": "2023~2024",
+   "reason": "제외는 아니고 가중치 0.3으로 축소(예: 남부 디에치 4과 로쟈 Tier0는 2023 평가)"
+  }
+ ],
+ "history": {
+  "gll": {
+   "rodion|라만차랜드 공주": [
+    {
+     "date": "2026-08-16",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "don|로보토미 E.G.O::사랑과 증오의 이름으로": [
+    {
+     "date": "2026-08-16",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2025-08-25",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "ryoshu|료.고.파. 주방장": [
+    {
+     "date": "2026-08-16",
+     "from": "A",
+     "to": "B"
+    },
+    {
+     "date": "2025-12-17",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "ryoshu|거미집의 검": [
+    {
+     "date": "2026-08-02",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "outis|거미집 중지 아비": [
+    {
+     "date": "2026-08-02",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "honglu|S사 추노꾼": [
+    {
+     "date": "2026-08-02",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "ishmael|LCD 현장추리팀": [
+    {
+     "date": "2026-08-02",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "heathcliff|거미집 엄지 제자": [
+    {
+     "date": "2026-08-02",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "rodion|거미집 엄지 아비": [
+    {
+     "date": "2026-08-02",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "faust|새벽 사무소 해결사": [
+    {
+     "date": "2026-08-02",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "gregor|새벽 사무소 대표": [
+    {
+     "date": "2026-08-02",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "yisang|LCE E.G.O::차원찢개": [
+    {
+     "date": "2026-08-02",
+     "from": null,
+     "to": "A"
+    }
+   ],
+   "ishmael|정사무소 대표": [
+    {
+     "date": "2026-08-02",
+     "from": "SSS",
+     "to": "SS"
+    },
+    {
+     "date": "2025-11-21",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "meursault|동부 엄지 카포 IIII": [
+    {
+     "date": "2026-08-02",
+     "from": "SSS",
+     "to": "SS"
+    },
+    {
+     "date": "2025-06-29",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "sinclair|새벽 사무소 해결사": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "SS"
+    }
+   ],
+   "gregor|불주먹 사무소 생존자": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "yisang|남부 리우 협회 3과": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "ishmael|어금니 보트 센터 해결사": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "sinclair|거미집 소지 제자": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2026-03-07",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "gregor|흑수 - 사": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2025-06-01",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "rodion|흑수 - 사": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2025-06-01",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "heathcliff|와일드헌트": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2026-01-07",
+     "from": "SSS",
+     "to": "SS"
+    }
+   ],
+   "ryoshu|N사 E.G.O::경멸, 경외": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2025-10-15",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "yisang|흑수 - 오 필두": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2025-10-15",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "yisang|개화 E.G.O::동백": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "heathcliff|마침표 사무소 해결사": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2025-06-01",
+     "from": "SSS",
+     "to": "SS"
+    }
+   ],
+   "honglu|마침표 사무소 대표": [
+    {
+     "date": "2026-08-02",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2025-06-01",
+     "from": "SSS",
+     "to": "SS"
+    }
+   ],
+   "gregor|쌍갈고리 해적단 부선장": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "gregor|라만차랜드 신부": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    },
+    {
+     "date": "2025-08-03",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "honglu|20구 유로지비": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    },
+    {
+     "date": "2025-06-29",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "sinclair|남부 섕크 협회 4과 부장": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    },
+    {
+     "date": "2025-03-26",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "faust|쥐는 자": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "don|로보토미 E.G.O::초롱": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "outis|약지 점묘파 스튜던트": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "honglu|콩콩이파 두목": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    },
+    {
+     "date": "2025-06-01",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "heathcliff|R사 제 4무리 토끼팀": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "rodion|북부 제뱌찌 협회 3과": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "sinclair|북부 제뱌찌 협회 3과": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "heathcliff|멀티크랙 사무소 해결사": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "faust|멀티크랙 사무소 대표": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    },
+    {
+     "date": "2025-12-28",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "heathcliff|피쿼드호 작살잡이": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    },
+    {
+     "date": "2025-06-29",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "honglu|남부 디에치 협회 4과": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    },
+    {
+     "date": "2025-06-29",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "ishmael|피쿼드호 선장": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "rodion|남부 리우 협회 4과 부장": [
+    {
+     "date": "2026-08-02",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "sinclair|검계 살수": [
+    {
+     "date": "2026-08-02",
+     "from": "B",
+     "to": "A"
+    }
+   ],
+   "yisang|어금니 사무소 해결사": [
+    {
+     "date": "2026-08-02",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "meursault|W사 2등급 정리 요원": [
+    {
+     "date": "2026-08-02",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "meursault|R사 제 4무리 코뿔소팀": [
+    {
+     "date": "2026-08-02",
+     "from": "A",
+     "to": "B"
+    },
+    {
+     "date": "2025-06-01",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "ishmael|에드가 가문 버틀러": [
+    {
+     "date": "2026-08-02",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "rodion|흑운회 와카슈": [
+    {
+     "date": "2026-08-02",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "outis|남부 세븐 협회 6과 부장": [
+    {
+     "date": "2026-08-02",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "outis|G사 부장": [
+    {
+     "date": "2026-08-02",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "gregor|남부 츠바이 협회 4과": [
+    {
+     "date": "2026-08-02",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "heathcliff|LCB 수감자": [
+    {
+     "date": "2026-08-02",
+     "from": "B",
+     "to": "C"
+    }
+   ],
+   "outis|검계 살수": [
+    {
+     "date": "2026-08-02",
+     "from": "B",
+     "to": "C"
+    }
+   ],
+   "meursault|로보토미 E.G.O::호넷【변조】": [
+    {
+     "date": "2026-05-14",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "ryoshu|로보토미 E.G.O::잔향 · 외로움": [
+    {
+     "date": "2026-05-14",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "gregor|LCE E.G.O::AEDD": [
+    {
+     "date": "2026-05-14",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "honglu|거미집 약지 아비": [
+    {
+     "date": "2026-05-14",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "faust|거미집 약지 제자": [
+    {
+     "date": "2026-05-14",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "rodion|약지 야수파 도슨트": [
+    {
+     "date": "2026-05-14",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "meursault|약지 야수파 스튜던트": [
+    {
+     "date": "2026-05-14",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "heathcliff|중지 작은 형님": [
+    {
+     "date": "2026-05-14",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "don|라만차랜드 실장": [
+    {
+     "date": "2026-05-14",
+     "from": "SSS",
+     "to": "SS"
+    }
+   ],
+   "meursault|라만차랜드 왕자": [
+    {
+     "date": "2026-05-14",
+     "from": "SSS",
+     "to": "SS"
+    },
+    {
+     "date": "2025-11-21",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "meursault|남부 디에치 협회 4과 부장": [
+    {
+     "date": "2026-05-14",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "faust|남부 세븐 협회 4과": [
+    {
+     "date": "2026-05-14",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "gregor|로보토미 E.G.O::램프": [
+    {
+     "date": "2026-03-07",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "yisang|거미집 검지 아비": [
+    {
+     "date": "2026-03-07",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "ishmael|거미집 중지 제자": [
+    {
+     "date": "2026-02-01",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "don|검지 대행자 - 개화 E.G.O::대행": [
+    {
+     "date": "2026-01-22",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "outis|LCA 우제트 선봉 3팀 팀장": [
+    {
+     "date": "2026-01-07",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "faust|검지 수행자:【쪽지】": [
+    {
+     "date": "2026-01-07",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "rodion|남부 디에치 협회 4과": [
+    {
+     "date": "2026-01-07",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "honglu|송곳니 사냥 사무소 해결사": [
+    {
+     "date": "2026-01-07",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "rodion|R사 제 4무리 순록팀": [
+    {
+     "date": "2025-12-28",
+     "from": null,
+     "to": "A"
+    }
+   ],
+   "don|동부 섕크 협회 3과": [
+    {
+     "date": "2025-12-28",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "outis|워더링하이츠 치프 버틀러": [
+    {
+     "date": "2025-12-28",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "meursault|검계 우두머리": [
+    {
+     "date": "2025-12-28",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "faust|로보토미 E.G.O::후회": [
+    {
+     "date": "2025-12-28",
+     "from": "SS",
+     "to": "A"
+    }
+   ],
+   "don|W사 3등급 정리 요원": [
+    {
+     "date": "2025-12-28",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "don|T사 3등급 징수직 직원": [
+    {
+     "date": "2025-12-28",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "heathcliff|남부 외우피 협회 3과": [
+    {
+     "date": "2025-12-28",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "sinclair|쥐어들 자": [
+    {
+     "date": "2025-12-28",
+     "from": "S",
+     "to": "A"
+    },
+    {
+     "date": "2025-04-23",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "honglu|K사 3등급 적출직 직원": [
+    {
+     "date": "2025-12-28",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "ryoshu|홍원 방랑무사": [
+    {
+     "date": "2025-12-17",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "meursault|서부 섕크 협회 3과": [
+    {
+     "date": "2025-12-17",
+     "from": "SS",
+     "to": "S"
+    },
+    {
+     "date": "2025-03-20",
+     "from": "SSS",
+     "to": "SS"
+    }
+   ],
+   "ryoshu|로보토미 E.G.O::적안 · 참회": [
+    {
+     "date": "2025-12-17",
+     "from": "SS",
+     "to": "A"
+    },
+    {
+     "date": "2025-03-20",
+     "from": "SSS",
+     "to": "SS"
+    }
+   ],
+   "ryoshu|W사 3등급 정리 요원": [
+    {
+     "date": "2025-12-17",
+     "from": "S",
+     "to": "A"
+    },
+    {
+     "date": "2025-06-29",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "ryoshu|에드가 가문 치프 버틀러": [
+    {
+     "date": "2025-12-17",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "ryoshu|남부 세븐 협회 6과": [
+    {
+     "date": "2025-12-17",
+     "from": "A",
+     "to": "B"
+    },
+    {
+     "date": "2025-04-23",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "heathcliff|흑수 - 유 필두": [
+    {
+     "date": "2025-11-30",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "don|흑수 - 미": [
+    {
+     "date": "2025-11-30",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "heathcliff|W사 4등급 정리 요원 - CCA": [
+    {
+     "date": "2025-11-21",
+     "from": null,
+     "to": "A"
+    }
+   ],
+   "gregor|밤의 송곳 카피타노": [
+    {
+     "date": "2025-11-21",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "sinclair|흑수 - 유": [
+    {
+     "date": "2025-10-15",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "faust|동부 시 협회 3과": [
+    {
+     "date": "2025-10-15",
+     "from": null,
+     "to": "A"
+    }
+   ],
+   "ryoshu|흑수 - 묘": [
+    {
+     "date": "2025-10-15",
+     "from": "SSS",
+     "to": "SS"
+    }
+   ],
+   "rodion|로보토미 E.G.O::눈물로 벼려낸 검": [
+    {
+     "date": "2025-08-25",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "outis|T사 3등급 강력징수직 직원": [
+    {
+     "date": "2025-08-25",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "honglu|홍원 군주": [
+    {
+     "date": "2025-08-25",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "yisang|N사 E.G.O::흉탄": [
+    {
+     "date": "2025-08-03",
+     "from": null,
+     "to": "A"
+    }
+   ],
+   "yisang|약지 점묘파 스튜던트": [
+    {
+     "date": "2025-08-03",
+     "from": "SSS",
+     "to": "SS"
+    }
+   ],
+   "ishmael|서부 츠바이 협회 3과": [
+    {
+     "date": "2025-08-03",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "rodion|장미스패너 공방 대표": [
+    {
+     "date": "2025-08-03",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "yisang|검계 살수": [
+    {
+     "date": "2025-08-03",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "outis|W사 3등급 정리 요원 팀장": [
+    {
+     "date": "2025-08-03",
+     "from": "S",
+     "to": "A"
+    }
+   ],
+   "honglu|W사 2등급 정리 요원": [
+    {
+     "date": "2025-08-03",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "don|남부 시 협회 5과 부장": [
+    {
+     "date": "2025-08-03",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "faust|살아남은 로보토미 직원": [
+    {
+     "date": "2025-08-03",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "sinclair|마리아치 보스": [
+    {
+     "date": "2025-08-03",
+     "from": "B",
+     "to": "C"
+    }
+   ],
+   "ishmael|가주 후보": [
+    {
+     "date": "2025-06-29",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "sinclair|동부 엄지 솔다토 II": [
+    {
+     "date": "2025-06-29",
+     "from": null,
+     "to": "S"
+    }
+   ],
+   "outis|어금니 사무소 해결사": [
+    {
+     "date": "2025-06-29",
+     "from": "SS",
+     "to": "S"
+    }
+   ],
+   "faust|흑수 - 묘 필두": [
+    {
+     "date": "2025-06-01",
+     "from": null,
+     "to": "SSS"
+    }
+   ],
+   "outis|흑수 - 묘": [
+    {
+     "date": "2025-06-01",
+     "from": "SSS",
+     "to": "SS"
+    }
+   ],
+   "meursault|N사 큰 망치": [
+    {
+     "date": "2025-06-01",
+     "from": "B",
+     "to": "C"
+    }
+   ],
+   "gregor|LCB 수감자": [
+    {
+     "date": "2025-06-01",
+     "from": "B",
+     "to": "C"
+    }
+   ],
+   "meursault|LCB 수감자": [
+    {
+     "date": "2025-06-01",
+     "from": "B",
+     "to": "C"
+    }
+   ],
+   "sinclair|어금니 보트 센터 해결사": [
+    {
+     "date": "2025-06-01",
+     "from": "B",
+     "to": "C"
+    }
+   ],
+   "sinclair|로보토미 E.G.O::홍적": [
+    {
+     "date": "2025-05-26",
+     "from": "S",
+     "to": "B"
+    }
+   ],
+   "honglu|R사 제 4무리 순록팀": [
+    {
+     "date": "2025-05-07",
+     "from": null,
+     "to": "SS"
+    }
+   ],
+   "outis|로보토미 E.G.O::마탄": [
+    {
+     "date": "2025-04-23",
+     "from": "S",
+     "to": "SS"
+    }
+   ],
+   "sinclair|중지 작은 아우": [
+    {
+     "date": "2025-04-03",
+     "from": null,
+     "to": "SS"
+    }
+   ]
+  },
+  "prydwen": {
+   "yisang|개화 E.G.O::동백": [
+    {
+     "date": "2026-04-12",
+     "from": "SS",
+     "to": "S+"
+    }
+   ],
+   "sinclair|거미집 소지 제자": [
+    {
+     "date": "2026-04-12",
+     "from": "SS",
+     "to": "S+"
+    }
+   ],
+   "sinclair|새벽 사무소 해결사": [
+    {
+     "date": "2026-04-12",
+     "from": "S+",
+     "to": "S"
+    }
+   ],
+   "gregor|불주먹 사무소 생존자": [
+    {
+     "date": "2026-04-12",
+     "from": "S+",
+     "to": "S"
+    }
+   ],
+   "meursault|로보토미 E.G.O::호넷【변조】": [
+    {
+     "date": "2026-04-12",
+     "from": "S+",
+     "to": "S"
+    }
+   ],
+   "yisang|N사 E.G.O::흉탄": [
+    {
+     "date": "2026-04-12",
+     "from": "S+",
+     "to": "S"
+    },
+    {
+     "date": "2026-02-23",
+     "from": "S",
+     "to": "S+"
+    }
+   ],
+   "faust|검지 수행자:【쪽지】": [
+    {
+     "date": "2026-04-12",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "heathcliff|멀티크랙 사무소 해결사": [
+    {
+     "date": "2026-04-12",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "gregor|라만차랜드 신부": [
+    {
+     "date": "2026-04-12",
+     "from": "A",
+     "to": "B"
+    }
+   ],
+   "honglu|홍원 군주": [
+    {
+     "date": "2026-04-12",
+     "from": "SS",
+     "to": "SSS"
+    }
+   ],
+   "faust|워더링하이츠 버틀러": [
+    {
+     "date": "2026-04-12",
+     "from": "S",
+     "to": "S+"
+    }
+   ],
+   "outis|워더링하이츠 치프 버틀러": [
+    {
+     "date": "2026-04-12",
+     "from": "S",
+     "to": "S+"
+    }
+   ],
+   "outis|LCA 우제트 선봉 3팀 팀장": [
+    {
+     "date": "2026-04-12",
+     "from": "S",
+     "to": "S+"
+    }
+   ],
+   "yisang|로보토미 E.G.O::엄숙한 애도": [
+    {
+     "date": "2026-04-12",
+     "from": "S",
+     "to": "S+"
+    },
+    {
+     "date": "2026-02-23",
+     "from": "S+",
+     "to": "S"
+    }
+   ],
+   "ishmael|LCCB 대리": [
+    {
+     "date": "2026-04-12",
+     "from": "A",
+     "to": "S+"
+    }
+   ],
+   "meursault|중지 작은 아우": [
+    {
+     "date": "2026-04-12",
+     "from": "A",
+     "to": "S"
+    }
+   ],
+   "don|검지 대행자 - 개화 E.G.O::대행": [
+    {
+     "date": "2026-02-23",
+     "from": "S+",
+     "to": "SS"
+    }
+   ],
+   "heathcliff|흑수 - 유 필두": [
+    {
+     "date": "2026-02-23",
+     "from": "S+",
+     "to": "SS"
+    }
+   ],
+   "gregor|로보토미 E.G.O::램프": [
+    {
+     "date": "2026-02-23",
+     "from": "A",
+     "to": "S"
+    }
+   ],
+   "faust|흑수 - 묘 필두": [
+    {
+     "date": "2026-02-23",
+     "from": "SS",
+     "to": "SSS"
+    }
+   ]
+  }
+ },
+ "decks": [
+  {
+   "id": "hwajin",
+   "name": "화진덱 (새벽·엄지)",
+   "kw": [
+    "화상",
+    "진동"
+   ],
+   "modes": [
+    "MD",
+    "story"
+   ],
+   "core": [
+    "faust|새벽 사무소 해결사",
+    "gregor|새벽 사무소 대표",
+    "sinclair|새벽 사무소 해결사",
+    "rodion|거미집 엄지 아비",
+    "heathcliff|거미집 엄지 제자",
+    "meursault|동부 엄지 카포 IIII"
+   ],
+   "flex": [
+    "yisang|남부 리우 협회 3과",
+    "ryoshu|거미집의 검",
+    "outis|로보토미 E.G.O::마탄",
+    "ishmael|정사무소 대표",
+    "don|동부 섕크 협회 3과",
+    "honglu|마침표 사무소 대표"
+   ],
+   "evidence": [
+    "아카 9/15: 6인 구성 \"새벽사무소 3인 + 엄지듀오 + 뫼횡(카포IIII)\", 7인은 거검슈/리우 이상 추가, 7번째로 정사무소 이스·마탄 오티스 제안",
+    "아카 9/17: \"엄지3 새벽3 뤼상\", \"엄지아비 새벽3은 유지\"",
+    "아카 9/27: 현역 성능덱으로 \"엄지새벽 화진덱\" 반복 언급",
+    "게임메카: 새벽 파우스트/그레고르 \"다른 새벽 사무소 인격과 연계된 화상&진동\""
+   ],
+   "sources": [
+    "arca_deck",
+    "gamemeca",
+    "prydwen_teams"
+   ],
+   "date": "2026-09-27"
+  },
+  {
+   "id": "middle",
+   "name": "중지덱 (질투 공명 화상·출혈)",
+   "kw": [
+    "화상",
+    "출혈"
+   ],
+   "modes": [
+    "MD",
+    "story"
+   ],
+   "core": [
+    "outis|거미집 중지 아비",
+    "ishmael|거미집 중지 제자",
+    "heathcliff|중지 작은 형님",
+    "don|중지 작은 아우",
+    "meursault|중지 작은 아우",
+    "sinclair|중지 작은 아우"
+   ],
+   "flex": [
+    "gregor|로보토미 E.G.O::램프",
+    "yisang|남부 리우 협회 3과",
+    "ryoshu|로보토미 E.G.O::적안 · 참회"
+   ],
+   "evidence": [
+    "아카 9/27: \"중지맨 6인 채우면 됨 — 6인이면 질투 6공명\"",
+    "아카 9/27: \"거던이면 6인, 그 외는 7번째 램그렉이 정석\", \"거던은 중지 5인+리우 이상도\"",
+    "아카 7/20: \"중지 화출\" 4대장 덱",
+    "게임메카: 중지 아비 오티스 \"질투 공명 + 반격\""
+   ],
+   "sources": [
+    "arca_deck",
+    "gamemeca"
+   ],
+   "date": "2026-09-27"
+  },
+  {
+   "id": "ring",
+   "name": "충출덱 (약지 출혈·충전)",
+   "kw": [
+    "출혈",
+    "충전"
+   ],
+   "modes": [
+    "MD",
+    "story"
+   ],
+   "core": [
+    "honglu|거미집 약지 아비",
+    "faust|거미집 약지 제자",
+    "rodion|약지 야수파 도슨트",
+    "yisang|약지 점묘파 스튜던트"
+   ],
+   "flex": [
+    "gregor|LCE E.G.O::AEDD",
+    "heathcliff|W사 4등급 정리 요원 - CCA",
+    "meursault|약지 야수파 스튜던트",
+    "ishmael|오트쿠튀르::르루주 부티크",
+    "ryoshu|로보토미 E.G.O::적안 · 참회",
+    "meursault|R사 제 4무리 코뿔소팀"
+   ],
+   "evidence": [
+    "아카 9/26: 약루/약파우/르루주 이스/약로쟈/약르소(약상)/W 히스/충그렉(AEDD) 편성 공유 — \"편성 인원 자체는 정상\"",
+    "아카 9/27: \"충출은 약지 아비·제자 1,2번\", 르루주 이스는 거던에서 예열이 어려워 비추",
+    "아카 9/18: 적참 료슈는 거던에서 \"꼽사리\"",
+    "아카 7/20: \"약지 충출\" 4대장"
+   ],
+   "sources": [
+    "arca_deck"
+   ],
+   "date": "2026-09-27"
+  },
+  {
+   "id": "heishou",
+   "name": "흑수덱 (파열·호흡)",
+   "kw": [
+    "파열",
+    "호흡"
+   ],
+   "modes": [
+    "MD",
+    "story",
+    "RR"
+   ],
+   "core": [
+    "honglu|홍원 군주",
+    "faust|흑수 - 묘 필두",
+    "outis|흑수 - 묘",
+    "ryoshu|흑수 - 묘"
+   ],
+   "flex": [
+    "rodion|흑수 - 사",
+    "ishmael|가주 후보",
+    "yisang|흑수 - 오 필두",
+    "gregor|흑수 - 사",
+    "don|흑수 - 미",
+    "heathcliff|흑수 - 유 필두"
+   ],
+   "evidence": [
+    "아카 9/26: \"거던 흑수는 군루+묘티스면 충분, 거던 밖 흑수는 군루·묘티스·묘슈·묘파우 필요\", \"사로쟈 정도는 있는 게 좋다\"",
+    "게임메카: 홍원 군주 \"다른 흑수 인격들과 상호작용\", 묘 필두 파우 \"파열 유지\"",
+    "Prydwen 5/22 Rupture 팀: 묘 필두 파우·묘 오티스·묘 료슈·사 로쟈·가주 후보 이스·오 필두 이상·홍원 군주",
+    "Prydwen 변경 로그: 홍원 군주 SSS 승급 사유 \"흑수와 3개 아키타입\""
+   ],
+   "sources": [
+    "arca_deck",
+    "gamemeca",
+    "prydwen_teams"
+   ],
+   "date": "2026-09-26"
+  },
+  {
+   "id": "index",
+   "name": "호침덱 (검지·마침표 호흡·침잠)",
+   "kw": [
+    "호흡",
+    "침잠"
+   ],
+   "modes": [
+    "MD",
+    "story"
+   ],
+   "core": [
+    "yisang|거미집 검지 아비",
+    "don|검지 대행자 - 개화 E.G.O::대행",
+    "faust|검지 수행자:【쪽지】",
+    "honglu|마침표 사무소 대표",
+    "heathcliff|마침표 사무소 해결사",
+    "ryoshu|로보토미 E.G.O::잔향 · 외로움"
+   ],
+   "flex": [
+    "outis|LCA 우제트 선봉 3팀 팀장",
+    "sinclair|거미집 소지 제자",
+    "meursault|검계 우두머리"
+   ],
+   "evidence": [
+    "아카 9/20: \"검지3+마침표2에 잔슈까지 고정\", 7번째는 우티스 등 취향(“3검지까지만 고정”)",
+    "아카 7/20: 뤼상(검지 아비 이상)은 호침덱",
+    "게임메카: 검지 아비 이상·대행 돈·쪽지 파우스트 모두 \"침잠&호흡\"",
+    "Prydwen 5/22 Poise-Fullstops: 마침표 2인+검지 아비 이상+소지 제자 싱클"
+   ],
+   "sources": [
+    "arca_deck",
+    "gamemeca",
+    "prydwen_teams"
+   ],
+   "date": "2026-09-20"
+  },
+  {
+   "id": "jinchim",
+   "name": "진침탕 (진동·침잠)",
+   "kw": [
+    "진동",
+    "침잠"
+   ],
+   "modes": [
+    "MD"
+   ],
+   "core": [
+    "outis|LCA 우제트 선봉 3팀 팀장",
+    "yisang|로보토미 E.G.O::엄숙한 애도",
+    "ishmael|정사무소 대표",
+    "ryoshu|로보토미 E.G.O::잔향 · 외로움"
+   ],
+   "flex": [
+    "rodion|로보토미 E.G.O::눈물로 벼려낸 검",
+    "heathcliff|와일드헌트",
+    "don|흑수 - 미"
+   ],
+   "evidence": [
+    "아카 9/20: \"우티스는 진침탕에서 써야 돼서\", \"애도 이상 없어서 진침탕 완성 못함\"",
+    "아카 7/20·9/27: \"에깊 좋은 진침탕\" 1티어/현역 언급",
+    "게임메카: 정사무소 이스·잔향 료슈·우제트 오티스 \"진동&침잠\""
+   ],
+   "confidence": "낮음",
+   "confidenceNote": "구성원 전체 목록을 준 출처가 없어 언급된 인격 + 진동·침잠 키워드로 구성",
+   "sources": [
+    "arca_deck",
+    "gamemeca"
+   ],
+   "date": "2026-09-27"
+  },
+  {
+   "id": "spider",
+   "name": "거미집 (거검슈 중심)",
+   "kw": [
+    "화상",
+    "출혈",
+    "호흡"
+   ],
+   "modes": [
+    "MD",
+    "story"
+   ],
+   "core": [
+    "ryoshu|거미집의 검",
+    "yisang|거미집 검지 아비",
+    "honglu|거미집 약지 아비",
+    "rodion|거미집 엄지 아비",
+    "outis|거미집 중지 아비"
+   ],
+   "flex": [
+    "faust|거미집 약지 제자",
+    "heathcliff|거미집 엄지 제자",
+    "ishmael|거미집 중지 제자",
+    "sinclair|거미집 소지 제자"
+   ],
+   "evidence": [
+    "아카 9/27 \"현역 성능덱\": \"거미집\" 최다 언급",
+    "아카 7/20: \"거검슈 1인\"(단독 캐리)",
+    "게임메카: 거검슈 \"같은 소속이 사망할수록 강해지는\"",
+    "Prydwen/GLL: 거미집 아비 4종+거검슈 모두 SSS~SS"
+   ],
+   "confidence": "보통",
+   "confidenceNote": "거미집 아비들은 각자 다른 키워드 덱의 핵심이라, 실제로는 각 손가락 덱에 섞어 쓰는 경우가 많음",
+   "sources": [
+    "arca_deck",
+    "gamemeca"
+   ],
+   "date": "2026-09-27"
+  }
+ ]
+}
