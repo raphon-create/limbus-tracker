@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>림버스 컴퍼니 인격 수집 트래커</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="logo">LIMBUS<br>COMPANY</div>
+    <div>
+      <h1>인격 수집 트래커</h1>
+      <div class="sub" id="asof">데이터 불러오는 중…</div>
+    </div>
+  </div>
+  <div class="top-right">
+    <label class="thread">끈 <input type="number" id="thread" min="0"></label>
+    <button id="btnReset" class="ghost" title="보유 체크/파편 입력을 스크린샷 기준 기본값으로 되돌립니다">기본값 복원</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs"></nav>
+
+<main>
+  <section id="summary" class="panel"></section>
+
+  <section class="panel filters">
+    <div class="fgroup"><span class="flabel">보유</span>
+      <button data-f="own" data-v="all" class="chip on">전체</button>
+      <button data-f="own" data-v="owned" class="chip">보유</button>
+      <button data-f="own" data-v="unowned" class="chip">미보유</button>
+    </div>
+    <div class="fgroup"><span class="flabel">등급</span>
+      <button data-f="rar" data-v="3" class="chip on">000</button>
+      <button data-f="rar" data-v="2" class="chip on">00</button>
+      <button data-f="rar" data-v="1" class="chip on">0</button>
+    </div>
+    <div class="fgroup"><span class="flabel">구분</span>
+      <button data-f="kind" data-v="all" class="chip on">전체</button>
+      <button data-f="kind" data-v="pool" class="chip">상시 추출 풀</button>
+      <button data-f="kind" data-v="limited" class="chip">한정/이벤트</button>
+      <button data-f="kind" data-v="walpurgis" class="chip">발푸르기스</button>
+    </div>
+    <div class="fgroup">
+      <button data-f="craft" data-v="1" class="chip toggle">지금 교환 가능만</button>
+      <input type="search" id="q" placeholder="인격 이름 검색">
+    </div>
+  </section>
+
+  <section id="grid" class="grid"></section>
+
+  <section class="panel" id="schedule"></section>
+  <section class="panel" id="rules"></section>
+  <section class="panel" id="sources"></section>
+</main>
+<footer>팬 제작 비공식 트래커 · 보유 체크/파편 수치는 이 브라우저(localStorage)에만 저장됩니다 · 모든 시각은 KST</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

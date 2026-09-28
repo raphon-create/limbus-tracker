@@ -1,0 +1,172 @@
+import json,re,datetime,urllib.parse,statistics
+TODAY=datetime.date(2026,9,28)
+P=json.load(open('namu_parsed.json'))
+ORDER=['yisang','faust','don','ryoshu','meursault','honglu','heathcliff','ishmael','rodion','sinclair','outis','gregor']
+KO={'yisang':'이상','faust':'파우스트','don':'돈키호테','ryoshu':'료슈','meursault':'뫼르소','honglu':'홍루','heathcliff':'히스클리프','ishmael':'이스마엘','rodion':'로쟈','sinclair':'싱클레어','outis':'오티스','gregor':'그레고르'}
+PAGE={'yisang':'이상(Project Moon 세계관)/인게임 정보','faust':'파우스트(Project Moon 세계관)/인게임 정보','don':'돈키호테(Project Moon 세계관)/인게임 정보','ryoshu':'료슈/인게임 정보','meursault':'뫼르소/인게임 정보','honglu':'홍루/인게임 정보','heathcliff':'히스클리프(Project Moon 세계관)/인게임 정보','ishmael':'이스마엘(Project Moon 세계관)/인게임 정보','rodion':'로쟈(Project Moon 세계관)/인게임 정보','sinclair':'싱클레어(Project Moon 세계관)/인게임 정보','outis':'오티스(Project Moon 세계관)/인게임 정보','gregor':'그레고르(Project Moon 세계관)/인게임 정보'}
+SHARDS={'yisang':174,'faust':416,'don':79,'ryoshu':133,'meursault':707,'honglu':25,'heathcliff':122,'ishmael':116,'rodion':231,'sinclair':172,'outis':319,'gregor':180}
+# owned (names normalized to namu official spelling); screenshot-read name in comment where differing
+OWNED={
+'gregor':['쌍갈고리 해적단 부선장','흑수 - 사','불주먹 사무소 생존자','장미스패너 공방 해결사','LCB 수감자','로보토미 E.G.O::램프','에드가 가문 승계자','밤의 송곳 카피타노','라만차랜드 신부','남부 리우 협회 6과','G사 일등대리'],
+'outis':['거미집 중지 아비','LCA 우제트 선봉 3팀 팀장','흑수 - 묘','W사 3등급 정리 요원 팀장','약지 점묘파 스튜던트','T사 3등급 강력징수직 직원','LCB 수감자','남부 섕크 협회 4과','검계 살수','G사 부장'],
+'sinclair':['LCB 수감자','중지 작은 아우','거미집 소지 제자','흑수 - 유','동부 엄지 솔다토 II','남부 섕크 협회 4과 부장','쥐어들 자','북부 제뱌찌 협회 3과','마리아치 보스','로보토미 E.G.O::홍적','서부 츠바이 협회 3과','새벽 사무소 해결사','남부 츠바이 협회 6과'],
+'rodion':['흑운회 와카슈','로보토미 E.G.O::눈물로 벼려낸 검','흑수 - 사','남부 리우 협회 4과 부장','라만차랜드 공주','LCB 수감자','T사 2등급 징수직 직원','R사 제 4무리 순록팀','북부 제뱌찌 협회 3과','남부 디에치 협회 4과','남부 츠바이 협회 5과','N사 중간 망치','LCCB 대리'],
+'ishmael':['LCB 수감자','정사무소 대표','가주 후보','피쿼드호 선장','남부 리우 협회 4과','남부 시 협회 5과','오트쿠튀르::르루주 부티크','서부 츠바이 협회 3과','에드가 가문 버틀러','로보토미 E.G.O::출렁임','LCCB 대리'],
+'heathcliff':['LCB 수감자','흑수 - 유 필두','마침표 사무소 해결사','남부 세븐 협회 4과','W사 4등급 정리 요원 - CCA','로보토미 E.G.O::여우비','남부 시 협회 5과','와일드헌트','멀티크랙 사무소 해결사','피쿼드호 작살잡이','N사 작은 망치'],
+'yisang':['LCB 수감자','거미집 검지 아비','흑수 - 오 필두','남부 리우 협회 3과','남부 세븐 협회 6과','피쿼드호 일등 항해사','N사 E.G.O::흉탄','LCE E.G.O::차원찢개','LCE E.G.O::초롱','약지 점묘파 스튜던트','남부 디에치 협회 4과','W사 3등급 정리 요원'],
+'faust':['LCB 수감자','검지 수행자:【쪽지】','흑수 - 묘 필두','쥐는 자','살아남은 로보토미 직원','워더링하이츠 버틀러','LCE E.G.O::홍염살','동부 시 협회 3과','남부 츠바이 협회 4과','W사 2등급 정리 요원'],
+'don':['LCB 수감자','중지 작은 아우','검지 대행자 - 개화 E.G.O::대행','흑수 - 미','동부 섕크 협회 3과','로보토미 E.G.O::사랑과 증오의 이름으로','라만차랜드 실장','W사 3등급 정리 요원','T사 3등급 징수직 직원','남부 시 협회 5과 부장','로보토미 E.G.O::초롱','남부 섕크 협회 5과 부장','N사 중간 망치'],
+'ryoshu':['LCB 수감자','로보토미 E.G.O::잔향 · 외로움','홍원 방랑무사','흑수 - 묘','N사 E.G.O::경멸, 경외','남부 세븐 협회 6과','LCCB 대리','남부 리우 협회 4과','오트쿠튀르::르누아르 신발관','20구 유로지비','에드가 가문 치프 버틀러','W사 3등급 정리 요원','료.고.파. 주방장','흑운회 와카슈'],
+'meursault':['검계 우두머리','중지 작은 아우','로보토미 E.G.O::호넷【변조】','동부 엄지 카포 IIII','서부 섕크 협회 3과','데드레빗츠 보스','장미스패너 공방 해결사','라만차랜드 왕자','남부 디에치 협회 4과 부장','LCB 수감자','약지 야수파 스튜던트','N사 큰 망치','남부 리우 협회 6과'],
+'honglu':['LCB 수감자','홍원 군주','마침표 사무소 대표','송곳니 사냥 사무소 해결사','흑운회 와카슈','남부 리우 협회 5과','R사 제 4무리 순록팀','남부 디에치 협회 4과','W사 2등급 정리 요원','콩콩이파 두목'],
+}
+EQUIPPED={'gregor':'쌍갈고리 해적단 부선장','meursault':'검계 우두머리','rodion':'흑운회 와카슈'}
+OCR_FIX={'outis':{'LCA 우제트 선봉 3팀 팀장':'LCA 우제트 선봉 3림 팀장 (게임 폰트상 "팀"이 "림"처럼 보임)','남부 섕크 협회 4과':'남부 생크 협회 4과'},
+ 'sinclair':{'쥐어들 자':'쥐어든 자','북부 제뱌찌 협회 3과':'북부 제바찌 협회 3과','동부 엄지 솔다토 II':'동부 엄지 솔다토II','남부 섕크 협회 4과 부장':'남부 생크 협회 4과 부장'},
+ 'rodion':{'북부 제뱌찌 협회 3과':'북부 제바찌 협회 3과'},
+ 'faust':{'검지 수행자:【쪽지】':'검지 수행자:[쪽지]'},'meursault':{'동부 엄지 카포 IIII':'동부 엄지 카포IIII','로보토미 E.G.O::호넷【변조】':'로보토미 E.G.O::호넷[번조]','서부 섕크 협회 3과':'서부 생크 협회 3과'},
+ 'ryoshu':{'로보토미 E.G.O::잔향 · 외로움':'로보토미 E.G.O::잔향·외로움'}}
+ROM={'I':1,'II':2,'III':3,'IV':4,'V':5,'VI':6,'VII':7,'VIII':8,'IX':9,'X':10,'Ⅰ':1,'Ⅱ':2,'Ⅲ':3,'Ⅳ':4,'Ⅴ':5,'Ⅵ':6,'Ⅶ':7,'Ⅷ':8,'Ⅸ':9,'Ⅹ':10}
+CUR_SEASON=8
+WN=[(1,'2023-10-26 12:00','2023-11-09 09:59'),(2,'2024-01-11 12:00','2024-01-25 10:00'),(3,'2024-05-02 12:00','2024-05-16 10:00'),(4,'2024-09-05 12:00','2024-09-19 10:00'),(5,'2025-01-09 12:00','2025-01-23 10:00'),(6,'2025-07-17 12:00','2025-07-31 10:00'),(7,'2025-11-06 12:00','2025-11-20 10:00'),(8,'2026-03-05 12:00','2026-03-19 10:00'),(9,'2026-07-09 12:00','2026-07-23 10:00')]
+d=lambda s: datetime.date.fromisoformat(s[:10])
+starts=[d(w[1]) for w in WN]
+iv=[(starts[i+1]-starts[i]).days for i in range(len(starts)-1)]
+recent=iv[-4:]  # WN5->6 .. WN8->9
+est_mid=starts[-1]+datetime.timedelta(days=round(statistics.mean(iv[-3:])))
+est_lo=starts[-1]+datetime.timedelta(days=min(iv[-3:]))
+est_hi=starts[-1]+datetime.timedelta(days=max(iv[-3:]))
+# sinner rotation
+B=json.load(open('banners.json'))
+rot={}
+for k in ORDER:
+    ds=sorted(d(b[1]) for b in B if b[0]==f'{KO[k]} 특정 추출')
+    rot[k]=ds
+all_iv=[]
+for k in ORDER:
+    ds=[x for x in rot[k] if x>=datetime.date(2025,1,1)]
+    all_iv+= [(ds[i+1]-ds[i]).days for i in range(len(ds)-1)]
+q=statistics.quantiles(all_iv,n=4); rot_min=int(q[0]); rot_med=int(q[1]); rot_max=int(q[2]); CLAMP=datetime.date(2026,10,8)
+def rot_est(k):
+    last=rot[k][-1]
+    lo=last+datetime.timedelta(days=int(rot_min)); mid=last+datetime.timedelta(days=int(rot_med)); hi=last+datetime.timedelta(days=int(rot_max))
+    lo=max(lo,CLAMP); mid=max(mid,CLAMP); hi=max(hi,CLAMP+datetime.timedelta(days=28))
+    return last,lo,mid,hi
+def classify(e):
+    s=e['시즌'].strip(); ob=e['획득 방법']
+    rar=int(re.search(r'(\d)성',e['인격 등급']).group(1))
+    t={'rarity':rar}
+    if ob.strip()=='기본': t['type']='base'
+    elif s=='통상': t['type']='standard'
+    elif s.startswith('발푸르기스의 밤'):
+        num=s.replace('발푸르기스의 밤','').strip(); t['type']='walpurgis'; t['wn']=ROM.get(num)
+    else:
+        m=re.match(r'(\d+)\s*(\[이벤트\])?',s); t['season']=int(m.group(1))
+        if m.group(2):
+            if '출석' in ob: t['type']='attendance'
+            elif '이벤트 추출' in ob or re.search(r'추출 \(시즌 \d 이후\) / \S+ 특정 추출',ob): t['type']='seasonEventGacha'
+            else: t['type']='eventReward'
+        else: t['type']='season'
+    return t
+TYPE_KO={'base':'기본 지급','standard':'통상(상시) 인격','season':'시즌 추출 인격','seasonEventGacha':'시즌 이벤트 추출 인격 (한정성)','eventReward':'이벤트 보상(배포) 인격','attendance':'출석 이벤트 보상 인격','walpurgis':'발푸르기스의 밤 한정 인격'}
+out_s=[];report={}
+for k in ORDER:
+    ids=[]; owned=set(OWNED[k]); matched=set()
+    last,lo,mid,hi=rot_est(k)
+    for e in P[k]:
+        c=classify(e); n=e['name']; r=c['rarity']; ty=c['type']
+        rel=e['출시 시기'].replace('.','-')
+        cost={1:None,2:150,3:400}[r]
+        it={'name':n,'rarity':r,'release':rel,'seasonLabel':e['시즌'].strip(),'type':ty,'typeKo':TYPE_KO[ty],'obtainRaw':e['획득 방법'],'keywords':e.get('특성 키워드',''),'shardCost':cost,'source':'https://namu.wiki/w/'+urllib.parse.quote(PAGE[k])}
+        if 'season' in c: it['season']=c['season']
+        if 'wn' in c: it['wn']=c['wn']
+        # availability rules (as of TODAY, season 8)
+        if ty=='base':
+            it.update(standardPool=False,limited=False,craftNow=False,craftNote='기본 지급 (교환 대상 아님)',next='보유 (기본 지급)')
+        elif ty=='standard':
+            it.update(standardPool=True,limited=False,craftNow=True,craftNote=f'자아 파편 {cost}개로 상시 교환 가능',next='상시: 모든 추출 배너 + 자판기 교환')
+        elif ty=='season':
+            S=c['season']
+            if S==CUR_SEASON:
+                rd=d(rel)+datetime.timedelta(days=7)
+                it.update(standardPool=True,limited=False,craftFromDate=rd.isoformat(),craftNow=TODAY>=rd,craftNote=f'시즌 {S} 인격: 출시 1주 후({rd.isoformat()})부터 시즌 {S} 종료까지 교환 가능, 시즌 {S+1} 동안 불가, 시즌 {S+2}부터 다시 가능',next='통상 추출 풀에 포함 (지금 추출 가능)')
+            elif S==CUR_SEASON-1:
+                it.update(standardPool=True,limited=False,craftNow=False,craftNote=f'시즌 {S} 인격: 시즌 {CUR_SEASON} 동안 자판기 교환 불가 → 시즌 {S+2} 개시 후 교환 가능 (시즌 9 시작일 미정)',next=f'통상 추출 풀에 포함 (지금 추출 가능) / 교환은 시즌 {S+2}부터')
+            else:
+                it.update(standardPool=True,limited=False,craftNow=True,craftNote=f'시즌 {S} 인격: 시즌 {S+2} 이후 상시 교환 가능',next='통상 추출 풀에 포함 + 자판기 교환')
+        elif ty in ('seasonEventGacha','eventReward','attendance'):
+            S=c['season']
+            rotnote=f"{KO[k]} 특정 추출(수감자 로테이션) — 최근 {last.isoformat()} / 다음 예상 {lo.strftime('%Y-%m')}~{hi.strftime('%Y-%m')} (중앙값 기준 {mid.strftime('%Y-%m')} 경)"
+            if S<=CUR_SEASON-2:
+                it.update(standardPool=False,limited=True,craftNow=True,craftNote=f'시즌 {S} 이벤트 인격: 시즌 {S+2} 이후 자판기 교환 가능',next='지금 자판기 교환 가능 / 추출은 '+rotnote,nextEstimate={'from':lo.isoformat(),'to':hi.isoformat(),'kind':'rotation'})
+            elif S==CUR_SEASON-1:
+                it.update(standardPool=False,limited=True,craftNow=False,craftNote=f'시즌 {S} 이벤트 인격: 시즌 {CUR_SEASON} 동안 교환 불가, 시즌 {S+2}부터 교환 가능 (시즌 9 시작일 미정)',next='시즌 8 중에는 '+rotnote+' 에서만 추출 가능'+(' / 시즌 7 3성 확정 추출권으로도 획득 가능' if ty=='seasonEventGacha' else ''),nextEstimate={'from':lo.isoformat(),'to':hi.isoformat(),'kind':'rotation'})
+            else:
+                it.update(standardPool=False,limited=True,craftNow=False,craftNote='현재 시즌 이벤트 인격 (확인 필요)',next='확인 필요')
+        elif ty=='walpurgis':
+            it.update(standardPool=False,limited=True,craftNow=False,craftWindow='walpurgis',craftNote=f"발푸르기스의 밤 한정: 제{c['wn']}회에서 첫 출시 → 제{c['wn']+1}회 이후의 발푸르기스의 밤 기간 중에만 자판기 교환 가능 (현재 비활성)",next=f"다음 발푸르기스의 밤 (제10회: 공식 미발표, 예상 {est_lo.isoformat()}~{est_hi.isoformat()} 시작)",nextEstimate={'from':est_lo.isoformat(),'to':est_hi.isoformat(),'kind':'walpurgis'})
+        it['ownedFromScreenshot']= n in owned
+        if n in owned: matched.add(n)
+        if EQUIPPED.get(k,'LCB 수감자')==n: it['equipped']=True
+        if n in OCR_FIX.get(k,{}): it['ocrRead']=OCR_FIX[k][n]
+        ids.append(it)
+    # upcoming announced
+    if k=='don':
+        ids.append({'name':'오트쿠튀르::르누아르 브랜드 매니저','rarity':3,'release':'2026-10-01','seasonLabel':'8','season':8,'type':'season','typeKo':'시즌 추출 인격 (출시 예정)','upcoming':True,'obtainRaw':'2026-10-01 12:00 ~ 10-15 10:00 (KST) 신규 특정 추출 예정 (공식 Steam 공지 2026-09-25) — 획득 경로 세부는 출시 후 확인 필요','keywords':'','shardCost':400,'standardPool':None,'limited':False,'craftNow':False,'craftFromDate':'2026-10-08','craftNote':'시즌 인격 규칙상 출시 1주 후(2026-10-08 예상)부터 교환 가능 — 출시 후 확인 필요','next':'공식: 2026-10-01 12:00 KST 특정 추출 시작 예정','source':'https://store.steampowered.com/news/app/1973530/view/1844751498223856 ; https://namu.wiki/w/'+urllib.parse.quote(PAGE['don']),'ownedFromScreenshot':False})
+    miss=owned-matched
+    assert not miss,(k,miss)
+    out_s.append({'id':k,'name':KO[k],'shardsDefault':SHARDS[k],'screenshot':True,'identities':ids,'rotationHistory':[x.isoformat() for x in rot[k]],'rotationEstimate':{'last':last.isoformat(),'from':lo.isoformat(),'mid':mid.isoformat(),'to':hi.isoformat()}})
+banners=[{'name':b[0],'start':b[1],'end':b[2]} for b in B]
+data={
+ 'meta':{'title':'림버스 컴퍼니 인격 수집 트래커','asOf':TODAY.isoformat(),'currentSeason':8,'currentSeasonName':'시즌 8 (PUNCTUM)','seasonStart':'2026-09-17','threadDefault':1753,
+   'sources':[
+     {'name':'나무위키 — 각 수감자 /인게임 정보 문서 (인격 목록·출시일·획득 방법·교환 규칙, 2026-09-27 전후 수정본)','url':'https://namu.wiki/w/'+urllib.parse.quote('분류:Limbus Company/인격 및 E.G.O')},
+     {'name':'나무위키 — Limbus Company/추출 (자판기(정가) 규칙, 특정 추출·발푸르기스의 밤 전체 일정)','url':'https://namu.wiki/w/'+urllib.parse.quote('Limbus Company/추출')},
+     {'name':'Limbus Company Wiki (wiki.gg) — List of Identities (교차 확인)','url':'https://limbuscompany.wiki.gg/wiki/List_of_Identities'},
+     {'name':'Limbus Company Wiki (wiki.gg) — Identities (승급(Uptie) 비용 표)','url':'https://limbuscompany.wiki.gg/wiki/Identities'},
+     {'name':'Steam 공식 공지 — 2026.10.01 (KST) New Identity Target Extraction (2026-09-25 17:59 KST 게시)','url':'https://store.steampowered.com/news/app/1973530/view/1844751498223856'},
+     {'name':'Steam 공식 공지 — Guide on Season 8: Punctum (2026-09-07 게시; 시즌 전환 시 파편 1/2 이월)','url':'https://store.steampowered.com/news/app/1973530/view/1842846814452550'},
+   ]},
+ 'craftRules':{
+   'costs':{'1':None,'2':150,'3':400,'egoNote':'E.G.O 교환도 400'},
+   'currencyName':'자아 파편 (인격 조각) — 수감자별 별도 재화, 인게임 "파편::끈 교환기" 화면에서 확인',
+   'rules':[
+     '2성 인격 = 해당 수감자 자아 파편 150개, 3성 인격(및 E.G.O) = 400개로 자판기에서 확정 교환(“정가”). 1성(LCB 수감자)은 기본 지급.',
+     '통상(시즌 0) 인격: 항상 교환 가능.',
+     '시즌 인격: 출시 후 1주일은 추출로만 획득 → 이후 해당 시즌 종료까지 교환 가능 → 다음 시즌(현재 시즌-1 인격) 동안 교환 불가 → 두 시즌 뒤부터 다시 상시 교환 가능. 시즌 인격은 시즌이 끝나도 일반 추출 풀에 남음.',
+     '시즌 이벤트 인격(이벤트 추출/배포): 시즌 종료 후 일반 추출 풀에서 빠짐. 다음 시즌에는 해당 수감자 특정 추출(로테이션)로만 추출 가능, 두 시즌 뒤부터 교환 가능.',
+     '발푸르기스의 밤 인격: 첫 회차에는 추출로만 획득. 이후 회차의 발푸르기스의 밤 기간(약 2주) 동안에만 교환 가능.',
+     '시즌이 바뀌면 이전 시즌 자아 파편의 절반(올림)이 새 시즌으로 이월되고 나머지는 끈으로 전환됨 (시즌 8 가이드 공지).',
+     '특정 추출 천장: 추출 1회당 이상[理想] 1개, 200개로 대표 3성/E.G.O 교환. 기간 종료 시 남은 이상은 끈으로 전환.'],
+   'thread':[
+     '끈은 인격 교환(정가)에는 쓰이지 않음 — 교환은 자아 파편만 사용.',
+     '끈 용도: 인격 동기화(Uptie). 2성: 2단계 10, 3단계 40, 4단계 100 + 파편 30 / 3성: 2단계 20, 3단계 80, 4단계 150 + 파편 50 / 1성: 4단계 50 + 파편 20 (1성 2·3단계는 스토리 진행으로 자동).',
+     '즉 새 3성 인격을 4동기화까지 올리려면 끈 250 + 그 수감자 파편 50이 추가로 필요 (2성: 끈 150 + 파편 30).',
+     '자아 파편 → 끈 전환 기능이 있음(전환 비율은 확인 필요). E.G.O 해석, 외형 투영(실타래 125: 같은 수감자 파편 1:1, 타 수감자 파편 2:1, 끈 2:1)에도 파편/끈 사용.'],
+   'sources':['https://namu.wiki/w/'+urllib.parse.quote('Limbus Company/추출'),'https://limbuscompany.wiki.gg/wiki/Identities','https://store.steampowered.com/news/app/1973530/view/1842846814452550']},
+ 'schedule':{
+   'official':[
+     {'name':'오트쿠튀르::르누아르 신발관 료슈 · 르루주 부티크 이스마엘 특정 추출','start':'2026-09-17 12:00','end':'2026-10-01 10:00','status':'진행 중','source':'https://namu.wiki/w/'+urllib.parse.quote('Limbus Company/추출')},
+     {'name':'뫼르소 특정 추출 (수감자 로테이션)','start':'2026-09-17 12:00','end':'2026-10-08 10:00','status':'진행 중','source':'https://namu.wiki/w/'+urllib.parse.quote('Limbus Company/추출')},
+     {'name':'오트쿠튀르::수선실 로쟈 특정 추출','start':'2026-09-24 12:00','end':'2026-10-08 10:00','status':'진행 중','source':'https://namu.wiki/w/'+urllib.parse.quote('Limbus Company/추출')+' ; https://store.steampowered.com/news/app/1973530/view/1844115010494144'},
+     {'name':'오트쿠튀르::르누아르 브랜드 매니저 돈키호테 특정 추출 (신규 3성)','start':'2026-10-01 12:00','end':'2026-10-15 10:00','status':'예정 (공식 발표)','source':'https://store.steampowered.com/news/app/1973530/view/1844751498223856 ; https://namu.wiki/w/'+urllib.parse.quote('Limbus Company/추출')},
+   ],
+   'estimates':[
+     {'name':'제10회 발푸르기스의 밤','from':est_lo.isoformat(),'to':est_hi.isoformat(),'mid':est_mid.isoformat(),'basis':f'제6~9회 시작 간격 {iv[-3:]}일 (평균 {round(statistics.mean(iv[-3:]))}일)을 제9회 시작일(2026-07-09)에 더한 값. 역대 모두 목요일 12:00 KST 시작, 2주간 진행. 공식 발표 아님.','note':'관례상 제6회부터 2회차 전 발푸르기스의 밤 복각 특정 추출이 함께 열림(6회=1·2회, 7회=2·3회, 8회=3·4회, 9회=4·5회) → 제10회에는 제5·6회 복각이 예상됨 (예상).'},
+     {'name':'수감자별 특정 추출(로테이션) 다음 회차','basis':f'2025년 이후 같은 수감자 특정 추출 간격: 하위 25% {rot_min}일, 중앙값 {rot_med}일, 상위 25% {rot_max}일 (n={len(all_iv)}). 수감자별 “최근 회차 + 간격”으로 범위를 추정하고, 현재 공개된 일정(~2026-10-08) 이후로 보정. 2025~26년 수감자 로테이션은 약 2주마다 1명씩 교대로 진행됨. 공식 발표 아님, 신뢰도 낮음.'}],
+   'walpurgisHistory':[{'no':w[0],'start':w[1],'end':w[2]} for w in WN],
+   'walpurgisIntervals':iv,
+   'bannerHistory':banners[-40:],
+   'walpurgisActive':[],
+   'timezone':'모든 시각 KST (UTC+9)'},
+ 'sinners':out_s}
+json.dump(data,open('/workspace/limbus-site/data.json','w'),ensure_ascii=False,indent=1)
+# report
+for s in out_s:
+    ids=[i for i in s['identities'] if not i.get('upcoming')]
+    own=[i for i in ids if i['ownedFromScreenshot']]; un=[i for i in ids if not i['ownedFromScreenshot']]
+    print(f"\n## {s['name']}: 보유 {len(own)} / 전체 {len(ids)} / 미보유 {len(un)}  (파편 {s['shardsDefault']})")
+    for i in un:
+        cr='교환가능' if (i['craftNow'] and i['shardCost'] and s['shardsDefault']>=i['shardCost']) else ('교환규칙OK·파편부족' if i['craftNow'] else '현재 교환불가')
+        print(f"  - [{i['rarity']}성] {i['name']} | {i['typeKo']} | {i['release']} | {cr} | {i['next']}")
+print('WN iv',iv,est_lo,est_mid,est_hi,'rot',rot_min,rot_med,rot_max)

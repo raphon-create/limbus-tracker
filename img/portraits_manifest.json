@@ -1,0 +1,1319 @@
+{
+ "yisang|LCB 수감자": {
+  "portrait": "img/yisang_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/e/e9/LCB_Sinner_Yi_Sang.png/revision/latest?cb=20240712085907",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Yi_Sang.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "yisang|남부 세븐 협회 6과": {
+  "portrait": "img/yisang_seven_assoc_south_section_6.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/3/34/Seven_Assoc._South_Section_6_Yi_Sang.png/revision/latest?cb=20230228050408",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Seven_Assoc._South_Section_6_Yi_Sang.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "yisang|어금니 사무소 해결사": {
+  "portrait": "img/yisang_molar_office_fixer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/5/59/Molar_Office_Fixer_Yi_Sang.png/revision/latest?cb=20230911174151",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Molar_Office_Fixer_Yi_Sang.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "yisang|피쿼드호 일등 항해사": {
+  "portrait": "img/yisang_the_pequod_first_mate.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/0/04/The_Pequod_First_Mate_Yi_Sang.png/revision/latest?cb=20231207082227",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:The_Pequod_First_Mate_Yi_Sang.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "yisang|남부 디에치 협회 4과": {
+  "portrait": "img/yisang_dieci_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/f/f7/Dieci_Assoc._South_Section_4_Yi_Sang.png/revision/latest?cb=20240125040534",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Dieci_Assoc._South_Section_4_Yi_Sang.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "yisang|LCE E.G.O::초롱": {
+  "portrait": "img/yisang_lce_e_g_o_lantern.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/Zz-sOQ7SASS7HdvwtHs1KzLuvB-xDKwf0Nz0ML-kkSzmDoagrQmreEf-b_7nUtrpfkeH9kF36gyXloNFtX3tssunKh2GOf_cx2ShiMtzjgp5cG34kDMD0l_TdycUL2HMwCP90B9NzuPeEpL4YhFfOw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%83%81%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.2.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "yisang|검계 살수": {
+  "portrait": "img/yisang_blade_lineage_salsu.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/7/7c/Blade_Lineage_Salsu_Yi_Sang.png/revision/latest?cb=20230228050056",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Blade_Lineage_Salsu_Yi_Sang.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "yisang|개화 E.G.O::동백": {
+  "portrait": "img/yisang_effloresced_e_g_o_spicebush.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/8/83/Effloresced_E.G.O_Spicebush_Yi_Sang.png/revision/latest?cb=20230615171148",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Effloresced_E.G.O::Spicebush_Yi_Sang.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "yisang|W사 3등급 정리 요원": {
+  "portrait": "img/yisang_w_corp_l3_cleanup_agent.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/a/a3/W_Corp._L3_Cleanup_Agent_Yi_Sang.png/revision/latest?cb=20231109083235",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:W_Corp._L3_Cleanup_Agent_Yi_Sang.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "yisang|약지 점묘파 스튜던트": {
+  "portrait": "img/yisang_the_ring_pointillist_student.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/1/1e/The_Ring_Pointillist_Student_Yi_Sang.png/revision/latest?cb=20240516033043",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:The_Ring_Pointillist_Student_Yi_Sang.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "yisang|로보토미 E.G.O::엄숙한 애도": {
+  "portrait": "img/yisang_lobotomy_e_g_o_solemn_lament.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/s0BIi42QNjrJS-YGDBoYVknWd9EmRT5tv6SZbtd-F5P1qRWacYQ7BV5qH_Jb6B8qaIGqLASlnLEPqbQdeIvmqLJKqxywJNjmIgEF1NYnhELjC4hW8Fk98gafiaa1YvMkT4Na_viOs6IsPhXne2EhqA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%83%81%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "yisang|남부 리우 협회 3과": {
+  "portrait": "img/yisang_liu_assoc_south_section_3.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/3GO8-25bnXHrvkMFzMRaJuoNvDwWyK3MaRXKX08STyxtWRKEASHsKygL232VqtvblJvXHzmgO5e3uzoAiKeRRTGoX-h74Px8jTID3Kk6JyRrKKWiK94WpdfSsAfcERWR7bvy151IjKetIfu2YTKVAw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%83%81%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "yisang|N사 E.G.O::흉탄": {
+  "portrait": "img/yisang_n_corp_e_g_o_fell_bullet.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/lYa-_srRJszYwY0c5L5eKwbTXThU-W3Y0p_Zm8ARPvm6k0Pc1uyDWlhYC1xCyixFNb9LvuSNLtrwbm9lQWoCI7cGgBy4EtWKH3z3BDXnWP67GkEU9Jqe5sJWoYdVWz7dLcvGq7ft2nrwre092BFzNA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%83%81%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "yisang|흑수 - 오 필두": {
+  "portrait": "img/yisang_heishou_pack_wu_branch_adept.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/xkE-QSNTFLuZ_LPpW2fWEDOk0_7E_jn1gbpiUnzGxlb5qUhD5yJq8-aVZE4VjKjUIZG_Q7j-1iywubQC8zRC2OxpWFQWpKcidYIrFs9pFzK0_6Ff3IaPrjdCjKdua27tpkL1W3oDe95yJRlCG54xxg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%83%81%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "yisang|거미집 검지 아비": {
+  "portrait": "img/yisang_the_house_of_spiders_the_index_nursefather.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/TgVhlYPZkzQzirgd7uPEH7dSzfIMOXkmwaApfohadwL8z1d1-ns9-1mpUE9vmDYBihDY6ta0Y4pKZBjejP7q4Ppp5lCqLd3Bt2yMzsckGT3PTgtX8bkuwaLWgPS3RU4j7pBPbseVdF2QvlrMOQK3kw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%83%81%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "yisang|LCE E.G.O::차원찢개": {
+  "portrait": "img/yisang_lce_e_g_o_dimension_shredder.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/q1Lt9Zt355rh6oK3Jf4X4HLWY6ql56SXtpIUJvxFup9PlDiTFRhGcw-uP6ebebXMBD48sz7hwpcyrvEzHdwNPXAJSQl_X65E5Ot0C8_60qfFLInCcbOchiOGGVnU1VYGEnIlVUqHbBVq_POr9EE-aw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%83%81%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "faust|LCB 수감자": {
+  "portrait": "img/faust_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/a/a8/LCB_Sinner_Faust.png/revision/latest?cb=20230314110407",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Faust.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "faust|W사 2등급 정리 요원": {
+  "portrait": "img/faust_w_corp_l2_cleanup_agent.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/4/4e/W_Corp._L2_Cleanup_Agent_Faust.png/revision/latest?cb=20230313154409",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:W_Corp._L2_Cleanup_Agent_Faust.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "faust|살아남은 로보토미 직원": {
+  "portrait": "img/faust_lobotomy_corp_remnant.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/e/ef/Lobotomy_Corp._Remnant_Faust.png/revision/latest?cb=20230228050533",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Lobotomy_Corp._Remnant_Faust.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "faust|남부 츠바이 협회 4과": {
+  "portrait": "img/faust_zwei_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/9/92/Zwei_Assoc._South_Section_4_Faust.png/revision/latest?cb=20230810171104",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Zwei_Assoc._South_Section_4_Faust.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "faust|워더링하이츠 버틀러": {
+  "portrait": "img/faust_wuthering_heights_butler.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/f/fb/Wuthering_Heights_Butler_Faust.png/revision/latest?cb=20240404031400",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Wuthering_Heights_Butler_Faust.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "faust|쥐는 자": {
+  "portrait": "img/faust_the_one_who_grips.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/3/36/The_One_Who_Grips_Faust.png/revision/latest?cb=20230323045342",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:The_One_Who_Grips_Faust.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "faust|남부 세븐 협회 4과": {
+  "portrait": "img/faust_seven_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/e/e3/Seven_Assoc._South_Section_4_Faust.png/revision/latest?cb=20230907173821",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Seven_Assoc._South_Section_4_Faust.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "faust|로보토미 E.G.O::후회": {
+  "portrait": "img/faust_lobotomy_e_g_o_regret.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/d/df/Lobotomy_E.G.O_Regret_Faust.png/revision/latest?cb=20231026040805",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Lobotomy_E.G.O::Regret_Faust.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "faust|검계 살수": {
+  "portrait": "img/faust_blade_lineage_salsu.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/a/a0/Blade_Lineage_Salsu_Faust.png/revision/latest?cb=20240222034438",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Blade_Lineage_Salsu_Faust.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "faust|멀티크랙 사무소 대표": {
+  "portrait": "img/faust_multicrack_office_rep.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/09fIztX8Pvcw8eL5IQfe2lJKfzXn1OY2mZm37WizaZAi398FD4Y1ycw1WHoDELxUxE9M23dCK20k0OMVHDmuk82n4hvVdr78jiClkW65yg_J26pihoOhysFdkpSdMlA2IC0jKABKo852Ke_cGsqjJw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%8C%8C%EC%9A%B0%EC%8A%A4%ED%8A%B8%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "faust|LCE E.G.O::홍염살": {
+  "portrait": "img/faust_lce_e_g_o_ardor_blossom_star.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/l24-RsL5XjfXyHEJOsFb2LaRHVjenmnjeVUs4SVjoM-8TcYdLkrGzFbFi7KJoZCQoGV4cNu3T16V4vkhIAdBJbsSVFE4IjYIqFooXWO0a0BQKxtn3DYUlogG6Q7xMhc6YUMvv3Yct7DuOc5CTPMjBA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%8C%8C%EC%9A%B0%EC%8A%A4%ED%8A%B8%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "faust|흑수 - 묘 필두": {
+  "portrait": "img/faust_heishou_pack_mao_branch_adept.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/1H3XDasQ8kYBCj0V3swmyl18w46rFoeJ91PtNRKa1wGo0Fx3tDcsK-7Aymk3joMSIZmMJeeuWjX3QDIISBidLCXChIt5yxzvzqvMQhGJEd-4cGGb3DvMQ4hQkH0LwqETisJZnUDuIf-meKc5-sDfTw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%8C%8C%EC%9A%B0%EC%8A%A4%ED%8A%B8%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "faust|동부 시 협회 3과": {
+  "portrait": "img/faust_shi_assoc_east_section_3.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/NPO8bQ9z3G-AAJT471M7OGU8LdrolKUAD2_K_AkdUsmSM_rdMSHQJrwy8KqYMse43PZjZwTmYvtdU2E6JSotGVuCd0tEqbmbzZ0HjSGfq5qFp-8eBwLjTUy-HLOYfXze_kK-CTrhK68fX6tPlitWAQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%8C%8C%EC%9A%B0%EC%8A%A4%ED%8A%B8%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "faust|검지 수행자:【쪽지】": {
+  "portrait": "img/faust_the_index_proselyte_paper_slip.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/gZHlo4x2NEDDPuKePyc4a2boKfphtxjeI78KhbvKVEjeCDla3OjldsweVcg9NawtPwes8wbk64hzb30H88RKw-s-M9R1HMyBk8OwyvUAX0mwUjcUhcf1UduD5-dFNCYYJlwsG_dbZbwLW4QeyKreUg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%8C%8C%EC%9A%B0%EC%8A%A4%ED%8A%B8%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "faust|거미집 약지 제자": {
+  "portrait": "img/faust_the_house_of_spiders_the_ring_apprentice.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/b96u32Tj9s_0iBebC3c9hR0bFKLHKjsuP5oX02iLv-ORN9RlBIh0kGkA_8HnGxHRXx8KiqASRzyBCxc3lVUBIVF9WHes1Mi1asb-hH-32jrABVcBjh8gcDlpHW1aL8LJMezKRLzRzQEXnOEDi2Cpmg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%8C%8C%EC%9A%B0%EC%8A%A4%ED%8A%B8%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "faust|새벽 사무소 해결사": {
+  "portrait": "img/faust_dawn_office_fixer.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/pgVcQJGwo8J9t4AJ_ISQLSf7EG93bx7O8Juka-2x66MZwDAC5bRhssNQj-vieVPysbQ3DzTiR2DuAQxVDCsQlMD7Bvc733JNxavwwON6uxP35VCwW5rU2lRWN3V0otJwuUH_E76kqDEJo19h6cxmQw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%8C%8C%EC%9A%B0%EC%8A%A4%ED%8A%B8%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.11",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(center)"
+ },
+ "don|LCB 수감자": {
+  "portrait": "img/don_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/5/55/LCB_Sinner_Don_Quixote.png/revision/latest?cb=20230310193701",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Don_Quixote.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "don|남부 시 협회 5과 부장": {
+  "portrait": "img/don_shi_assoc_south_section_5_director.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/8/8d/Shi_Assoc._South_Section_5_Director_Don_Quixote.png/revision/latest?cb=20230322230858",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Shi_Assoc._South_Section_5_Director_Don_Quixote.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "don|N사 중간 망치": {
+  "portrait": "img/don_n_corp_mittelhammer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/2/23/N_Corp._Mittelhammer_Don_Quixote.png/revision/latest?cb=20230504045843",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:N_Corp._Mittelhammer_Don_Quixote.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "don|로보토미 E.G.O::초롱": {
+  "portrait": "img/don_lobotomy_e_g_o_lantern.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/6/68/Lobotomy_E.G.O_Lantern_Don_Quixote.png/revision/latest?cb=20240111071821",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Lobotomy_E.G.O::Lantern_Don_Quixote.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "don|검계 살수": {
+  "portrait": "img/don_blade_lineage_salsu.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/4/4a/Blade_Lineage_Salsu_Don_Quixote.png/revision/latest?cb=20240222033909",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Blade_Lineage_Salsu_Don_Quixote.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "don|W사 3등급 정리 요원": {
+  "portrait": "img/don_w_corp_l3_cleanup_agent.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/4/4a/W_Corp._L3_Cleanup_Agent_Don_Quixote.png/revision/latest?cb=20230322230927",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:W_Corp._L3_Cleanup_Agent_Don_Quixote.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "don|남부 섕크 협회 5과 부장": {
+  "portrait": "img/don_cinq_assoc_south_section_5_director.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/6/60/Cinq_Assoc._South_Section_5_Director_Don_Quixote.png/revision/latest?cb=20230720070112",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Cinq_Assoc._South_Section_5_Director_Don_Quixote.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "don|중지 작은 아우": {
+  "portrait": "img/don_the_middle_little_sister.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/1/14/The_Middle_Little_Sister_Don_Quixote.png/revision/latest?cb=20231123042257",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:The_Middle_Little_Sister_Don_Quixote.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "don|T사 3등급 징수직 직원": {
+  "portrait": "img/don_t_corp_class_3_collection_staff.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/6z2IgER1pml8-EWIq15scyVODZ7auPuKi8aEdPIpzNv4MT5uyO4YDQB6mZTGOnk6XPdQbE49sxXXtjLBXpMxiGrI1TuB1WPNb-3cWT7fnbvpQDKKVdsRdf6Gy3-qk_kFNXCtYZv7PsfLTRMrEIz4VA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%8F%88%ED%82%A4%ED%98%B8%ED%85%8C%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.4",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "don|라만차랜드 실장": {
+  "portrait": "img/don_the_manager_of_la_manchaland.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/XtllbsCt5x1Qq7ttFzEv_r4zON37neC1JgFOCDYiXzqsIc5Z1sIOcqbUv4q3-JEMzBUcvHpUdjNeYh4mcJ-cORNv1X7jy-KFxd4qrOOHzlbdKPmyAjEllpCj07YsFlBcr00r89q2f8e5BFTuuVpRZA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%8F%88%ED%82%A4%ED%98%B8%ED%85%8C%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "don|동부 섕크 협회 3과": {
+  "portrait": "img/don_cinq_assoc_east_section_3.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/sZsh1wEY00MKzD9-0xXCdELE2dGqkAasPKQHB6nMSKWzm9mXk1FwDaR5uR2jVi1rJlP5YYTuQaI_h9PRvDVoZz21rBPUBBW-xGwfkFHsIbVlmhP4I5HW6zeIplppLpiq00tPrZeYt1yYWtQU56L2rA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%8F%88%ED%82%A4%ED%98%B8%ED%85%8C%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "don|로보토미 E.G.O::사랑과 증오의 이름으로": {
+  "portrait": "img/don_lobotomy_e_g_o_in_the_name_of_love_and_hate.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/4jhCvheGLymSg5JYvDqr3oeHwj4TH8pry9TAeAFOFKYgBxSAr7onycLSBa_bIi93Q8whcuoGeEB-RjKW3w8UZkCPFQE9oo3WPqhZLkzvg9zruYBc2Kk97ofqcSaVukZ58geX_a0lQzmzJYoSLcNgkQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%8F%88%ED%82%A4%ED%98%B8%ED%85%8C%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "don|흑수 - 미": {
+  "portrait": "img/don_heishou_pack_wei_branch.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/VMcTtpSFFfEz40uH_bW5m-ewyAu2O47RPvlg1T4DQ0sO_gUgF-StD09tQQ_86ZTR0w13HAo-fLfUgnPSzC_or7HX0msXXapOLjs1PrGglflanWr8vVvg1u0rBq5ufAJz_mO__k8O1RXN8R-NqVsCpQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%8F%88%ED%82%A4%ED%98%B8%ED%85%8C%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "don|검지 대행자 - 개화 E.G.O::대행": {
+  "portrait": "img/don_the_index_proxy_effloresced_e_g_o_procuration.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/fO9EgujkMoqgYSWa4n1YaLGBGn0xSaQ2_Zf9cnGXZVYx1D2PVLD9O03IQw6ToRxntiFHhpNB1cPMF8yqGyJfFQm2rT_5tWFqRkcS_JrfAxGXbh1T8tEtzJ4IHJF4J8xRYPCoT4pssEdDWJeekGOszw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%8F%88%ED%82%A4%ED%98%B8%ED%85%8C%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "don|오트쿠튀르::르누아르 브랜드 매니저": null,
+ "ryoshu|LCB 수감자": {
+  "portrait": "img/ryoshu_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/d/da/LCB_Sinner_Ry%C5%8Dsh%C5%AB.png/revision/latest?cb=20230313183627",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Ryōshū.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ryoshu|남부 세븐 협회 6과": {
+  "portrait": "img/ryoshu_seven_assoc_south_section_6.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/f/fa/Seven_Assoc._South_Section_6_Ry%C5%8Dsh%C5%AB.png/revision/latest?cb=20230313110607",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Seven_Assoc._South_Section_6_Ryōshū.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ryoshu|LCCB 대리": {
+  "portrait": "img/ryoshu_lccb_assistant_manager.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/e/e3/LCCB_Assistant_Manager_Ry%C5%8Dsh%C5%AB.png/revision/latest?cb=20231116061508",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCCB_Assistant_Manager_Ryōshū.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ryoshu|남부 리우 협회 4과": {
+  "portrait": "img/ryoshu_liu_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/e/e0/Liu_Assoc._South_Section_4_Ry%C5%8Dsh%C5%AB.png/revision/latest?cb=20240307034313",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Liu_Assoc._South_Section_4_Ryōshū.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ryoshu|20구 유로지비": {
+  "portrait": "img/ryoshu_district_20_yurodivy.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/6/62/District_20_Yurodivy_Ry%C5%8Dsh%C5%AB.png/revision/latest?cb=20240613035936",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:District_20_Yurodivy_Ryōshū.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ryoshu|흑운회 와카슈": {
+  "portrait": "img/ryoshu_kurokumo_clan_wakashu.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/4/4e/Kurokumo_Clan_Wakashu_Ry%C5%8Dsh%C5%AB.png/revision/latest?cb=20230228050107",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Kurokumo_Clan_Wakashu_Ryōshū.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ryoshu|료.고.파. 주방장": {
+  "portrait": "img/ryoshu_r_b_chef_de_cuisine.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/7/71/R.B._Chef_de_Cuisine_Ry%C5%8Dsh%C5%AB.png/revision/latest?cb=20230420091417",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:R.B._Chef_de_Cuisine_Ryōshū.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ryoshu|W사 3등급 정리 요원": {
+  "portrait": "img/ryoshu_w_corp_l3_cleanup_agent.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/0/0e/W_Corp._L3_Cleanup_Agent_Ry%C5%8Dsh%C5%AB.png/revision/latest?cb=20230824164450",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:W_Corp._L3_Cleanup_Agent_Ryōshū.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ryoshu|에드가 가문 치프 버틀러": {
+  "portrait": "img/ryoshu_edgar_family_chief_butler.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/b/bc/Edgar_Family_Chief_Butler_Ry%C5%8Dsh%C5%AB.png/revision/latest?cb=20240418033159",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Edgar_Family_Chief_Butler_Ryōshū.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ryoshu|로보토미 E.G.O::적안 · 참회": {
+  "portrait": "img/ryoshu_lobotomy_e_g_o_red_eyes_penitence.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/DTn5BfIij2eg7u1BiTzzadCNIOs8X_YaqTr9PJprb2BxdirfRwLKM4WFCVN0OBTNVzl6c-_549s3lhBmo8o7KGoHg4zEqsOZTEgG-BMJFNUU8Z2FRA_-hmPCIWaGLOrk9cLRcZ7NJm1muzscxBOQQA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A3%8C%EC%8A%88/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "ryoshu|흑수 - 묘": {
+  "portrait": "img/ryoshu_heishou_pack_mao_branch.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/dl4RO0nsbrgBgniLq5FedQ7g-5FNi19ukHvPBoGNlDaWF4pm5YFLrOzL4KLAWh6ION0MtFKvmrSi0wu1Lf8PZWQW0Qprex9jxiSIdC8aR1Xb6B3TqK9Fe9fXgU3UQnIAF7CAdNoI9G_6NLjUhwDSFA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A3%8C%EC%8A%88/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "ryoshu|N사 E.G.O::경멸, 경외": {
+  "portrait": "img/ryoshu_n_corp_e_g_o_contempt_awe.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/L52wkQqXTYV1hy2d5oYigsxaJrPMFHem9YeBRIVygFR5-iXCXPSz93dOxay6OXY47hjMIpf9T7dhQSAMobY18nuuo4nVRDOlwFP5waZ7i6bjpuigtc41rWHOKmBDYWcHnwb-tCIoEDEn6UQE9itFmA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A3%8C%EC%8A%88/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "ryoshu|홍원 방랑무사": {
+  "portrait": "img/ryoshu_drifting_blade_of_hongyuan.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/3te0cY8UokkdrXfyqm7pMCh6yzl70TMxI5s5qYDhURoXJzRLJN6vssGV3NIh7xdnd4onuvW-ZN5gjUayxxV8FxWj9WWH5-CgUmo2Kss6UWcPeECy5rD4VA6MFCrXgNrnXZzURdOeQ8AfPSYcNtOOpQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A3%8C%EC%8A%88/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "ryoshu|로보토미 E.G.O::잔향 · 외로움": {
+  "portrait": "img/ryoshu_lobotomy_e_g_o_faint_aroma_solitude.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/E9nbDiw_OHYUXgWSS1Zb_pbD14N5iNbKX9ZncVM33L97r5iPzv2JO9Y5f0BgFwC8HK1PR0awfCfrmUu9eD759I0eO8UEAT_58vwd0PtkvPkCZ-Wb1-BzTZm9KTl3UXztdX5XrSB_Jk-OtNE4ynCaUw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A3%8C%EC%8A%88/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "ryoshu|거미집의 검": {
+  "portrait": "img/ryoshu_blade_of_the_house_of_spiders.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/Vg8JtHtTg3v286WXbeL7lHbvjqcTjuECav2DJIynPTm02LsyL_Pk38BMjICTN2tNKutKguGCHMGAcd0P3JfsQUEmcQkfG0yFlvqRXwm9RfLziRy1yOCPQaL1flSk5Ps9xxv_Vd6ah4CTgN9IkcWSZw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A3%8C%EC%8A%88/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "ryoshu|오트쿠튀르::르누아르 신발관": {
+  "portrait": "img/ryoshu_haute_couture_le_noir_footwear_hall.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/uqnJne0uLxlTQa_epC9W9mpi4hg7yw1Cn5I2KoeY7vNXm99dytuoBvC4mDeG2l-_NgcRgoYtEkj8ZcBhKTehMHvpaljPk0l4xT3yhrxVtgd-ltBuje52buSBOJJZbfhEY9Fs58ZQteODfwcpLM5ngQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A3%8C%EC%8A%88/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.11",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "meursault|LCB 수감자": {
+  "portrait": "img/meursault_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/1/11/LCB_Sinner_Meursault.png/revision/latest?cb=20230310193810",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|남부 리우 협회 6과": {
+  "portrait": "img/meursault_liu_assoc_south_section_6.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/5/57/Liu_Assoc._South_Section_6_Meursault.png/revision/latest?cb=20230228050204",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Liu_Assoc._South_Section_6_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|장미스패너 공방 해결사": {
+  "portrait": "img/meursault_rosespanner_workshop_fixer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/b/b2/Rosespanner_Workshop_Fixer_Meursault.png/revision/latest?cb=20230601202718",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Rosespanner_Workshop_Fixer_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|중지 작은 아우": {
+  "portrait": "img/meursault_the_middle_little_brother.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/c/c7/The_Middle_Little_Brother_Meursault.png/revision/latest?cb=20231123045250",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:The_Middle_Little_Brother_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|데드레빗츠 보스": {
+  "portrait": "img/meursault_dead_rabbits_boss.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/7/7f/Dead_Rabbits_Boss_Meursault.png/revision/latest?cb=20240328033113",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Dead_Rabbits_Boss_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|W사 2등급 정리 요원": {
+  "portrait": "img/meursault_w_corp_l2_cleanup_agent.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/a/a1/W_Corp._L2_Cleanup_Agent_Meursault.png/revision/latest?cb=20230228050443",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:W_Corp._L2_Cleanup_Agent_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|N사 큰 망치": {
+  "portrait": "img/meursault_n_corp_gro_hammer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/c/c0/N_Corp._Gro%C3%9Fhammer_Meursault.png/revision/latest?cb=20230314005053",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:N_Corp._Großhammer_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|R사 제 4무리 코뿔소팀": {
+  "portrait": "img/meursault_r_corp_4th_pack_rhino.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/a/ab/R_Corp._4th_Pack_Rhino_Meursault.png/revision/latest?cb=20230713202815",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:R_Corp._4th_Pack_Rhino_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|검계 우두머리": {
+  "portrait": "img/meursault_blade_lineage_mentor.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/3/36/Blade_Lineage_Mentor_Meursault.png/revision/latest?cb=20240222033429",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Blade_Lineage_Mentor_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|남부 디에치 협회 4과 부장": {
+  "portrait": "img/meursault_dieci_assoc_south_section_4_director.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/uh7HossT2y21zxyalHVPH_03kh_XQ4u1beoCpk94V4oj2Xs0rAu0blM76xqDpN2K0c7cK3GzShNsWFkaCFRxli9OUcg9V0byTbV-8y4pE_teMxX3FouStIK_Tq4APKaLT2pHFdso-6_s9pMncNkoBw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%AB%BC%EB%A5%B4%EC%86%8C/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(center)"
+ },
+ "meursault|서부 섕크 협회 3과": {
+  "portrait": "img/meursault_cinq_assoc_west_section_3.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/1/1b/Cinq_Assoc._West_Section_3_Meursault.png/revision/latest?cb=20251229190621",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Cinq_Assoc._West_Section_3_Meursault.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "meursault|동부 엄지 카포 IIII": {
+  "portrait": "img/meursault_the_thumb_east_capo_iiii.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/mWOFxTwFYtadPMUttsU72JDPfnaGP9bQeEG1ft6s49aaRpOkn8ZHTVhQP-IhME3R5TTy-3GL-IQdn67gKBhSERYSddd_irq6tj0NTh6Mv-ns9u1nWJIs4fI8J20fKiTtFRCrGp3oLO96tsrmLkX0xQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%AB%BC%EB%A5%B4%EC%86%8C/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(center)"
+ },
+ "meursault|라만차랜드 왕자": {
+  "portrait": "img/meursault_the_prince_of_la_manchaland.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/FSlTJ81IhT2yh0xPVrGYmbUnZyV90VdUjnjVS34pcxXNZGgRnUd0BXYUrroGqwpn0Pq6Iut8lvQkTdptHnBfQHILuATPjIzaRF2Il28XZp2ysOqip_iIZrPBGFdNXCEXePWPPMziUtt78HzfT7XVig.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%AB%BC%EB%A5%B4%EC%86%8C/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "meursault|로보토미 E.G.O::호넷【변조】": {
+  "portrait": "img/meursault_lobotomy_e_g_o_hornet_alteration.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/rAEo1yRr5LP5JnW-Jq4UTj2bvIJprb0XlhjiAuriSC51rSV8-BB85_3bRNZwC7GsZk6TBTFtGhhLsxCN5ddcitHE9nhNLqOtYOCqB5KFgdhHtcmFOeRkHNy_qMrzSV3fR6XH74OIXDrufk2fqr-DuA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%AB%BC%EB%A5%B4%EC%86%8C/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(center)"
+ },
+ "meursault|약지 야수파 스튜던트": {
+  "portrait": "img/meursault_the_ring_fauvist_student.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/YWoH-Rfm2tZCtfq-EFHWrXK89YWYkYbK9EYWubrtYxoXe4OrsnNtQB7m_J6-HMiFcm0d8PMPRNAS_NjoV8dWLfXm3bvaz3PpEpI43oMjGOMjprSnKNi8U7kQxPNobRgYRmw2hJrklqp_7Aj5O30hvA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%AB%BC%EB%A5%B4%EC%86%8C/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "honglu|LCB 수감자": {
+  "portrait": "img/honglu_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/9/94/LCB_Sinner_Hong_Lu.png/revision/latest?cb=20230310193739",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|흑운회 와카슈": {
+  "portrait": "img/honglu_kurokumo_clan_wakashu.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/5/55/Kurokumo_Clan_Wakashu_Hong_Lu.png/revision/latest?cb=20230228050118",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Kurokumo_Clan_Wakashu_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|남부 리우 협회 5과": {
+  "portrait": "img/honglu_liu_assoc_south_section_5.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/e/e0/Liu_Assoc._South_Section_5_Hong_Lu.png/revision/latest?cb=20230406052158",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Liu_Assoc._South_Section_5_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|W사 2등급 정리 요원": {
+  "portrait": "img/honglu_w_corp_l2_cleanup_agent.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/0/0a/W_Corp._L2_Cleanup_Agent_Hong_Lu.png/revision/latest?cb=20230824164439",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:W_Corp._L2_Cleanup_Agent_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|갈고리 사무소 해결사": {
+  "portrait": "img/honglu_hook_office_fixer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/1/18/Hook_Office_Fixer_Hong_Lu.png/revision/latest?cb=20231026040907",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Hook_Office_Fixer_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|송곳니 사냥 사무소 해결사": {
+  "portrait": "img/honglu_fanghunt_office_fixer.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/H3-HVfpu9vfNGdMMrI0nz3xajM0HB4yQQNXgfQTO5aOSqgTtLa5_3SnkShTB2VSvNwVV0ASj42dHV0JHnC4x262eCPJ0QI6F_mrjsjhymWYSbsI7K2sU-ylb5pZBhhiFmTD1ydZU1EhvvBkvc--rew.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%99%8D%EB%A3%A8/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.2.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "honglu|콩콩이파 두목": {
+  "portrait": "img/honglu_tingtang_gang_gangleader.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/a/ac/Tingtang_Gang_Gangleader_Hong_Lu.png/revision/latest?cb=20230228050604",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Tingtang_Gang_Gangleader_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|K사 3등급 적출직 직원": {
+  "portrait": "img/honglu_k_corp_class_3_excision_staff.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/7/70/K_Corp._Class_3_Excision_Staff_Hong_Lu.png/revision/latest?cb=20230629174842",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:K_Corp._Class_3_Excision_Staff_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|남부 디에치 협회 4과": {
+  "portrait": "img/honglu_dieci_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/d/d4/Dieci_Assoc._South_Section_4_Hong_Lu.png/revision/latest?cb=20240202215836",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Dieci_Assoc._South_Section_4_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|20구 유로지비": {
+  "portrait": "img/honglu_district_20_yurodivy.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/9/95/District_20_Yurodivy_Hong_Lu.png/revision/latest?cb=20240613035906",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:District_20_Yurodivy_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|마침표 사무소 대표": {
+  "portrait": "img/honglu_full_stop_office_rep.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/-Ir9qI9LfokNqQHufDmOMT_Fn9OwfBWQ5S7WTL1UDT93xH9ppuf01E6dgjDMFwhn2sU1vR0Ihg3ven6U-JT9m2qH9oiilt6q1rZb5ErqG6eWYXKkRtKAWrPh36EScAN11KgDtF3b-V2I6pZZveHSHQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%99%8D%EB%A3%A8/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "honglu|R사 제 4무리 순록팀": {
+  "portrait": "img/honglu_r_corp_4th_pack_reindeer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/3/3c/R_Corp._4th_Pack_Reindeer_Hong_Lu.png/revision/latest?cb=20251231193527",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:R_Corp._4th_Pack_Reindeer_Hong_Lu.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "honglu|홍원 군주": {
+  "portrait": "img/honglu_the_lord_of_hongyuan.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/g2JzKdoILP04WYFTgWZ2ajSDFbSB2_O8CCEPSvx17r0VdUp2WtuWM2cumrSeFlgjcgyNGrj8ijZ8muUniUTo89bnBPFAnBV-_dwb87lHtmY3ROGiHxQG077y8Rv75crHoavnCba8P_NvoH8U4O3Few.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%99%8D%EB%A3%A8/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "honglu|거미집 약지 아비": {
+  "portrait": "img/honglu_the_house_of_spiders_the_ring_nursefather.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/3OtceSNIBIsND16MvheiawEp-hQi3WNZWsM79MFMw7ozfg7875SGALq8LCQO7SgCij2WubIY55OkVMLl216-7eDB6Boe5VKWYLGG_y01JaKJdVtAtlInU9iR-e70SpzPXO4PlQOHssOKF9Q8aDtMbw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%99%8D%EB%A3%A8/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "honglu|S사 추노꾼": {
+  "portrait": "img/honglu_s_corp_ch_unokkun.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/b5Kc9QxyvgghmOC9KqYMwzEPs1sxpmb1UJfr-LE0wP82wqEnTIIa8V1TO3zKhwD7H2zqLTJn_ZqbUdb4QLsucSPyxXOachU1Vyx5pXj8xAVM7tOuRBiv8vzT1zX15gzreCIEIZRnG0IWeUzJKHW-lA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%99%8D%EB%A3%A8/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "honglu|동부 섕크 협회 3과": {
+  "portrait": "img/honglu_cinq_assoc_east_section_3.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/ekOunj-FgBO-MhBykKw4EKIodbpa96Sb8J5r8MpMAw33UN5t2PZN1s1s4xp0puR_B1iIAqUWDsZ7vDb7zmyu-6-gl5k5CthqhTRNwrN3AGFyCGT3wyl3Q7Dtcx5zqe-JbZw2OqZH87w_W4QkZe4bVg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%99%8D%EB%A3%A8/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(center)"
+ },
+ "heathcliff|LCB 수감자": {
+  "portrait": "img/heathcliff_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/7/77/LCB_Sinner_Heathcliff.png/revision/latest?cb=20230309183656",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Heathcliff.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "heathcliff|남부 시 협회 5과": {
+  "portrait": "img/heathcliff_shi_assoc_south_section_5.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/e/e6/Shi_Assoc._South_Section_5_Heathcliff.png/revision/latest?cb=20230228050344",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Shi_Assoc._South_Section_5_Heathcliff.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "heathcliff|N사 작은 망치": {
+  "portrait": "img/heathcliff_n_corp_kleinhammer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/f/f5/N_Corp._Kleinhammer_Heathcliff.png/revision/latest?cb=20230323045333",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:N_Corp._Kleinhammer_Heathcliff.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "heathcliff|남부 세븐 협회 4과": {
+  "portrait": "img/heathcliff_seven_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/4/42/Seven_Assoc._South_Section_4_Heathcliff.png/revision/latest?cb=20230907173819",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Seven_Assoc._South_Section_4_Heathcliff.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "heathcliff|멀티크랙 사무소 해결사": {
+  "portrait": "img/heathcliff_multicrack_office_fixer.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/ivVuRezRTxvt35devZnaazRwa_y6F70yAKmRabDft5d37DA6d_I5oAlU4V1FjYryKhGs1lpCTNIwuWsqIXnRNZkCyBJEg0leuiB-WZcqexfTmyfj3VbmhncRKGXWjME082w5591xqOc4wTL4-D2e3A.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%9E%88%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%94%84%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.2.4",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "heathcliff|R사 제 4무리 토끼팀": {
+  "portrait": "img/heathcliff_r_corp_4th_pack_rabbit.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/b/b3/R_Corp._4th_Pack_Rabbit_Heathcliff.png/revision/latest?cb=20230228050453",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:R_Corp._4th_Pack_Rabbit_Heathcliff.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "heathcliff|로보토미 E.G.O::여우비": {
+  "portrait": "img/heathcliff_lobotomy_e_g_o_sunshower.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/e/eb/Lobotomy_E.G.O_Sunshower_Heathcliff.png/revision/latest?cb=20230608040906",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Lobotomy_E.G.O::Sunshower_Heathcliff.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "heathcliff|피쿼드호 작살잡이": {
+  "portrait": "img/heathcliff_the_pequod_harpooneer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/8/8a/The_Pequod_Harpooneer_Heathcliff.png/revision/latest?cb=20231207090218",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:The_Pequod_Harpooneer_Heathcliff.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "heathcliff|남부 외우피 협회 3과": {
+  "portrait": "img/heathcliff_ufi_assoc_south_section_3.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/7/77/%C3%96ufi_Assoc._South_Section_3_Heathcliff.png/revision/latest?cb=20240321035407",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Öufi_Assoc._South_Section_3_Heathcliff.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "heathcliff|와일드헌트": {
+  "portrait": "img/heathcliff_wild_hunt.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/3/39/Wild_Hunt_Heathcliff.png/revision/latest?cb=20260419133029",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Wild_Hunt_Heathcliff.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "heathcliff|마침표 사무소 해결사": {
+  "portrait": "img/heathcliff_full_stop_office_fixer.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/jBGHtvqMtloRIGQ6owYDFrgkwrY3UJlPWg68NS8j2oszoAAWyAnnuIDLMjFW-0aQL8mX7x7PkOqKpKU2ALqROwXzOAxpYD7KTOBtI7DK5QILYURwAqp9nQhDpplcMbwHh-N9F-7Qv_oJFhQQ-3nL0g.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%9E%88%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%94%84%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "heathcliff|흑운회 와카슈": {
+  "portrait": "img/heathcliff_kurokumo_clan_wakashu.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/sx8UHVEqz2d719Z9flI9jKgmk8hlZbgXb2rqMn7nXFFwR8_JY6ui-McAc2G0tsZZVXylSU-poxhZ-tw5S97uehQjjjE6ayd1hHFc7bKWXayHTNlaJTJl2f2z0S4MiAxIjNW2zXzmjOsESy4EanPMFw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%9E%88%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%94%84%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "heathcliff|W사 4등급 정리 요원 - CCA": {
+  "portrait": "img/heathcliff_w_corp_l4_cleanup_agent_cca.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/xAJdKfCSxkdUQPWYOorjePaSPOEP0VnSpcJz-BSXl3n1aRGBZntnKEs38uLvXKRtnBVkI2FIEPMELBemIIzqB-C7BHN2SRFZdzO-y65sARbT8kFPjL-iI_Tl_p6KuO1FN2HLiSGRCAMYesoiq1f1Mw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%9E%88%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%94%84%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "heathcliff|흑수 - 유 필두": {
+  "portrait": "img/heathcliff_heishou_pack_you_branch_adept.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/Hf33oTixqwAvXKvaSYGigKVeeAmU6FFh55TGXhQVfUxGJYV39MazfFi3zqsZ5NXZtb1XzaCcURr0iqI1SmgUhmCAmpGydDR7HkLC89NZBzA0sNscCAeOxiygvXPvYRhoEYRyFK2YyYtueMrJn6OnTw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%9E%88%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%94%84%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "heathcliff|중지 작은 형님": {
+  "portrait": "img/heathcliff_the_middle_big_brother.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/HXxEpV4zqBNLkf36yE_HgYqJkJFIDoiRhCYXLYkHMbDv-FJkgpjqgCbWlbKwd5J4K9LifAqw749Of4UQ_u1dTC3r6xbnOSBC-aMzAyI2j0MjuFdUw7zpvmvmTXwoO_driY9D23cFhiUvjModST-Ayg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%9E%88%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%94%84%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "heathcliff|거미집 엄지 제자": {
+  "portrait": "img/heathcliff_the_house_of_spiders_the_thumb_apprentice.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/TYHFr4z6ZjflWzwTNYgTA5hYQBUQeCIrNHd--lixpWXJ6G3wjY6taOpFp02L7eo8IfIBnUHzG9O5_gR_DIzzvopeO47qKwhemcFgZVxnUa7aX5li8Ayva5d7hKcHgJXfY7eItpeJzfRNweAI79cnSQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%ED%9E%88%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%94%84%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.11",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "ishmael|LCB 수감자": {
+  "portrait": "img/ishmael_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/8/81/LCB_Sinner_Ishmael.png/revision/latest?cb=20230309183548",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Ishmael.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ishmael|남부 시 협회 5과": {
+  "portrait": "img/ishmael_shi_assoc_south_section_5.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/2/29/Shi_Assoc._South_Section_5_Ishmael.png/revision/latest?cb=20230310183240",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Shi_Assoc._South_Section_5_Ishmael.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ishmael|LCCB 대리": {
+  "portrait": "img/ishmael_lccb_assistant_manager.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/0/04/LCCB_Assistant_Manager_Ishmael.png/revision/latest?cb=20230310181444",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCCB_Assistant_Manager_Ishmael.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ishmael|로보토미 E.G.O::출렁임": {
+  "portrait": "img/ishmael_lobotomy_e_g_o_sloshing.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/6/62/Lobotomy_E.G.O_Sloshing_Ishmael.png/revision/latest?cb=20230615171254",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Lobotomy_E.G.O::Sloshing_Ishmael.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ishmael|에드가 가문 버틀러": {
+  "portrait": "img/ishmael_edgar_family_butler.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/f/ff/Edgar_Family_Butler_Ishmael.png/revision/latest?cb=20240418033238",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Edgar_Family_Butler_Ishmael.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ishmael|R사 제 4무리 순록팀": {
+  "portrait": "img/ishmael_r_corp_4th_pack_reindeer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/a/ab/R_Corp._4th_Pack_Reindeer_Ishmael.png/revision/latest?cb=20230312191617",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:R_Corp._4th_Pack_Reindeer_Ishmael.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ishmael|남부 리우 협회 4과": {
+  "portrait": "img/ishmael_liu_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/7/71/Liu_Assoc._South_Section_4_Ishmael.png/revision/latest?cb=20230706184934",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Liu_Assoc._South_Section_4_Ishmael.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ishmael|어금니 보트 센터 해결사": {
+  "portrait": "img/ishmael_molar_boatworks_fixer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/7/7a/Molar_Boatworks_Fixer_Ishmael.png/revision/latest?cb=20230728134637",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Molar_Boatworks_Fixer_Ishmael.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ishmael|피쿼드호 선장": {
+  "portrait": "img/ishmael_the_pequod_captain.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/8/8a/The_Pequod_Captain_Ishmael.png/revision/latest?cb=20240208033634",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:The_Pequod_Captain_Ishmael.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "ishmael|서부 츠바이 협회 3과": {
+  "portrait": "img/ishmael_zwei_assoc_west_section_3.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/vsFZxH5aQQDWd5G9L5EqycQ72f0aEcIrBxIYwS9-UkQ5JLsre_gouELT6OuVS_NDziqw9BwjaY5qNc5r8mwz6pzTxERalkMa9OOPFpY6oJJwJ_qnIe5P8DTm1DLiRKshmoykerXlpo-W-3PS2kXQjA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%8A%A4%EB%A7%88%EC%97%98%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(center)"
+ },
+ "ishmael|흑운회 부조장": {
+  "portrait": "img/ishmael_kurokumo_clan_captain.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/YZI97w7dtjUTTfw5qrD4yNJFRh1Nvg6kuqLssSm-VJlFLlocgeLlILkJP2bjzdarulTJVSNWDKfwv4jCA01fziSd39EBcENIVsBTtOvmZH0DbHjCcE_PjPVuBWEjnL9vjmhNgRWrt-ectMoCr27s_w.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%8A%A4%EB%A7%88%EC%97%98%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "ishmael|가주 후보": {
+  "portrait": "img/ishmael_family_hierarch_candidate.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/ATJPSpZp_N3z8NcUeWzwMSJKzu2bmWlnu64zp00SshBgSUNJP9AZ5Nl9m3gdyyeoGOwY8Pk7jzmwrkdyx0k_RVWNPM6uDpVDy7skcZfsDqIUC5BZL8vfYW8TEObYvtn4ZZO9xsSXFAjvPMjChkrHTw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%8A%A4%EB%A7%88%EC%97%98%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "ishmael|정사무소 대표": {
+  "portrait": "img/ishmael_jeong_s_office_rep.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/odyj5IZl6od17bGsUPNZXi62Ufc1cSOV2VecpAnBccgW0XO_mMrgVMYvFxO2aQ_KSfZJDYzeO-0779di9aK9hszIRNznpg5o2EzNTdTevtWRhe7fZnM0tDp9XDgvvpOF7rxGXvajWYtr19FUpRZfBw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%8A%A4%EB%A7%88%EC%97%98%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "ishmael|거미집 중지 제자": {
+  "portrait": "img/ishmael_the_house_of_spiders_the_middle_apprentice.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/GAzSJ3wVMuNKKO3DFtV78gIxS8De_mvSMj7XntcpersjZiTK27RzzbwVaZ4vSRe1vwN9b1pC2odiBG5fwHwtA0Zi6rsJLwh2dgZSs-Awhy_wiuRknPSgyrf_iSbLy7lHyjZU-DCPE37cMSr--15EDQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%8A%A4%EB%A7%88%EC%97%98%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(center)"
+ },
+ "ishmael|LCD 현장추리팀": {
+  "portrait": "img/ishmael_lcd_osir_team.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/2wEsIJPSET7v0SAZLKOuW9Q1wWe0iD5o1kxGVtN3wpJz6-vE8vM1TBdueuz9jaJkNgvNfutfA40yvJ7X3_4O0vdSO7bCFnX-YwC5lkFuryf6UqjhkK_NJIqX8ieEud9qwAIENXP75yu1FJvK2SKfUQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%8A%A4%EB%A7%88%EC%97%98%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "ishmael|오트쿠튀르::르루주 부티크": {
+  "portrait": "img/ishmael_haute_couture_boutique_du_rouge.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/SOhd5YtFfyGYsnVtfGh8rOMOAlboNOkAre9bLxlF8mNRNgCfxwZ9acz-gCPnfGyTJFDEv5NF7aIAVWwaTbBZKfLdBZXp6IzfznsfDtAveoAL6dCakIsx5iUOmapNmQABjwZXfrebxsMLAT63pH2egA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%9D%B4%EC%8A%A4%EB%A7%88%EC%97%98%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.11",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "rodion|LCB 수감자": {
+  "portrait": "img/rodion_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/3/32/LCB_Sinner_Rodion.png/revision/latest?cb=20230310193833",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Rodion.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "rodion|LCCB 대리": {
+  "portrait": "img/rodion_lccb_assistant_manager.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/2/2f/LCCB_Assistant_Manager_Rodion.png/revision/latest?cb=20230228050524",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCCB_Assistant_Manager_Rodion.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "rodion|N사 중간 망치": {
+  "portrait": "img/rodion_n_corp_mittelhammer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/1/1a/N_Corp._Mittelhammer_Rodion.png/revision/latest?cb=20230314005149",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:N_Corp._Mittelhammer_Rodion.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "rodion|남부 츠바이 협회 5과": {
+  "portrait": "img/rodion_zwei_assoc_south_section_5.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/2/2e/Zwei_Assoc._South_Section_5_Rodion.png/revision/latest?cb=20230713204032",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Zwei_Assoc._South_Section_5_Rodion.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "rodion|T사 2등급 징수직 직원": {
+  "portrait": "img/rodion_t_corp_class_2_collection_staff.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/y4njxfNoViXOzXrqi5SU1akz10Fve2cwX1PCPTdswE7rG-QuyXoU_dEKnLb4m4LOf7tZS-GGHcKQQNw8qGP1vOZqhtK3Leob35jXgUhUVXh-PRuN5Nv6jCt9S71ZkrpkEvcMR6Do9xkYF1zM6j37fg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A1%9C%EC%9F%88%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.2.4",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "rodion|흑운회 와카슈": {
+  "portrait": "img/rodion_kurokumo_clan_wakashu.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/9/9e/Kurokumo_Clan_Wakashu_Rodion.png/revision/latest?cb=20230228050127",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Kurokumo_Clan_Wakashu_Rodion.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "rodion|장미스패너 공방 대표": {
+  "portrait": "img/rodion_rosespanner_workshop_rep.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/TBu8GXEiSeuEc872DmaytNSkXjuP0rbDEwir_FUUkETmj7Q2L7sG_rP0QZHhq6Pzv-OJ0iIHD1oftd9INTBhwYtahp8A6j2G4y0W6KSiVe1BVoQh_YwyHUGDgtL4h4p1z8nM3dBdf0lzzDjDH5f18w.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A1%9C%EC%9F%88%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.2",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "rodion|남부 디에치 협회 4과": {
+  "portrait": "img/rodion_dieci_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/3/32/Dieci_Assoc._South_Section_4_Rodion.png/revision/latest?cb=20230921065744",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Dieci_Assoc._South_Section_4_Rodion.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "rodion|남부 리우 협회 4과 부장": {
+  "portrait": "img/rodion_liu_assoc_south_section_4_director.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/d/dc/Liu_Assoc._South_Section_4_Director_Rodion.png/revision/latest?cb=20240307034222",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Liu_Assoc._South_Section_4_Director_Rodion.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "rodion|북부 제뱌찌 협회 3과": {
+  "portrait": "img/rodion_devyat_assoc_north_section_3.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/1/1b/Devyat%27_Assoc._North_Section_3_Rodion.png/revision/latest?cb=20260215143207",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Devyat'_Assoc._North_Section_3_Rodion.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "rodion|라만차랜드 공주": {
+  "portrait": "img/rodion_the_princess_of_la_manchaland.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/7LVjyUoncqgJo7S6eB0I9mJXYHTMv9KS_XnmxZCccMETQna___lTHJllPDf2W78hOT_qjMEMB2T6NRs7FCbxMLo3ZerYaVg-K5ZB4-PgIqegjUtZE_K8rAyxEH8EOQW74qIfulWbaASO5g77wxeWfw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A1%9C%EC%9F%88%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "rodion|흑수 - 사": {
+  "portrait": "img/rodion_heishou_pack_si_branch.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/bnNbWScReLVoDk5UeEb-bAuDOctvrDeFNqVr9WWHn8pAJbZFKe68pvQCrER_gmoNfSsraNsRHkG-Mz4g8YiX1uuOZbcG2GB3W4OcGbWns3FOh2bQ3zXKWMvdttTyhQgrEHt-JFTiD6u7OnRHV7x0Bg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A1%9C%EC%9F%88%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "rodion|로보토미 E.G.O::눈물로 벼려낸 검": {
+  "portrait": "img/rodion_lobotomy_e_g_o_the_sword_sharpened_with_tears.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/abTkuPKggnmW7FkJBXcnRt4u2czVPegSUfbVk8v1nwsLXK382cDQA4xPCQvfviyr53q8YYLvJfDJq-rxkr_0fbFTyDZkGJo6pabHeK_C-QQE-XdTZ4o8vhihEEf8CbYA0Em82FL23iEoowVz_0v0Og.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A1%9C%EC%9F%88%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "rodion|R사 제 4무리 순록팀": {
+  "portrait": "img/rodion_r_corp_4th_pack_reindeer.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/GJXP7wFm9SL2iOOnijl8IWKc8r4tF8wU7CokroY6-0E7ATRJhOIOImSnoyOeVCC0SbbudcicjhgAczIwT5h6twCHQmgSIF02bcWMYyhb-dQeYDDSQlwSiN8eGM-5L6WmOpIzveyIBkLmslGGuCHEWQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A1%9C%EC%9F%88%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "rodion|약지 야수파 도슨트": {
+  "portrait": "img/rodion_the_ring_fauvist_docent.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/Kia5ZMuR262S5YWMhWK28Q7phhh1Q0L28vXmNQ14g7nIEkzo4Tp-rCEoe5oNSp02kDJ5nrc0R03kYO45kvNrdelyCMvZmKE4y2ElBec40gVfacfqLczpHsvwERdaVwdn8E9iuRSOFXc1rQP2yFGWUg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A1%9C%EC%9F%88%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "rodion|거미집 엄지 아비": {
+  "portrait": "img/rodion_the_house_of_spiders_the_thumb_nursefather.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/UeOiaUfFJ3842-_uqloTvp9W1gZ808DUdlYLubxMfuWqFd3CG5QQc5-C09-upeuZs8CFymBHXkKlhR7Cs_ftrLQgTKzkF_6LTB3heF-yQ7hBC17lxP2TVngZ-6sxoqiqbzXdOqJfdkQHJmlNX__j9Q.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A1%9C%EC%9F%88%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.11",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(center)"
+ },
+ "rodion|오트쿠튀르::수선실": {
+  "portrait": "img/rodion_haute_couture_alteration_shop.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/w6cILeT6rPCB8ffzGWLxP8x-gLEVhHm0AeHhnw2AgGGP0AKixrvPs5pZooIiRZICrKQKedeuAYUBJNMm6V_RcQTs2EKa8qXoRxpX8xR7r_8MMwhfoZEs4GNtX897SPUiwANO8hhJqb8s2l5Abn8ydg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EB%A1%9C%EC%9F%88%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.12",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "sinclair|LCB 수감자": {
+  "portrait": "img/sinclair_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/f/f2/LCB_Sinner_Sinclair.png/revision/latest?cb=20230318012203",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Sinclair.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "sinclair|남부 츠바이 협회 6과": {
+  "portrait": "img/sinclair_zwei_assoc_south_section_6.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/9/9c/Zwei_Assoc._South_Section_6_Sinclair.png/revision/latest?cb=20230228050226",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Zwei_Assoc._South_Section_6_Sinclair.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "sinclair|마리아치 보스": {
+  "portrait": "img/sinclair_los_mariachis_jefe.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/4/44/Los_Mariachis_Jefe_Sinclair.png/revision/latest?cb=20230228050614",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Los_Mariachis_Jefe_Sinclair.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "sinclair|로보토미 E.G.O::홍적": {
+  "portrait": "img/sinclair_lobotomy_e_g_o_red_sheet.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/3/3f/Lobotomy_E.G.O_Red_Sheet_Sinclair.png/revision/latest?cb=20230629174856",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Lobotomy_E.G.O::Red_Sheet_Sinclair.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "sinclair|어금니 보트 센터 해결사": {
+  "portrait": "img/sinclair_molar_boatworks_fixer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/4/41/Molar_Boatworks_Fixer_Sinclair.png/revision/latest?cb=20230728134638",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Molar_Boatworks_Fixer_Sinclair.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "sinclair|서부 츠바이 협회 3과": {
+  "portrait": "img/sinclair_zwei_assoc_west_section_3.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/Pbl66ut26EV6-WR8RXKTtc-Cm6zyBZpPPTiUrkQcEbWLFia2avDcwjwic8QE6Je-0HpMdzk8Ec8TkUr_PTZzFl3nlisi-FAlFFKf3y4Eq-iFpfFUynoMahA25w01RS3HF4FdRM2danLQLisaZ7TtJA.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%8B%B1%ED%81%B4%EB%A0%88%EC%96%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.2.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "sinclair|검계 살수": {
+  "portrait": "img/sinclair_blade_lineage_salsu.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/c/cc/Blade_Lineage_Salsu_Sinclair.png/revision/latest?cb=20230228050139",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Blade_Lineage_Salsu_Sinclair.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "sinclair|쥐어들 자": {
+  "portrait": "img/sinclair_the_one_who_shall_grip.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/d/d2/The_One_Who_Shall_Grip_Sinclair.png/revision/latest?cb=20230504045849",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:The_One_Who_Shall_Grip_Sinclair.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "sinclair|남부 섕크 협회 4과 부장": {
+  "portrait": "img/sinclair_cinq_assoc_south_section_4_director.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/6/6a/Cinq_Assoc._South_Section_4_Director_Sinclair.png/revision/latest?cb=20231221034013",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Cinq_Assoc._South_Section_4_Director_Sinclair.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "sinclair|새벽 사무소 해결사": {
+  "portrait": "img/sinclair_dawn_office_fixer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/9/95/Dawn_Office_Fixer_Sinclair.png/revision/latest?cb=20240502040501",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Dawn_Office_Fixer_Sinclair.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "sinclair|북부 제뱌찌 협회 3과": {
+  "portrait": "img/sinclair_devyat_assoc_north_section_3.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/qgMiZBRh4bgYhdBZ6cmFb6B2ovFbVRwDdU8_u-8q680C7Ks9s2pedVWJelTz7zhD7bJHIA54F0T8LjV41MCibP4eF1TMrK9h6UE7Otr9Zp8UR3k45UhtYnHOKicqlGU6UPTQRqb-2lFwCo6VTi5V7w.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%8B%B1%ED%81%B4%EB%A0%88%EC%96%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "sinclair|중지 작은 아우": {
+  "portrait": "img/sinclair_the_middle_little_brother.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/xcLkKsqd5zUykqcfdDDngYgE_8z5a9KNYgk7Su3MmrDqoBL1UpqTXxwOrjBW0xro9b0L3Y5y9N9ixOgU57teZGOyyFIw1UcPKAtnrH9R99jplbkKnYF6m6CkIzchDJY5puUQ2i-z07hDqKiHzfe8-Q.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%8B%B1%ED%81%B4%EB%A0%88%EC%96%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(center)"
+ },
+ "sinclair|동부 엄지 솔다토 II": {
+  "portrait": "img/sinclair_the_thumb_east_soldato_ii.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/6m71tg7-II-Cb-g-i0lqS3AzLG1BT2RiulpILjo27Ex-tzbl4zYjv5pivCvJmLQZHvhcMoi-t24l0ysT_ASi-LY1vHgh8VEpsWwnOwxVAPyTf2TZJH0ddlwu5NkV_Ib8PMRSdTxQOHRpiIe2LZtUuQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%8B%B1%ED%81%B4%EB%A0%88%EC%96%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "sinclair|흑수 - 유": {
+  "portrait": "img/sinclair_heishou_pack_you_branch.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/GP_scivXqL2wXw_Bwg4Fhv0X8pUHphDrr5cGsSvseDZF5RgvyjmALYj5wSKQjoaDcRPxv2A23OLL1Oe7WIP746qCLkCqrfuAkhaBKfZC39B0eTfdK2pTABENJkTq18wv5QYHnvCDeOgk7HNeXb-_cg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%8B%B1%ED%81%B4%EB%A0%88%EC%96%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "sinclair|거미집 소지 제자": {
+  "portrait": "img/sinclair_the_house_of_spiders_the_pinky_apprentice.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/eJV_fC5jMnV_KnwxL2Yb4jBNLZAaZecQZL7MsdXxnPoIHy0Ib3s3X17m-DHsDOl6K4q6rE-JHdNvwZA9ozz8RuU3so57XmTvmaxZFlJ8gA7dm4gHt7Prp4pcm1uykQoCZk06fiqy5ruog6Y_YXO3Ng.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%8B%B1%ED%81%B4%EB%A0%88%EC%96%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "outis|LCB 수감자": {
+  "portrait": "img/outis_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/3/37/LCB_Sinner_Outis.png/revision/latest?cb=20230310193822",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|검계 살수": {
+  "portrait": "img/outis_blade_lineage_salsu.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/d/da/Blade_Lineage_Salsu_Outis.png/revision/latest?cb=20230318012154",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Blade_Lineage_Salsu_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|G사 부장": {
+  "portrait": "img/outis_g_corp_head_manager.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/2/28/G_Corp._Head_Manager_Outis.png/revision/latest?cb=20230228050543",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:G_Corp._Head_Manager_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|남부 섕크 협회 4과": {
+  "portrait": "img/outis_cinq_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/5/52/Cinq_Assoc._South_Section_4_Outis.png/revision/latest?cb=20231221034325",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Cinq_Assoc._South_Section_4_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|약지 점묘파 스튜던트": {
+  "portrait": "img/outis_the_ring_pointillist_student.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/e/e1/The_Ring_Pointillist_Student_Outis.png/revision/latest?cb=20240516032602",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:The_Ring_Pointillist_Student_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|남부 세븐 협회 6과 부장": {
+  "portrait": "img/outis_seven_assoc_south_section_6_director.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/c/cc/Seven_Assoc._South_Section_6_Director_Outis.png/revision/latest?cb=20230406052200",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Seven_Assoc._South_Section_6_Director_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|어금니 사무소 해결사": {
+  "portrait": "img/outis_molar_office_fixer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/9/96/Molar_Office_Fixer_Outis.png/revision/latest?cb=20230911180321",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Molar_Office_Fixer_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|로보토미 E.G.O::마탄": {
+  "portrait": "img/outis_lobotomy_e_g_o_magic_bullet.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/b/b7/Lobotomy_E.G.O_Magic_Bullet_Outis.png/revision/latest?cb=20240111072748",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Lobotomy_E.G.O::Magic_Bullet_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|워더링하이츠 치프 버틀러": {
+  "portrait": "img/outis_wuthering_heights_chief_butler.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/f/ff/Wuthering_Heights_Chief_Butler_Outis.png/revision/latest?cb=20240328033152",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Wuthering_Heights_Chief_Butler_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|W사 3등급 정리 요원 팀장": {
+  "portrait": "img/outis_w_corp_l3_cleanup_captain.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/z47O5d0iUowFNgKQ1Ea-CmhAz_XN1RQl8ckqZoIn8rodqkyiJq7SZeYIKn51jWqVsa8RwgSsfp9D2UMHPhBC-tlm7McsII1qWhOhn73lVTUPELumtHUjES9XF4vyjQjsDzozbJAdZ7mRz7GAMIYbnw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%98%A4%ED%8B%B0%EC%8A%A4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "outis|라만차랜드 이발사": {
+  "portrait": "img/outis_the_barber_of_la_manchaland.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/t31MxxOaMPNhBZG0AcZLtmF5dmz8irYEJGuh5mG4-7rQbfcvNtjA87di7EAarln5DHoiF6kiqpMXjTZh2YbPFDp3Gsz-LULVo55dNHSCgy_7DD8r_S8sRuMKTMJYE7fLrTLlH9WfPondZghjp1T26w.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%98%A4%ED%8B%B0%EC%8A%A4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "outis|흑수 - 묘": {
+  "portrait": "img/outis_heishou_pack_mao_branch.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/1/15/Heishou_Pack_-_Mao_Branch_Outis.png/revision/latest?cb=20260206063208",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Heishou_Pack_-_Mao_Branch_Outis.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "outis|T사 3등급 강력징수직 직원": {
+  "portrait": "img/outis_t_corp_class_3_vdcu_staff.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/hXQXpIqn3BIDKUNqoork3KNjbn9pJhYOeIh1n4ftHqFYgxOn6oHJnZrqGtknxjN9BmvgHU1r63dgttNWLmcJ9zgYudolVL4QOs1Xd1L0vaD5PS6UfpZCm-OC_jk0ZwXM-li0kyt4RrkJuOCDJFq4Zg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%98%A4%ED%8B%B0%EC%8A%A4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "outis|LCA 우제트 선봉 3팀 팀장": {
+  "portrait": "img/outis_lca_udjat_vanguard_team_3_leader.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/r9eTrkytKkUCeO0KmCEU9pUYoQPy_UNPIuykM_vHbdpWFUjNKcv7Hc_eXr1nT9uAMsdXNu_xNKOCKIZLFz8pyjkRfRZIwvPCSjHAJw2UhswyD3tNDyV2TuuxNcw86Q--n_oOlx3x_4EFBYT86PQWYw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%98%A4%ED%8B%B0%EC%8A%A4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(face)"
+ },
+ "outis|거미집 중지 아비": {
+  "portrait": "img/outis_the_house_of_spiders_the_middle_nursefather.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/MDiZgPm2mm2hxj19aLI84oq1EMdRly1BwGFu6aD0nng4_O5PVmL4adixx3F78H3c3LwYQbcazgO6ko9QcfCYbNwvUXQ6mJ2PkLXpS2Cc1beiHoeg_9tal1e0yQ0ZnazDI2PaMAa3A2EycDZfl71mwQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EC%98%A4%ED%8B%B0%EC%8A%A4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "gregor|LCB 수감자": {
+  "portrait": "img/gregor_lcb_sinner.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/6/6c/LCB_Sinner_Gregor.png/revision/latest?cb=20230310193714",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:LCB_Sinner_Gregor.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "gregor|남부 리우 협회 6과": {
+  "portrait": "img/gregor_liu_assoc_south_section_6.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/1/1c/Liu_Assoc._South_Section_6_Gregor.png/revision/latest?cb=20230228050212",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Liu_Assoc._South_Section_6_Gregor.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "gregor|료.고.파. 조수": {
+  "portrait": "img/gregor_r_b_sous_chef.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/5/5d/R.B._Sous-chef_Gregor.png/revision/latest?cb=20230420091418",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:R.B._Sous-chef_Gregor.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "gregor|장미스패너 공방 해결사": {
+  "portrait": "img/gregor_rosespanner_workshop_fixer.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/a/a9/Rosespanner_Workshop_Fixer_Gregor.png/revision/latest?cb=20230608041022",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Rosespanner_Workshop_Fixer_Gregor.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "gregor|흑운회 부조장": {
+  "portrait": "img/gregor_kurokumo_clan_captain.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/8/8b/Kurokumo_Clan_Captain_Gregor.png/revision/latest?cb=20240222034921",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Kurokumo_Clan_Captain_Gregor.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "gregor|G사 일등대리": {
+  "portrait": "img/gregor_g_corp_manager_corporal.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/b/ba/G_Corp._Manager_Corporal_Gregor.png/revision/latest?cb=20230228050555",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:G_Corp._Manager_Corporal_Gregor.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "gregor|남부 츠바이 협회 4과": {
+  "portrait": "img/gregor_zwei_assoc_south_section_4.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/b/bf/Zwei_Assoc._South_Section_4_Gregor.png/revision/latest?cb=20230810171106",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Zwei_Assoc._South_Section_4_Gregor.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "gregor|쌍갈고리 해적단 부선장": {
+  "portrait": "img/gregor_twinhook_pirates_first_mate.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/4/48/Twinhook_Pirates_First_Mate_Gregor.png/revision/latest?cb=20231116055141",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Twinhook_Pirates_First_Mate_Gregor.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "gregor|에드가 가문 승계자": {
+  "portrait": "img/gregor_edgar_family_heir.webp",
+  "portraitSource": "fandom",
+  "portraitSourceUrl": "https://static.wikia.nocookie.net/limbuscompany/images/0/09/Edgar_Family_Heir_Gregor.png/revision/latest?cb=20240404031330",
+  "portraitSourcePage": "https://limbuscompany.fandom.com/wiki/File:Edgar_Family_Heir_Gregor.png",
+  "portraitNote": "공식 인격 카드 이미지(동기화 전)"
+ },
+ "gregor|라만차랜드 신부": {
+  "portrait": "img/gregor_the_priest_of_la_manchaland.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/dIoyvCtb4-SeBbJWqaaU2ksCkpK2NdptPWdhqFHnI_uoclXScFy05HWFyiw2rLKmRDeao1uYnc_6nKgHERnQYBHb_LiUCaRnXEgoq3COY4R8fuuxMC1DK8jRpgsTbEsPFg5U8uin3oEc12tjFRWaGw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EA%B7%B8%EB%A0%88%EA%B3%A0%EB%A5%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.5",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "gregor|불주먹 사무소 생존자": {
+  "portrait": "img/gregor_firefist_office_survivor.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/BL-SuPWf4OEvlNo7Zr-WXBL8eoCDaBq9APDrpkC1rpYIeqng1BdaasOUGhuIBfdUGRckGo5D_MywM3z6yp0ZF32R-GWQLDBd5cOQX3G5grmZUfpfHjYFrnwdKToe1EJUaYO5hpW9o8UhfG6lzJbQkg.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EA%B7%B8%EB%A0%88%EA%B3%A0%EB%A5%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.6",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "gregor|흑수 - 사": {
+  "portrait": "img/gregor_heishou_pack_si_branch.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/nMXir5O1kuZN4WQVyP2wsOVtKrOnal2Z9D2fYycA3nJiNc9Ae-W1aMhkzdx_VLAX8aQHcl-tuBB1ekFijghKqNltx0Sk8jv5Yn-lRWMLdmdSEJAvJY09wQeVbRVrTqzP7xyVpJofP1scsW1lk9l94A.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EA%B7%B8%EB%A0%88%EA%B3%A0%EB%A5%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.7",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "gregor|밤의 송곳 카피타노": {
+  "portrait": "img/gregor_night_awls_capitano.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/1g6vNKsxTmR3IG75Iwt8ofODOt0dktNUEP_K6krCikZ6ZilL1ZB-LswTKPFTgRcvuCEWq8_thaY9JQ85XoTpzaQaPSuQ71o-O_T5tv0jmQYhNRIMzsBXos-vkPJjuz2zN_krBHQfljJpeom6M_hi3A.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EA%B7%B8%EB%A0%88%EA%B3%A0%EB%A5%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.8",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "gregor|로보토미 E.G.O::램프": {
+  "portrait": "img/gregor_lobotomy_e_g_o_lamp.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/wxO92NIYVwArKhThmwTfLdr6cBe2l54_lHfjGsfhyBOg0-lcgGb3yEmvkcNIEnsWLsFAEnSDRJS0z1DOYAI9rZFWMborAmZLhpP7JN7R4448mAL-aNmQ_9ica81v0OvcXgKitVqhUtX4IQXHxBPriQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EA%B7%B8%EB%A0%88%EA%B3%A0%EB%A5%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.9",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "gregor|LCE E.G.O::AEDD": {
+  "portrait": "img/gregor_lce_e_g_o_aedd.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/8ztqXl3bDbEWhNnuFUQjpzXAo3pmJqL36N4zrSZ2Q7QD4VmjYGLkk4jtf3DRpg9GebPx-dYWD7O8hejLcQ-qtiT4sw9PB4Q8ju87Wx_Gne2lFiqBYiH-LGXJBfzQusCoE2ffPIp3-Hluq2xpDnmwrQ.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EA%B7%B8%EB%A0%88%EA%B3%A0%EB%A5%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.10",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ },
+ "gregor|새벽 사무소 대표": {
+  "portrait": "img/gregor_dawn_office_rep.webp",
+  "portraitSource": "namu",
+  "portraitSourceUrl": "https://i.namu.wiki/i/_zoQft7dICVMMaMVy2P0EAV96yHu5h-WVU0ITqa-qT8Z4JpkoV2E2bIJvLjUfxzPPOBqDkMsAGsUsd9g-29t3VxG5D4nNfWDUsL-9HenQVPw_Wkajzeata5DV-UQ-gjTUK1i-gYws5vRvtsom8DWZw.webp",
+  "portraitSourcePage": "https://namu.wiki/w/%EA%B7%B8%EB%A0%88%EA%B3%A0%EB%A5%B4%28Project%20Moon%20%EC%84%B8%EA%B3%84%EA%B4%80%29/%EC%9D%B8%EA%B2%8C%EC%9E%84%20%EC%A0%95%EB%B3%B4#s-2.3.11",
+  "portraitNote": "나무위키 동기화 전 일러스트를 카드 비율로 크롭(manual)"
+ }
+}
