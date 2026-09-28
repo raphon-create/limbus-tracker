@@ -1,7 +1,8 @@
 'use strict';
 const LS_OWN='limbus.owned.v1', LS_SH='limbus.shards.v1', LS_TH='limbus.thread.v1', LS_TAB='limbus.tab.v1';
 let DATA=null;
-const st={tab:'all',own:'all',rar:new Set([1,2,3]),kind:'all',craft:false,q:''};
+const st={tab:'all',own:'all',rar:new Set([1,2,3]),kind:'all',kw:'all',craft:false,q:''};
+const VIEW_TABS=['deck','builder'];
 const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}};
 const save=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
 let ownMap=load(LS_OWN,{}), shMap=load(LS_SH,{});
@@ -51,11 +52,12 @@ function card(s,i){
      <div class="nm">${esc(i.name)}</div></div>
      <button class="own ${own?'yes':''}" data-k="${esc(key(s,i))}" data-o="${own?1:0}" ${i.type==='base'?'disabled title="기본 지급"':''}>${own?'✓ 보유':'미보유'}</button></div>
    <div class="badges">${b.join('')}</div>
+   <div class="kwrow">${kwChips(i,{sub:true})}</div><div class="kwrow">${sinChips(i)}</div>
    <div class="kv"><b>출시</b>${esc(i.release)} · 시즌 ${esc(i.seasonLabel)}</div>
    ${own?'':`<div class="kv"><b>획득</b>${esc(i.obtainRaw)}</div>
    <div class="kv"><b>교환</b>${i.shardCost?('파편 '+i.shardCost+' · '):''}${esc(i.craftNote)}</div>
    <div class="kv"><b>다음 기회</b>${nextHtml(i)}</div>`}
-   <details class="more"><summary>세부/출처</summary><div>${own&&i.obtainRaw?('획득: '+esc(i.obtainRaw)+'<br>'):''}키워드: ${esc(i.keywords)}${i.ocrRead?('<br>스크린샷 판독: '+esc(i.ocrRead)):''}<br>출처: ${i.source.split(' ; ').map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(decodeURI(u).slice(0,60))}</a>`).join(' , ')}${i.portrait?`<br>초상화: <a href="${esc(i.portraitSourcePage||i.portraitSourceUrl)}" target="_blank" rel="noopener">${i.portraitSource==='fandom'?'Limbus Company Fandom Wiki':i.portraitSource==='namu'?'나무위키':'출처'}</a> (${esc(i.portraitNote||'')})`:'<br>초상화: 없음'}</div></details>
+   <details class="more"><summary>세부/출처</summary><div>${own&&i.obtainRaw?('획득: '+esc(i.obtainRaw)+'<br>'):''}특성 키워드: ${esc(i.keywords)}${i.ocrRead?('<br>스크린샷 판독: '+esc(i.ocrRead)):''}<br>출처: ${i.source.split(' ; ').map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(decodeURI(u).slice(0,60))}</a>`).join(' , ')}${i.portrait?`<br>초상화: <a href="${esc(i.portraitSourcePage||i.portraitSourceUrl)}" target="_blank" rel="noopener">${i.portraitSource==='fandom'?'Limbus Company Fandom Wiki':i.portraitSource==='namu'?'나무위키':'출처'}</a> (${esc(i.portraitNote||'')})`:'<br>초상화: 없음'}${combatDetail(i)}</div></details>
    </div>
   </div>`;
 }
@@ -65,6 +67,7 @@ function renderTabs(){
   const t=document.getElementById('tabs');
   let h=`<button class="tab ${st.tab==='all'?'on':''}" data-t="all">전체</button>`;
   for(const s of DATA.sinners){const x=stats(s);h+=`<button class="tab ${st.tab===s.id?'on':''}" data-t="${s.id}">${esc(s.name)}<span class="cnt">${x.owned}/${x.total}</span></button>`}
+  h+=`<span class="tabsep"></span><button class="tab vt ${st.tab==='deck'?'on':''}" data-t="deck">덱</button><button class="tab vt ${st.tab==='builder'?'on':''}" data-t="builder">덱 빌더</button>`;
   t.innerHTML=h;
 }
 function renderSummary(){
@@ -106,6 +109,7 @@ function renderGrid(){
       if(st.kind==='pool'&&i.standardPool!==true)continue;
       if(st.kind==='limited'&&!i.limited)continue;
       if(st.kind==='walpurgis'&&i.type!=='walpurgis')continue;
+      if(st.kw!=='all'){const kk=(i.combat&&i.combat.kw)||[]; if(st.kw==='none'?(kk.length||!(i.combat&&i.combat.skills&&i.combat.skills.length)):!kk.includes(st.kw))continue;}
       if(st.craft&&(own||!craft(s,i).ok))continue;
       if(q&&!i.name.includes(q)&&!s.name.includes(q))continue;
       list.push([s,i]);}}
@@ -136,9 +140,16 @@ function renderRules(){
   <p class="note">출처: ${R.sources.map(u=>`<a href="${esc(u)}" target="_blank">${esc(decodeURI(u))}</a>`).join(' · ')}</p>`;
 }
 function renderSources(){
-  document.getElementById('sources').innerHTML='<h2>데이터 출처</h2><ul class="rules">'+DATA.meta.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank">${esc(s.name)}</a></li>`).join('')+'</ul><p class="note">인격 이름은 나무위키 표기(인게임 공식 한글명) 기준. 데이터 갱신은 data.json 편집으로 가능합니다.</p>';
+  const ex=(DATA.meta.deck?[...DATA.meta.deck.sources.map(x=>({name:'전투 데이터(키워드·죄악 속성): '+x.name,url:x.url})),...DATA.meta.deck.deploySources.map(x=>({name:'출전 인원/순서: '+x.name,url:x.url}))]:[]);
+  document.getElementById('sources').innerHTML='<h2>데이터 출처</h2><ul class="rules">'+[...DATA.meta.sources,...ex].map(s=>`<li><a href="${esc(s.url)}" target="_blank">${esc(s.name)}</a></li>`).join('')+'</ul><p class="note">인격 이름은 나무위키 표기(인게임 공식 한글명) 기준. 데이터 갱신은 data.json 편집으로 가능합니다.</p>';
 }
-function renderAll(){renderTabs();renderSummary();renderGrid();renderSchedule();renderRules();}
+function renderAll(){
+  const v=VIEW_TABS.includes(st.tab)?st.tab:'';
+  document.body.classList.toggle('mode-deck',v==='deck');document.body.classList.toggle('mode-builder',v==='builder');
+  renderTabs();
+  if(v==='deck'){renderDecks();return}
+  if(v==='builder'){renderBuilder();return}
+  renderSummary();renderGrid();renderSchedule();renderRules();}
 document.addEventListener('click',e=>{
   const t=e.target.closest('[data-t]'); if(t){st.tab=t.dataset.t;save(LS_TAB,st.tab);history.replaceState(null,'','#'+st.tab);renderAll();window.scrollTo({top:0,behavior:'smooth'});return;}
   const p=e.target.closest('.pf[data-k]'); if(p){const b=p.parentElement.querySelector('button.own'); if(b&&!b.disabled){ownMap[b.dataset.k]=b.dataset.o!=='1';save(LS_OWN,ownMap);renderTabs();renderSummary();renderGrid();} return;}
@@ -152,8 +163,9 @@ document.addEventListener('click',e=>{
 document.getElementById('q').addEventListener('input',e=>{st.q=e.target.value;renderGrid()});
 document.getElementById('btnReset').addEventListener('click',()=>{if(confirm('보유 체크와 파편/끈 입력을 기본값(스크린샷 기준)으로 되돌릴까요?')){ownMap={};shMap={};localStorage.removeItem(LS_OWN);localStorage.removeItem(LS_SH);localStorage.removeItem(LS_TH);document.getElementById('thread').value=DATA.meta.threadDefault;renderAll();}});
 (window.LIMBUS_DATA?Promise.resolve(window.LIMBUS_DATA):fetch('data.json',{cache:'no-store'}).then(r=>r.json())).then(d=>{DATA=d;
-  st.tab=(location.hash.slice(1)||load(LS_TAB,'all')); if(st.tab!=='all'&&!DATA.sinners.some(s=>s.id===st.tab))st.tab='all';
-  const th=document.getElementById('thread');th.value=load(LS_TH,d.meta.threadDefault);th.addEventListener('input',()=>{save(LS_TH,Number(th.value));renderRules()});
+  st.tab=(decodeURIComponent(location.hash.slice(1))||load(LS_TAB,'all')); if(st.tab!=='all'&&!VIEW_TABS.includes(st.tab)&&!DATA.sinners.some(s=>s.id===st.tab))st.tab='all';
+  bLoad(); deckEvents();
+  const th=document.getElementById('thread');th.value=load(LS_TH,d.meta.threadDefault);th.addEventListener('input',()=>{save(LS_TH,Number(th.value));if(!VIEW_TABS.includes(st.tab))renderRules()});
   document.getElementById('asof').textContent=`데이터 기준 ${d.meta.asOf} (KST) · ${d.meta.currentSeasonName} (${d.meta.seasonStart} 시작)`;
   renderAll();renderSources();
 }).catch(e=>{document.getElementById('asof').textContent='data.json을 불러오지 못했습니다. 로컬 서버(python3 -m http.server)로 열어주세요.';console.error(e)});

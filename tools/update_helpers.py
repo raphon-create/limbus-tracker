@@ -18,6 +18,12 @@
   # 4) 초상화 누락 목록
   python3 tools/update_helpers.py missing
 
+  # 5) tools/combat_manifest.json (상태이상 키워드·스킬 죄악 속성·출전 규칙) 을 data.json 에 병합 + data.js 재생성
+  #    각 인격의 identities[].combat 필드와 meta.deck 이 갱신됨. 수동으로 고칠 땐 manifest 를 고친 뒤 이 명령 실행.
+  python3 tools/update_helpers.py merge-combat
+  #    전투 데이터가 없는/확인 필요 인격 목록
+  python3 tools/update_helpers.py combat-missing
+
 키: data.json 의 sinners[].id (yisang faust don ryoshu meursault honglu heathcliff ishmael rodion
 sinclair outis gregor) + identities[].name (한국어 인격명, data.json 과 정확히 일치).
 필요 패키지: Pillow (pip install pillow). 네트워크 다운로드는 curl 사용.
@@ -111,6 +117,29 @@ def add_portrait(sid, name, url, cx=None, page=None):
                             'portraitSourcePage': page or url, 'portraitNote': '수동 추가' + (f' (크롭 중심 {cx})' if cx is not None else '')}
     dump(MANIFEST, man); print('저장:', rel); merge_portraits()
 
+COMBAT = os.path.join(ROOT, 'tools', 'combat_manifest.json')
+
+def merge_combat():
+    d = load(DATA); man = load(COMBAT, {})
+    meta = man.get('__meta__')
+    n = miss = 0
+    for s in d['sinners']:
+        for i in s['identities']:
+            v = man.get(f"{s['id']}|{i['name']}")
+            if v: i['combat'] = v; n += 1
+            else:
+                i['combat'] = {'kw': [], 'skills': [], 'check': ['전투 데이터 없음 — 확인 필요'], 'kwStatus': '확인 필요', 'sinStatus': '확인 필요'}; miss += 1
+    if meta: d.setdefault('meta', {})['deck'] = meta
+    dump(DATA, d); print(f'전투 데이터 병합: {n}개, 없음 {miss}개'); build_js()
+
+def combat_missing():
+    d = load(DATA)
+    for s in d['sinners']:
+        for i in s['identities']:
+            c = i.get('combat') or {}
+            if not c.get('skills') or c.get('check'):
+                print(f"{s['id']}|{i['name']}:", '; '.join(c.get('check') or ['전투 데이터 없음']))
+
 def missing():
     d = load(DATA)
     for s in d['sinners']:
@@ -121,10 +150,13 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest='cmd', required=True)
     sub.add_parser('build-js'); sub.add_parser('merge-portraits'); sub.add_parser('missing')
+    sub.add_parser('merge-combat'); sub.add_parser('combat-missing')
     a = sub.add_parser('add-portrait'); a.add_argument('sinner'); a.add_argument('name'); a.add_argument('url')
     a.add_argument('--cx', type=float); a.add_argument('--page')
     x = ap.parse_args()
     if x.cmd == 'build-js': build_js()
     elif x.cmd == 'merge-portraits': merge_portraits()
     elif x.cmd == 'missing': missing()
+    elif x.cmd == 'merge-combat': merge_combat()
+    elif x.cmd == 'combat-missing': combat_missing()
     else: add_portrait(x.sinner, x.name, x.url, x.cx, x.page)

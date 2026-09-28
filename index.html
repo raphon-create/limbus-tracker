@@ -24,6 +24,8 @@
 <nav class="tabs" id="tabs"></nav>
 
 <main>
+  <div id="deckView" class="view"></div>
+  <div id="builderView" class="view"></div>
   <section id="summary" class="panel"></section>
 
   <section class="panel filters">
@@ -43,6 +45,17 @@
       <button data-f="kind" data-v="limited" class="chip">한정/이벤트</button>
       <button data-f="kind" data-v="walpurgis" class="chip">발푸르기스</button>
     </div>
+    <div class="fgroup"><span class="flabel">키워드</span>
+      <button data-f="kw" data-v="all" class="chip on">전체</button>
+      <button data-f="kw" data-v="화상" class="chip">화상</button>
+      <button data-f="kw" data-v="출혈" class="chip">출혈</button>
+      <button data-f="kw" data-v="진동" class="chip">진동</button>
+      <button data-f="kw" data-v="파열" class="chip">파열</button>
+      <button data-f="kw" data-v="침잠" class="chip">침잠</button>
+      <button data-f="kw" data-v="호흡" class="chip">호흡</button>
+      <button data-f="kw" data-v="충전" class="chip">충전</button>
+      <button data-f="kw" data-v="none" class="chip" title="나무위키 목록에 상태이상 키워드 아이콘이 없는 인격">범용</button>
+    </div>
     <div class="fgroup">
       <button data-f="craft" data-v="1" class="chip toggle">지금 교환 가능만</button>
       <input type="search" id="q" placeholder="인격 이름 검색">
@@ -55,8 +68,9 @@
   <section class="panel" id="rules"></section>
   <section class="panel" id="sources"></section>
 </main>
-<footer>팬 제작 비공식 트래커 · 보유 체크/파편 수치는 이 브라우저(localStorage)에만 저장됩니다 · 모든 시각은 KST</footer>
+<footer>팬 제작 비공식 트래커 · 보유 체크/파편 수치/저장한 덱은 이 브라우저(localStorage)에만 저장됩니다 · 모든 시각은 KST</footer>
 <script src="data.js"></script>
+<script src="deck.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -103,3 +103,120 @@ footer{color:var(--mut);text-align:center;font-size:12px;padding:20px}
 .ph .phn{font-size:10px;line-height:1.3;color:#bfae94;word-break:keep-all}
 .ph .phx{font-size:9px;border:1px solid var(--line);padding:0 5px;border-radius:8px}
 @media(max-width:700px){.grid{grid-template-columns:1fr}.pf{flex-basis:88px;width:88px;height:136px}}
+
+/* ---- 키워드/죄악 칩 ---- */
+.kwrow{display:flex;flex-wrap:wrap;gap:3px;margin:3px 0}
+.kc{display:inline-flex;align-items:center;gap:3px;font-size:11px;padding:0 7px;border-radius:9px;border:1px solid var(--c,#666);color:var(--c,#ccc);background:color-mix(in srgb,var(--c,#666) 14%,transparent);font-weight:700;white-space:nowrap}
+.kc small{font-size:10px;color:#e9dfcf;opacity:.85;font-weight:600}
+.kc sup{color:#ffd98a;font-size:9px}
+.kc.sub{border-style:dashed;font-weight:500;opacity:.8}
+.kc.gen{--c:#9c8b74}
+.kc.chk,.sc.chk{--c:#e5b85a;border-style:dashed}
+.sc{display:inline-flex;align-items:center;gap:3px;font-size:10px;padding:0 6px 0 4px;border-radius:3px;border-left:3px solid var(--c,#666);background:#0c0806;color:var(--mut);white-space:nowrap}
+.sc b{color:var(--c,#ccc);font-weight:700;font-size:11px}
+.sc.def{border-left-style:double}
+
+/* ---- 뷰 전환 ---- */
+.view{display:none}
+body.mode-deck #deckView,body.mode-builder #builderView{display:block}
+body.mode-deck #summary,body.mode-deck .filters,body.mode-deck #grid,body.mode-deck #schedule,body.mode-deck #rules,
+body.mode-builder #summary,body.mode-builder .filters,body.mode-builder #grid,body.mode-builder #schedule,body.mode-builder #rules{display:none}
+.tabsep{flex:0 0 10px}
+.tab.vt{border-color:#7a5a2a;color:var(--gold2);font-weight:700}
+.btn{background:linear-gradient(#6b4d1f,#3a2912);border:1px solid var(--gold);color:#fff3d0;padding:5px 12px;border-radius:3px;font-weight:700;font-size:12px}
+.btn:hover{filter:brightness(1.2)}
+.ghost:disabled{opacity:.4;cursor:default}
+
+/* ---- 덱 탭 ---- */
+.dctl{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
+.dctl input{width:60px}
+.dsum{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:6px;margin:6px 0}
+.dsb{position:relative;display:flex;justify-content:space-between;align-items:center;padding:6px 10px 8px;border:1px solid var(--line);border-left:4px solid var(--c);border-radius:3px;background:#140e0a;text-decoration:none;color:var(--txt);overflow:hidden}
+.dsb b{color:var(--c)}
+.dsb i{position:absolute;left:0;bottom:0;height:3px;background:var(--c)}
+.dsb:hover{border-color:var(--c)}
+.dinfo div{font-size:12px!important;color:#cbbba3!important}
+.panel.deck{border-top:3px solid var(--c)}
+.dhead{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.dhead h2{margin:0}
+.kwd{color:var(--c)}
+.comp{font-size:13px;color:#cbbba3}.comp b{font-size:18px;color:var(--gold2)}
+.dsin{display:flex;gap:10px;align-items:center;margin:8px 0}
+.dsin .note{white-space:nowrap}
+.sinbar{flex:1;display:flex;height:18px;border-radius:3px;overflow:hidden;border:1px solid #3a2a19;background:#0c0806;min-width:160px}
+.sinbar.big{height:24px;margin:4px 0 8px}
+.sinbar i{display:flex;align-items:center;justify-content:center;background:var(--c);min-width:0;overflow:hidden}
+.sinbar i b{font-size:10px;color:#000c;font-weight:800;white-space:nowrap;text-shadow:0 0 2px #fff6}
+.sinbar.none{font-size:11px;color:var(--mut);align-items:center;padding-left:8px}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.slot{background:#140e0a;border:1px solid var(--line);border-radius:4px;padding:6px;min-height:150px;display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center}
+.slot.dep{border-color:color-mix(in srgb,var(--c) 60%,var(--line));box-shadow:inset 0 0 12px color-mix(in srgb,var(--c) 18%,transparent)}
+.slot.bk{opacity:.85}
+.slot.vac{border-style:dashed;align-items:stretch;text-align:left;background:#100b08}
+.sn{width:100%;display:flex;justify-content:space-between;align-items:center;font-weight:800;color:var(--gold2);font-size:12px}
+.ordb{font-size:10px;font-weight:700;padding:0 5px;border-radius:8px;background:#2e4a2a;color:#d7f3cf}
+.slot.bk .ordb{background:#3a2c22;color:#e7d6bd}
+.ordb.no{background:#3a1f1a;color:#f0a79f}
+.pn{font-size:11px;color:#fff3dc;font-weight:700;line-height:1.25;max-height:2.5em;overflow:hidden}
+.alts{display:flex;gap:3px;flex-wrap:wrap;justify-content:center;margin-top:2px}
+.unc{font-size:10px;color:var(--mut)}
+.cand{display:flex;gap:6px;align-items:flex-start;margin-top:4px}
+.cand .cn{font-size:11px;color:#cdbfa9;font-weight:700;line-height:1.25}
+.cand .b{display:inline-block;margin-top:2px;font-size:10px}
+.cand .cx{font-size:10px;color:var(--mut);line-height:1.25;margin-top:2px}
+.th{position:relative;display:inline-block;width:62px;height:95px;flex:0 0 auto;border-radius:3px;overflow:hidden;border:2px solid var(--r1);background:repeating-linear-gradient(135deg,#1b130d 0 6px,#150f0a 6px 12px)}
+.th.r3{border-color:var(--r3)}.th.r2{border-color:var(--r2)}
+.th img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.th.un img{filter:grayscale(.9) brightness(.55)}
+.th.mini{width:34px;height:52px;border-width:1px}
+.th.mini2{width:44px;height:68px}
+.th.none{border-style:dashed;border-color:var(--line);width:44px;height:68px}
+.th .thr{position:absolute;left:2px;bottom:0;font:900 10px Georgia,serif;color:#fff;text-shadow:0 1px 2px #000}
+.th.mini .thr{display:none}
+.th .tho{position:absolute;right:2px;top:2px;font-size:10px;font-weight:800;background:#000b;color:var(--gold2);padding:0 3px;border-radius:2px}
+.th .thn{position:absolute;inset:auto 0 0 0;font-size:9px;background:#000a;color:#e7d6bd;text-align:center}
+.uplist{margin:4px 0 0;padding-left:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:4px}
+.uplist li{font-size:12px;background:#140e0a;border:1px solid var(--line);border-radius:3px;padding:4px 8px}
+.uplist li.cr{border-color:var(--green);box-shadow:0 0 8px #5f9e5a40}
+.b.fill{border-color:var(--gold);color:var(--gold2);font-weight:700}
+.b.upg{border-color:#6d8fb8;color:#b7d3f0}
+
+/* ---- 덱 빌더 ---- */
+.bbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0}
+.bbar label{font-size:12px;color:var(--mut);display:flex;gap:4px;align-items:center}
+.bbar .dctl{margin:0}
+select,input[type=text],textarea{background:#0c0806;border:1px solid var(--line);color:var(--txt);padding:4px 6px;border-radius:3px;font-family:inherit;font-size:13px}
+input[type=text]{width:180px}
+.bbar.io{align-items:stretch}
+.bbar.io textarea{flex:1;min-width:260px;font-family:ui-monospace,monospace;font-size:12px}
+.iob{display:flex;flex-direction:column;gap:4px}
+#bMsg.flash{color:var(--gold2)}
+.blayout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px;align-items:start}
+.bsum{position:sticky;top:90px}
+.brows{padding:8px}
+.brow{display:flex;gap:10px;align-items:center;padding:6px;border-bottom:1px solid #2a1e14;border-left:3px solid transparent}
+.brow.dep{border-left-color:var(--green);background:#16110b}
+.brow.bk{opacity:.8}
+.brow.warnrow{border-left-color:#c0463b}
+.bo{display:flex;flex-direction:column;align-items:center;width:44px;gap:1px}
+.bo .num{font-size:18px;font-weight:900;color:var(--gold2);line-height:1}
+.bo .lab{font-size:10px;color:var(--mut)}
+.brow.dep .bo .lab{color:#a9dca2}
+.mv{background:#0c0806;border:1px solid var(--line);color:var(--mut);font-size:9px;padding:0 6px;line-height:14px;border-radius:2px}
+.mv:disabled{opacity:.3}
+.bm{flex:1;min-width:0}
+.bs{font-weight:800;color:var(--gold2);font-size:13px}
+.bm select{width:100%;max-width:520px;margin:2px 0}
+.bchips{display:flex;flex-wrap:wrap;gap:3px}
+.bord input{width:48px}
+.bord label{font-size:11px;color:var(--mut)}
+.wbad{font-size:10px;font-weight:700;color:#f0a79f;border:1px solid var(--red);border-radius:8px;padding:0 5px;margin-left:4px}
+table.st{font-size:12px;margin-bottom:6px}
+table.st td,table.st th{padding:3px 6px}
+.cnum{text-align:right;font-variant-numeric:tabular-nums}
+.minibar{height:6px;background:#2a1e14;border-radius:3px;overflow:hidden;min-width:60px}
+.minibar i{display:block;height:100%}
+ul.wl{margin:4px 0;padding-left:16px;font-size:12px;color:#f0c9a0}
+ul.wl.sp{color:#cbbba3}
+@media(max-width:1000px){.blayout{grid-template-columns:1fr}.bsum{position:static}}
+@media(max-width:700px){.slots{grid-template-columns:repeat(2,1fr)}.uplist{grid-template-columns:1fr}.brow{flex-wrap:wrap}}
